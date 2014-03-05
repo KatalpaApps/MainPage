@@ -1,0 +1,499 @@
+*{
+	margin:0px;
+	padding:0px;	
+}
+
+body
+{
+	font-size:21px;
+}
+
+main {
+    display: block;
+}
+
+
+section
+{
+	height: 800px;
+	background-attachment:fixed;
+	background-size:cover;
+	position:relative;
+	color: #dad6be;
+}
+
+.subpage-footer
+{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	min-height: 70px;
+}
+
+
+@-webkit-keyframes ScrollRoad66 {
+	0% {
+		opacity: 0.6;
+		
+	}
+	
+	25% {
+		opacity: 0.9;
+		
+	}
+	
+	50% {
+		opacity: 0.6;
+		
+	}
+	
+	75% {
+		opacity: 0.3;
+		
+	}
+	
+	100% {
+		opacity: 0.6;
+	}
+}
+
+@-moz-keyframes ScrollRoad66 {
+	0% {
+		opacity: 0.6;
+		
+	}
+	
+	25% {
+		opacity: 0.9;
+		
+	}
+	
+	50% {
+		opacity: 0.6;
+		
+	}
+	
+	75% {
+		opacity: 0.3;
+		
+	}
+	
+	100% {
+		opacity: 0.6;
+	}
+}
+
+@-o-keyframes ScrollRoad66 {
+	0% {
+		opacity: 0.6;
+		
+	}
+	
+	25% {
+		opacity: 0.9;
+		
+	}
+	
+	50% {
+		opacity: 0.6;
+		
+	}
+	
+	75% {
+		opacity: 0.3;
+		
+	}
+	
+	100% {
+		opacity: 0.6;
+	}
+}
+
+@keyframes ScrollRoad66 {
+	0% {
+		opacity: 0.6;
+		
+	}
+	
+	25% {
+		opacity: 0.9;
+		
+	}
+	
+	50% {
+		opacity: 0.6;
+		
+	}
+	
+	75% {
+		opacity: 0.3;
+		
+	}
+	
+	100% {
+		opacity: 0.6;
+	}
+}
+
+
+@-webkit-keyframes ScrollRoad33 {
+	0% {
+		opacity: 0.3;
+		
+	}
+	
+	25% {
+		opacity: 0.6;
+		
+	}
+	
+	50% {
+		opacity: 0.9;
+		
+	}
+	
+	75% {
+		opacity: 0.6;
+		
+	}
+	
+	100% {
+		opacity: 0.3;
+	}
+}
+
+@-moz-keyframes ScrollRoad33 {
+	0% {
+		opacity: 0.3;
+		
+	}
+	
+	25% {
+		opacity: 0.6;
+		
+	}
+	
+	50% {
+		opacity: 0.9;
+		
+	}
+	
+	75% {
+		opacity: 0.6;
+		
+	}
+	
+	100% {
+		opacity: 0.3;
+	}
+}
+
+@-o-keyframes ScrollRoad33 {
+	0% {
+		opacity: 0.3;
+		
+	}
+	
+	25% {
+		opacity: 0.6;
+		
+	}
+	
+	50% {
+		opacity: 0.9;
+		
+	}
+	
+	75% {
+		opacity: 0.6;
+		
+	}
+	
+	100% {
+		opacity: 0.3;
+	}
+}
+
+@keyframes ScrollRoad33 {
+	0% {
+		opacity: 0.3;
+		
+	}
+	
+	25% {
+		opacity: 0.6;
+		
+	}
+	
+	50% {
+		opacity: 0.9;
+		
+	}
+	
+	75% {
+		opacity: 0.6;
+		
+	}
+	
+	100% {
+		opacity: 0.3;
+	}
+}
+
+
+@-webkit-keyframes ScrollRoad99 {
+	0% {
+		opacity: 0.9;
+		
+	}
+	
+	25% {
+		opacity: 0.6;
+		
+	}
+	
+	50% {
+		opacity: 0.3;
+		
+	}
+	
+	75% {
+		opacity: 0.6;
+		
+	}
+	
+	100% {
+		opacity: 0.9;
+	}
+}
+
+@-moz-keyframes ScrollRoad99 {
+	0% {
+		opacity: 0.9;
+		
+	}
+	
+	25% {
+		opacity: 0.6;
+		
+	}
+	
+	50% {
+		opacity: 0.3;
+		
+	}
+	
+	75% {
+		opacity: 0.6;
+		
+	}
+	
+	100% {
+		opacity: 0.9;
+	}
+}
+
+@-o-keyframes SScrollRoad99 {
+	0% {
+		opacity: 0.9;
+		
+	}
+	
+	25% {
+		opacity: 0.6;
+		
+	}
+	
+	50% {
+		opacity: 0.3;
+		
+	}
+	
+	75% {
+		opacity: 0.6;
+		
+	}
+	
+	100% {
+		opacity: 0.9;
+	}
+}
+
+@keyframes ScrollRoad99 {
+	0% {
+		opacity: 0.9;
+		
+	}
+	
+	25% {
+		opacity: 0.6;
+		
+	}
+	
+	50% {
+		opacity: 0.3;
+		
+	}
+	
+	75% {
+		opacity: 0.6;
+		
+	}
+	
+	100% {
+		opacity: 0.9;
+	}
+}
+
+.srcoll-down-bar
+{
+	margin-bottom:5%;
+}
+
+.srcoll-down-bar > div
+{
+
+	-webkit-animation-fill-mode:both;
+	-moz-animation-fill-mode:both;
+	-ms-animation-fill-mode:both;
+	-o-animation-fill-mode:both;
+	animation-fill-mode:both;
+		
+	-webkit-animation-duration:2s;
+	-moz-animation-duration:2s;
+	-ms-animation-duration:2s;
+	-o-animation-duration:2s;
+	animation-duration:2s;
+	
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-ms-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	
+}
+
+
+.srcoll-down-bar > div:last-child
+{	
+	-webkit-animation-name: ScrollRoad33;
+	-moz-animation-name: ScrollRoad33;
+	-o-animation-name: ScrollRoad33;
+	animation-name: ScrollRoad33;
+}
+
+.srcoll-down-bar > div:nth-child(2)
+{
+	-webkit-animation-name: ScrollRoad66;
+	-moz-animation-name: ScrollRoad66;
+	-o-animation-name: ScrollRoad66;
+	animation-name: ScrollRoad66;
+}
+
+.srcoll-down-bar > div:first-child
+{
+	-webkit-animation-name: ScrollRoad99;
+	-moz-animation-name: ScrollRoad99;
+	-o-animation-name: ScrollRoad99;
+	animation-name: ScrollRoad99;
+}
+
+.menu-top
+{
+	background-color:rgba(26,26,26,0.25);
+}
+
+#menu-right
+{
+	position:fixed;
+}
+
+
+.stdbtn,
+.go-up
+{
+	border: 4px solid #FFF;
+	color: #DAD6BE;
+}
+
+.stdbtn
+{
+	border-radius:12px;
+	padding: 15px 43px;
+}
+
+.go-up
+{
+	border-radius:50%;
+	padding: 12px 15px;
+	position:absolute;
+	bottom:23px;
+	right: 10px;
+	background-color:rgba(0,0,0,0);
+}
+
+.hr-up,
+.hr-down
+{
+	border:2px solid #dad6be;
+}
+
+.item
+{
+	position:relative;
+}
+
+
+
+.page-title
+{
+	font-size:3.571em;
+	padding-top:15%;
+	width:100%;
+}
+
+
+#lading-home  div.page-title
+{
+	padding-bottom:15%;
+}
+
+.stdbtn:hover,.stdbtn:focus,.go-up:hover
+{
+	border: 4px solid #dad6be;
+	color: #FFF;
+	text-decoration:none;
+}
+
+.center-content,
+.page-title
+{
+	text-align:center;
+}
+
+#lading-home
+{
+	background-image:url('../images/landing/landing_dark.jpg');
+}
+
+
+#lading-projects
+{
+	background-image:url('../images/landing/projects_dark.jpg');
+}
+
+#lading-about-us
+{
+	background-image:url('../images/landing/about_us_dark.jpg');
+}
+
+#lading-meet-us
+{
+	background-image:url('../images/landing/contact_dark.jpg');
+}
+
+#lading-planner
+{
+	background-image:url('../images/landing/kickstart_dark.jpg');
+}
