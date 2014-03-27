@@ -127,7 +127,7 @@
 }
 
 .dotstyle-fillin li.active a {
-	box-shadow: inset 0 0 0 8px white;
+	box-shadow: inset 0 0 0 8px #dad6be;
 }
 
 /* Circle grow */

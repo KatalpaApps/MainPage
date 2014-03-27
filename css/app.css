@@ -20,6 +20,7 @@ section
 	background-size:cover;
 	position:relative;
 	color: #dad6be;
+        padding-top: 15%;
 }
 
 .subpage-footer
@@ -436,7 +437,10 @@ section
 .hr-up,
 .hr-down
 {
-	border:2px solid #dad6be;
+	transition: all ease 1s;
+        border:2px solid #FFF;
+        width: 25%;
+        margin: 0px auto;
 }
 
 .item
@@ -449,14 +453,23 @@ section
 .page-title
 {
 	font-size:3.571em;
-	padding-top:15%;
+	padding: 0px;
 	width:100%;
 }
 
+.page-title:hover .hr-up, .page-title:hover .hr-down
+{
+	 width: 35%;
+         border-color: #DAD6BE;
+}
 
 #lading-home  div.page-title
 {
-	padding-bottom:15%;
+	/*padding-bottom:15%;*/
+}
+#lading-home .carousel-indicators
+{
+    bottom: -150%;
 }
 
 .stdbtn:hover,.stdbtn:focus,.go-up:hover
