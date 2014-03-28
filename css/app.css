@@ -192,8 +192,7 @@ section
 
 @-o-keyframes ScrollRoad33 {
 	0% {
-		opacity: 0.3;
-		
+		opacity: 0.3;		
 	}
 	
 	25% {
@@ -428,10 +427,12 @@ section
 {
 	border-radius:50%;
 	padding: 12px 15px;
-	position:absolute;
+	position:fixed;
 	bottom:23px;
 	right: 10px;
 	background-color:rgba(0,0,0,0);
+        display: none;
+        transition: all 0.3s linear;
 }
 
 .hr-up,
