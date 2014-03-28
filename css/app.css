@@ -438,9 +438,17 @@ section
 .hr-down
 {
 	transition: all ease 1s;
+        -webkit-transition: all ease 1s;
+        -moz-transition: all ease 1s;
+        -o-transition: all ease 1s;
         border:2px solid #FFF;
         width: 25%;
         margin: 0px auto;
+}
+.page-title:hover .hr-up, .page-title:hover .hr-down
+{
+	 width: 35%;
+         border-color: #DAD6BE;
 }
 
 .item
@@ -457,11 +465,6 @@ section
 	width:100%;
 }
 
-.page-title:hover .hr-up, .page-title:hover .hr-down
-{
-	 width: 35%;
-         border-color: #DAD6BE;
-}
 
 #lading-home  div.page-title
 {
