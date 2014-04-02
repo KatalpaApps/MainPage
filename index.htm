@@ -7,6 +7,7 @@
         <link href="css/font.css" rel="stylesheet" type="text/css" />	
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />	
         <link href="css/app.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="css/app-responsive.css">
         <!--files holds styling for nav sidebar & dot animiations-->
         <!--<link href="css/components-right.css" rel="stylesheet" type="text/css" />-->
         <link href="css/carousel-dots.css" rel="stylesheet" type="text/css" />
@@ -15,48 +16,65 @@
         <!--end of css-->
         <!--javascript section--> 
         <script src="js/lib/jquery-1.9.1.js" type="text/javascript"></script>
+        <script src="js/lib/jquery-ui-1.9.2.custom.min.js"></script>
         <script src="js/lib/bootstrap.min.js"></script>
         <script src="js/app.js" type="text/javascript"></script>	
         <script src="js/app/landing.js" type="text/javascript"></script>
         <!--end of javascript-->  
         <script type="text/javascript">
+            window.set
             $(document).ready(function() {
-                $('#show-menu-btn').on('click', function() {
-                    $('.st-pusher').toggleClass('pushed');
+                bouncing_arrow();
+                $('#show-menu-btn').on('click', function(event) {
+                    $('.pusher').toggleClass('pushed');
 
                 });
-                $('#close-menu-btn').on('click', function() {
-                    $('.st-pusher').toggleClass('pushed');
+                $('#close-menu-btn').on('click', function(event) {
+                    $('.pusher').toggleClass('pushed');
 
                 });
-                $('div#st-content').on('click', function() {
+                $('div#st-content').on('click', function(event) {
+                    //check up in DOM structure to figure out if container has been pushed or not
                     if ($(this).parents().hasClass('pushed'))
                     {
-                        $('.st-pusher').toggleClass('pushed');
+                        $('.pusher').toggleClass('pushed');
                     }
                 });
+                $('.arrow').on('click', function(event) {
+                    $('html, body').animate({ scrollTop: $(window).height() }, 1000);
+
+                });
+            
                 $(window).scroll(function() {
-                    var scrollPosition = $(window).scrollTop();
-                    var windowHeight = $(window).height();
-                    if(scrollPosition > windowHeight)
+                    var m__scrollPosition = $(window).scrollTop();
+                    var m__windowHeight = $(window).height();
+                    if(m__scrollPosition > m__windowHeight)
                     {
                         $(".go-up").fadeIn();
                     }
                     else{
-                            $(".go-up").fadeOut();     
+                        $(".go-up").fadeOut();     
                     }
                 });
             });
+            function bouncing_arrow()
+            {
+                 // ie hack
+                 if ($(window).scrollTop() < $(window).height()) {
+                 $(".arrow").effect('bounce',{directon: 'down',distance: 30,times: 2 }, 1000);   
+                 }
+                  window.setTimeout(function() { bouncing_arrow() }, 3500)
+            }
         </script>
         <style type="text/css">
-            .st-pusher
+            .pusher
             {
-                transition: all 0.5s ease;
+                transition: all 0.5s linear;
             }
             .pushed
             {
-                transition: padding 0.5s ease;
-                padding-right: 300px;
+                transition: padding 0.5s linear;
+                padding-right: 320px;
             }
             .pushed section
             {
@@ -67,7 +85,8 @@
                 background-color: #1a1a1a;
                 height: 100%;
                 right: 0px;
-                width: 300px;
+                width: 320px;
+
                 transition: all 0.5s linear;
 
             }
@@ -99,8 +118,6 @@
                 color:#515151;
                 display: block;
                 width: 100%;
-
-
             }
             #menu-right span
             {
@@ -126,7 +143,7 @@
             }
             .pushed .menu-top
             {
-                margin-right: 300px;
+                margin-right: 320px;
             }         
             .pushed .st-content::before {
                 background: rgba(0,0,0,0.2);
@@ -142,6 +159,7 @@
             .st-content
             {
                 position:relative;
+                transition: all 0.5s linear;
             }
             .st-content::before {
                 position: absolute;
@@ -178,101 +196,7 @@
             {
                 padding: 0px;
             }
-            .icon
-            {
-                background-repeat: no-repeat;
-                display: block;
-                padding-left: 24px;
-                background-position: 24px center;
-            }
-            .icon-only
-            {
-                width: 24px;
-                height: 24px;
-                padding: 0px;
-                display: inline-block;
-                background-position: center center;
-            }
-            .icon-about
-            { 
-                background-image: url(images/sidebar/about_us.png);
-            }
-            .icon-about:hover
-            {
-                background-image: url(images/sidebar/about_us_action.png);
-            }
-            .icon-landing
-            {
-                background-image: url(images/sidebar/landing.png);
-            }
-            .icon-landing:hover
-            {
-                background-image: url(images/sidebar/landing_action.png);
-            }
-            .icon-projects
-            {
-                background-image: url(images/sidebar/projects.png);
-            }
-            .icon-projects:hover
-            {
-                background-image: url(images/sidebar/projects_action.png);
-            }
-            .icon-journal
-            {
-                background-image: url(images/sidebar/journal.png);
-            }
-            .icon-journal:hover
-            {
-                background-image: url(images/sidebar/journal_action.png);
-            }
-            .icon-contact
-            {
-                background-image: url(images/sidebar/contact.png);
-            }
-            .icon-contact:hover
-            {
-                background-image: url(images/sidebar/contact_action.png);
-            }
-            .icon-kickstart
-            {
-                background-image: url(images/sidebar/kickstart_project.png);
-            }
-            .icon-kickstart:hover
-            {
-                background-image: url(images/sidebar/kickstart_project_action.png);
-            }
-            .icon-twitter
-            {
-                background-image: url(images/sidebar/twitter.png);
-            }
-            .icon-twitter:hover
-            {
-                background-image: url(images/sidebar/twitter_action.png);
-            }
-            .icon-facebook
-            {
-                background-image: url(images/sidebar/facebook.png);
-            }
-            .icon-facebook:hover
-            {
-                background-image: url(images/sidebar/facebook_action.png);
-            }
-            .icon-github
-            {
-                background-image: url(images/sidebar/github.png);
-            }
-            .icon-github:hover
-            {
-                background-image: url(images/sidebar/github_action.png);
-            }
-            .icon-gooogle-plus
-            {
-                background-image: url(images/sidebar/google_plus.png);
-            }
-            .icon-gooogle-plus:hover
-            {
-                background-image: url(images/sidebar/google_plus_action.png);
-            }
+          
             #lading-home .page-title
             {
                 position: static;
@@ -294,9 +218,9 @@
                 position: absolute;
                 bottom: 20px;
                 left: 50%;
-                margin-left:-20px;
+                margin-left: -12px;
             }
-
+/*
             .bounce {
                 -webkit-animation-name: bounce;
                 -moz-animation-name: bounce;
@@ -337,7 +261,7 @@
                 0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
                 40% {transform: translateY(-30px);}
                 60% {transform: translateY(-15px);}
-            }
+            }*/
             p#show-menu-btn
             {
                 padding: 10px 15px;
@@ -353,10 +277,8 @@
     <body>    
 
         <main id="content" class="group" role="main">
-            <div id="st-container" class="st-container">
-                <div class="st-pusher">
-
-                    <nav class="st-menu st-effect-1 auto-height" id="menu-right">
+                <div class="pusher">
+                    <nav class="auto-height" id="menu-right">
                         <ul>
                             <li><a href="#" id="close-menu-btn" ><img src="images/sidebar/menu_close.png"</a></li>
                             <li><a href="#" ><span class="icon icon-landing">landing page</span></a></li>
@@ -367,7 +289,6 @@
                                             <li><a href="#" ><span class="icon icon-kickstart">kickstart project</span></a></li>
                                             </ul>
                                             <ul id="menu-right-social-media">
-
                                                 <li><a href="#"><span class="icon icon-only icon-twitter"></span></a></li>
                                                 <li><a href="#"><span class="icon icon-only icon-github"></span></a></li>
                                                 <li><a href="#"><span class="icon icon-only icon-facebook"></span></a></li>
@@ -376,15 +297,12 @@
                                             </nav>
 
                                             <div class="st-content" id="st-content">
-                                                <div class="stcontent-inner">
                                                     <nav class="navbar navbar-fixed-top menu-top" role="navigation">
                                                         <div class="navbar-inner">
                                                             <div class="container-fluid">					
-                                                                <div class="navbar-header">
+                                                                <div class="navbar-header col-sm-12">
                                                                     <a class="navbar-brand" href="#"><img src="images/logo.png" /></a>
-                                                                </div>
-                                                                <div class="collapse navbar-collapse">
-                                                                    <p id="show-menu-btn" class="navbar-right"><img src="images/menu_open.png" /></p>
+                                                                    <p id="show-menu-btn" class="pull-right"><img src="images/menu_open.png" /></p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -468,18 +386,9 @@
                                                                         <button class="go-up">
                                                                             <img src="images/scroll_up.png" />
                                                                         </button>
-
                                                                     </section>	
-
                                                                     </div>
-                                                                    </div>
-
-                                                                    </div>
-
                                                                     </div>						
                                                                     </main>
-                                                                    <script src="js/lib/classie.js"></script>
-                                                                    <script src="js/lib/sidebarEffects.js"></script>
-                                                                    <script src="js/lib/dots.js"</script>
                                                                     </body>
                                                                     </html>
