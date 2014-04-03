@@ -1,13 +1,12 @@
 	jQuery(document).ready(function(){
 	
 		initModule('Landing',resizeLandingWindow,initLanding,false);
-		
 	});	
 	
 	function resizeLandingWindow(__iWindowHeight,__iWindowWidth)
 	{
 		$(".auto-height").css("height",__iWindowHeight+"px");
-                $(".auto-padding").css("padding-top",__iWindowHeight * 0.3 +"px");
+        $(".auto-padding").css("padding-top",__iWindowHeight * 0.3 +"px");
 	}
 	
 	function initLanding()
@@ -25,25 +24,8 @@
 		});
 		
 		$('#show-menu-btn').click(function(event){
-		
 			event.stopPropagation();
-		
-			if($('#st-container').hasClass("st-menu-open"))
-			{
-				$('#st-container').removeClass("st-effect-4 st-menu-open");
-			}else{
-				$('#st-container').addClass("st-effect-4 st-menu-open");
-			}
-			
 		});
 		
-		$('.st-pusher').click(function(){
-		
-			if($('#st-container').hasClass("st-menu-open"))
-			{
-				$('#st-container').removeClass("st-effect-4 st-menu-open");
-			}
-			
-		});
 	}
      

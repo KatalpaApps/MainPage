@@ -9,9 +9,9 @@ main {
     display: block;
 }
 section {
-    height: 800px;
     background-attachment: fixed;
     background-size: cover;
+    background-color: white;
     position: relative;
     color: #dad6be;
     padding-top: 15%;
@@ -302,19 +302,11 @@ section {
     width: 35%;
     border-color: #DAD6BE;
 }
-.item {
-    position: relative;
-}
+
 .page-title {
     font-size: 3.571em;
     padding: 0px;
     width: 100%;
-}
-#lading-home div.page-title {
-    /*padding-bottom:15%;*/
-}
-#lading-home .carousel-indicators {
-    bottom: -150%;
 }
 .stdbtn:hover, .stdbtn:focus, .go-up:hover {
     border: 4px solid #dad6be;
@@ -324,20 +316,125 @@ section {
 .center-content, .page-title {
     text-align: center;
 }
-#lading-home {
-    background-image: url('../images/landing/landing_dark.jpg');
+.pusher {
+    transition: all 0.5s linear;
 }
-#lading-projects {
-    background-image: url('../images/landing/projects_dark.jpg');
+.pushed {
+    transition: padding 0.5s linear;
+    padding-right: 320px;
 }
-#lading-about-us {
-    background-image: url('../images/landing/about_us_dark.jpg');
+#menu-right {
+    background-color: #1a1a1a;
+    height: 100%;
+    right: 0px;
+    width: 320px;
+    /*transition: all 0.5s linear;*/
 }
-#lading-meet-us {
-    background-image: url('../images/landing/contact_dark.jpg');
+.pushed #menu-right {
+    /*transition: all 0.5s linear;*/
 }
-#lading-planner {
-    background-image: url('../images/landing/kickstart_dark.jpg');
+#menu-right ul {
+    border-bottom: solid 1px #2f2f2f;
+    border-top: solid 1px #2f2f2f;
+    list-style: none;
+}
+#menu-right li {
+    border-top: solid 1px #2f2f2f;
+}
+#menu-right li:hover {
+    background-color: #242424;
+    color: white;
+}
+#menu-right a {
+    color: #515151;
+    display: block;
+    width: 100%;
+}
+#menu-right span {
+    padding: 12px 12px 12px 64px;
+}
+#menu-right a:hover {
+    color: white;
+    text-decoration: none;
+}
+#menu-right li:first-child a {
+    text-align: right;
+    padding: 9px;
+}
+#menu-right li:first-child:hover {
+    background-color: #1a1a1a;
+}
+.menu-top {
+    transition: margin 0.5s linear;
+}
+.pushed .menu-top {
+    margin-right: 320px;
+}
+.pushed .st-content:before {
+    background: rgba(0, 0, 0, 0.2);
+    content: '';
+    height: 100%;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 200;
+}
+.st-content {
+    position: relative;
+    transition: all 0.5s linear;
+}
+.st-content:before {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    content: '';
+    opacity: 0;
+    z-index: 0;
+}
+ul#menu-right-social-media {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+ul#menu-right-social-media li {
+    border-top: none;
+    display: inline-block;
+    padding: 0px 6px;
+    text-align: center;
+    width: 23%;
+}
+ul#menu-right-social-media li:hover {
+    background-color: #1a1a1a;
+}
+ul#menu-right-social-media span {
+    padding: 0px;
+}
+.page-title {
+    position: absolute;
+    top: 30%;
+}
+.page-title .hr-up {
+    margin-bottom: 10px;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -12px;
+}
+p#show-menu-btn {
+    padding: 10px 15px;
+    margin-bottom: 0px;
+}
+.pushed .go-up {
+    right: 310px;
 }
 /*==========  icons  ==========*/
 
