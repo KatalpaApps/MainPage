@@ -1,6 +1,8 @@
     jQuery(document).ready(function(){
-    
-        initModule('General',resizeLandingWindow,initGeneral,false);
+		bindMenuEvents();
+		bindArrowEvents();
+		scrollDown();
+		bouncingArrow();
     }); 
 
    function bindMenuEvents() {
@@ -45,12 +47,4 @@
        window.setTimeout(function() {
            bouncingArrow()
        }, 3500)
-   }
-
-   function initGeneral()
-   {
-    bindMenuEvents();
-    bindArrowEvents();
-    scrollDown();
-    bouncingArrow();
    }
