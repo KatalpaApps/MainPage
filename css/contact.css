@@ -1,0 +1,73 @@
+#meet-us {
+    background-image: url(../images/contact/contact_dark.jpg);
+}
+#map {
+    width: 100%;
+}
+#contact {
+    text-align: left;
+}
+#contact h3 {
+    font-weight: bold;
+    font-size: 1em;
+}
+#contact p {
+    font-weight: 200;
+    font-size: 0.8em
+}
+#contact hr {
+    width: 10%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border-color: black;
+}
+.underline {
+    text-decoration: underline;
+}
+.light-gray {
+    color: #c7c7c7;
+}
+.bold {
+    font-weight: bold;
+}
+.light {
+    font-weight: 200;
+}
+#contact-form {
+    color: #1a1a1a;
+    text-align: center;
+}
+#contact-form p {
+    margin: -10px 0 10px 0;
+    font-size: 1.2em;
+}
+#contact-form input {
+    border-width: 2px;
+    padding: 0.5em;
+    width: 49%;
+}
+#contact-form textarea {
+    min-width: 100%;
+    padding: 0.5em;
+    min-height: 6em;
+}
+.extra-padding {
+    padding-bottom: 3%;
+}
+.black
+{
+    color: #1a1a1a;
+    border-color: #1a1a1a;
+    border-width: 1px;
+}
+.black:hover
+{
+    color: #1a1a1a;
+    border-color: #1a1a1a;
+    border-width: 1px;
+    text-decoration: underline;
+}
+.form-group
+{
+    margin-bottom: 25px;
+}

@@ -597,4 +597,28 @@ p#show-menu-btn {
 .icon-gooogle-plus:hover {
     background-image: url(../images/sidebar/google_plus_action.png);
 }
+.icon-grey-facebook {
+    background-image: url(../images/general/facebook.png);
+}
+.icon-grey-facebook:hover {
+    background-image: url(../images/general/facebook_a.png);
+}
+.icon-grey-twitter {
+    background-image: url(../images/general/twitter.png);
+}
+.icon-grey-twitter:hover {
+    background-image: url(../images/general/twitter_a.png);
+}
+.icon-grey-github {
+    background-image: url(../images/general/github.png);
+}
+.icon-grey-github:hover {
+    background-image: url(../images/general/github_a.png);
+}
+.icon-grey-google-plus {
+    background-image: url(../images/general/google_plus.png);
+}
+.icon-grey-google-plus:hover {
+    background-image: url(../images/general/google_plus_a.png);
+}
 /*==========  end of icons  ==========*/
