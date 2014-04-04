@@ -13,7 +13,8 @@
 				
 		if(!g_sActiveModule && $('main.module'+__sModuleName).exists())
 			activeModule(__sModuleName);
-		
+
+	
 	}
 	
 	function activeModule(__sModuleName)

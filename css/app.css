@@ -324,6 +324,7 @@ section {
 }
 #menu-right {
     visibility: hidden;
+     transition: all 2s ease;
 }
 #menu-right {
     background-color: #1a1a1a;
@@ -423,21 +424,7 @@ ul#menu-right-social-media span {
     position: absolute;
     top: 30%;
 }
-.page-title-small {
-    font-size: 2em;
-    font-weight: bold;
-}
-.page-title-extra-small {
-    font-size: 1em;
-    font-weight: bold;
-}
-.page-title-one-third {
-    padding-top: 10%;
-    padding-bottom: 10%;
-    position: static;
-    width: 33.333%;
-    background-size: cover;
-}
+
 .page-title .hr-up {
     margin-bottom: 10px;
 }
@@ -530,6 +517,10 @@ p#show-menu-btn {
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
+}
+.no-padding
+{
+  padding: 0px;
 }
 /*==========  icons  ==========*/
 

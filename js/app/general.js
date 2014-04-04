@@ -3,6 +3,7 @@
 		bindArrowEvents();
 		scrollDown();
 		bouncingArrow();
+    resizeWindow();
     }); 
 
    function bindMenuEvents() {
