@@ -48,3 +48,9 @@
            bouncingArrow()
        }, 3500)
    }
+    function resizeWindow(__iWindowHeight,__iWindowWidth)
+  {
+    $(".auto-height").css("height",__iWindowHeight+"px");
+        $(".auto-padding").css("padding-top",__iWindowHeight * 0.3 +"px");
+  }
+  
