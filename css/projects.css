@@ -1,0 +1,24 @@
+#umowiony {
+    background-image: url(../images/projects/umowiony_dark.jpg)
+}
+#zielony-solar {
+    background-image: url(../images/projects/zielony_solar_dark.jpg)
+}
+#sellbox {
+    background-image: url(../images/projects/sellbox_dark.jpg)
+}
+#local-bitcoins {
+    background-image: url(images/projects/local_btc_small_dark.jpg);
+}
+#all4btc {
+    background-image: url(images/projects/all4btc_small_dark.jpg);
+}
+#win-lose-bitcoins {
+    background-image: url(images/projects/minefield_small_dark.jpg);
+}
+#bitcoins {
+    padding-top: 0px;
+}
+#bitcoins p {
+    height: 69px;
+}

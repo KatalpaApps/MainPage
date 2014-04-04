@@ -1,3 +1,114 @@
-#few-words-about-us{
-	background-image: url(../images/about-us/about_us_dark.jpg);
+#few-words-about-us {
+    background-image: url(../images/about-us/about_us_dark.jpg);
+}
+.icon-mobile-apps {
+    background-image: url(images/about-us/ico_mobile_apps.png);
+}
+.icon-outsourcing {
+    background-image: url(images/about-us/ico_outsourcing.png);
+}
+.icon-user-experience {
+    background-image: url(images/about-us/ico_user_experience.png);
+}
+.icon-web-apps {
+    background-image: url(images/about-us/ico_web_apps.png);
+}
+.icon-heart {
+    background-image: url(images/about-us/ico_heart.png);
+}
+.icon-eltel {
+    background-image: url(images/about-us/companies/eltel.png);
+}
+.icon-eltel:hover {
+    background-image: url(images/about-us/companies/eltel_a.png);
+}
+.icon-inea {
+    background-image: url(images/about-us/companies/inea.png);
+}
+.icon-inea:hover {
+    background-image: url(images/about-us/companies/inea_a.png);
+}
+.icon-korbank {
+    background-image: url(images/about-us/companies/korbank.png);
+}
+.icon-korbank:hover {
+    background-image: url(images/about-us/companies/korbank_a.png);
+}
+.icon-netia {
+    background-image: url(images/about-us/companies/netia.png);
+}
+.icon-netia:hover {
+    background-image: url(images/about-us/companies/netia_a.png);
+}
+.icon-orange {
+    background-image: url(images/about-us/companies/orange.png);
+}
+.icon-orange:hover {
+    background-image: url(images/about-us/companies/orange_a.png);
+}
+.icon-plus {
+    background-image: url(images/about-us/companies/plus.png);
+}
+.icon-plus:hover {
+    background-image: url(images/about-us/companies/plus_a.png);
+}
+.icon-sellbox {
+    background-image: url(images/about-us/companies/sellbox.png);
+}
+.icon-sellbox:hover {
+    background-image: url(images/about-us/companies/sellbox_a.png);
+}
+.icon-tk-telekom {
+    background-image: url(images/about-us/companies/tk_telekom.png);
+}
+.icon-tk-telekom:hover {
+    background-image: url(images/about-us/companies/tk_telekom_a.png);
+}
+.icon-tp {
+    background-image: url(images/about-us/companies/tp.png);
+}
+.icon-tp:hover {
+    background-image: url(images/about-us/companies/tp_a.png);
+}
+.icon-umowiony {
+    background-image: url(images/about-us/companies/umowiony.png);
+}
+.icon-umowiony:hover {
+    background-image: url(images/about-us/companies/umowiony_a.png);
+}
+.icon-upc {
+    background-image: url(images/about-us/companies/upc.png);
+}
+.icon-upc:hover {
+    background-image: url(images/about-us/companies/upc_a.png);
+}
+.icon-vectra {
+    background-image: url(images/about-us/companies/vectra.png);
+}
+.icon-vectra:hover {
+    background-image: url(images/about-us/companies/vectra_a.png);
+}
+.icon-grey-facebook {
+    background-image: url(images/general/facebook.png);
+}
+.icon-grey-facebook:hover {
+    background-image: url(images/general/facebook_a.png);
+}
+.icon-grey-twitter {
+    background-image: url(images/general/twitter.png);
+}
+.icon-grey-twitter:hover {
+    background-image: url(images/general/twitter_a.png);
+}
+.icon-grey-github {
+    background-image: url(images/general/github.png);
+}
+.icon-grey-github:hover {
+    background-image: url(images/general/github_a.png);
+}
+.icon-grey-google-plus {
+    background-image: url(images/general/google_plus.png);
+}
+.icon-grey-google-plus:hover {
+    background-image: url(images/general/google_plus_a.png);
 }
