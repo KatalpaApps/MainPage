@@ -1,0 +1,75 @@
+#send-us-your-project-plan
+{
+	background-image: url(../images/project-planner/project_planer_dark.jpg);
+}
+#project-plan-form h3 {
+    font-weight: bold;
+    font-size: 1em;
+}
+#project-plan-form p {
+    font-weight: 200;
+    font-size: 0.8em
+}
+#project-plan-form hr {
+    border-color: #1a1a1a;
+    border-width: 2px;
+    margin: 0 auto 20px auto;
+    width: 50%;
+}
+.underline {
+    text-decoration: underline;
+}
+.light-gray {
+    color: #c7c7c7;
+}
+.bold {
+    font-weight: bold;
+}
+.light {
+    font-weight: 200;
+}
+#project-plan-form-form {
+    color: #1a1a1a;
+    text-align: center;
+}
+#project-plan-form p {
+    margin: -10px 0 10px 0;
+    font-size: 1.2em;
+}
+#project-plan-form input {
+    padding: 0.5em;
+    width: 49%;
+    color: #c7c7c7;
+    font-size: 0.8em; 
+}
+#project-plan-form textarea {
+    min-width: 100%;
+    padding: 0.5em;
+    min-height: 6em;
+    color: #c7c7c7;
+    font-size: 0.8em;
+}
+.extra-padding {
+    padding-bottom: 3%;
+}
+.black
+{
+    color: #1a1a1a;
+    border-color: #1a1a1a;
+    border-width: 1px;
+}
+.black:hover
+{
+    color: #1a1a1a;
+    border-color: #1a1a1a;
+    border-width: 1px;
+    text-decoration: underline;
+}
+.form-group
+{
+    margin-bottom: 25px;
+}
+.full-width
+{
+	width:100% !important;
+}
