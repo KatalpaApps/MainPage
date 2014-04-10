@@ -4,17 +4,19 @@
 }
 #project-plan-form h3 {
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.4em;
+    text-align: center;
 }
 #project-plan-form p {
     font-weight: 200;
-    font-size: 0.8em
+    font-size: 0.8em;
+    text-align: center;
 }
 #project-plan-form hr {
     border-color: #1a1a1a;
     border-width: 2px;
     margin: 0 auto 20px auto;
-    width: 50%;
+    width: 20%;
 }
 .underline {
     text-decoration: underline;
@@ -34,36 +36,31 @@
 }
 #project-plan-form p {
     margin: -10px 0 10px 0;
-    font-size: 1.2em;
-}
-#project-plan-form input {
-    padding: 0.5em;
-    width: 49%;
-    color: #c7c7c7;
-    font-size: 0.8em; 
-}
-#project-plan-form textarea {
-    min-width: 100%;
-    padding: 0.5em;
-    min-height: 6em;
-    color: #c7c7c7;
     font-size: 0.8em;
 }
+#project-plan-form input:focus{
+        /*border-color: solid 1px black;*/
+}
+#project-plan-form input{
+        width: 100%;
+}
+#project-plan-form textarea{
+    width: 100%;
+}
+#project-plan-form input, #project-plan-form textarea {
+    padding: 0.5em;
+    border: solid 2px #C7C7C7;
+    font-size: 0.8em;
+    border-radius: 0px;
+}
+#project-plan-form .has-error input, #project-plan-form .has-error textarea {
+    padding: 0.5em;
+    border: solid 2px #a94442;
+    font-size: 0.8em;
+}
+
 .extra-padding {
-    padding-bottom: 3%;
-}
-.black
-{
-    color: #1a1a1a;
-    border-color: #1a1a1a;
-    border-width: 1px;
-}
-.black:hover
-{
-    color: #1a1a1a;
-    border-color: #1a1a1a;
-    border-width: 1px;
-    text-decoration: underline;
+    padding-bottom: 2%;
 }
 .form-group
 {
@@ -72,4 +69,37 @@
 .full-width
 {
 	width:100% !important;
+}
+select
+{
+    font-size: 0.8em;
+    color: rgb(117,117,117);
+    padding: 0 0.3em;
+    border: solid 2px #c7c7c7;
+}
+.styled-select
+{
+overflow: hidden;
+width: 100%;
+border: solid 2px #c7c7c7;
+background: no-repeat 97%  url(../images/project-planner/arrow_down.png);
+}
+.styled-select:hover
+{
+ box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+.styled-select select {
+   background: transparent;
+   border: none;
+   width: 110%;
+   -webkit-appearance: none;
+   outline: none;
+   }
+select option
+{
+    border-bottom: 1px solid #c7c7c7;
+    border-right: 1px solid #c7c7c7;
+    /*width: 80%;*/
+    overflow: hidden;
+    padding: .3em;      
 }

@@ -10,6 +10,11 @@
 }
 body {
     font-size: 21px;
+    /*font-family: 'colaborate-regularregular'; */
+    /*font-family: 'ralewaylight';*/
+    font-family: 'ubuntulight';
+
+
 }
 main {
     display: block;
@@ -20,7 +25,6 @@ section {
     background-color: white;
     position: relative;
     color: #dad6be;
-    padding-top: 15%;
 }
 .subpage-footer {
     position: absolute;
@@ -70,6 +74,40 @@ section {
 .stdbtn {
     border-radius: 12px;
     padding: 15px 43px;
+   -webkit-transition: all 0.3s ease;
+   -moz-transition: all 0.3s ease;
+   -ms-transition: all 0.3s ease;
+   -o-transition: all 0.3s ease;
+   transition: all 0.3s ease;
+}
+.stdbtn.black
+{
+    color: #1a1a1a;
+    border-color: #1a1a1a;
+    border-width: 1px;
+    position: relative;
+    top: 25px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.stdbtn.black:hover
+{
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    background-color: #c7c7c7;
+    border-color: #d2d2d2;
+    border-width: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    
 }
 .stdbtn, .go-up {
     border: 4px solid #FFF;
@@ -103,6 +141,11 @@ section {
     font-size: 3.571em;
     padding: 0px;
     width: 100%;
+    /*font-family: 'ubuntu_titlingbold';*/
+    font-family: 'ubunturegular';
+    font-weight: bold;
+    /*font-family: 'ralewaybold';*/
+    /*font-family: 'colaborate-boldregular';*/
 }
 .stdbtn:hover, .stdbtn:focus, .go-up:hover {
     border: 4px solid #dad6be;
@@ -119,11 +162,12 @@ section {
     transition: padding 0.5s linear;
     padding-right: 320px;
 }
+
 #menu-right {
-     transition: all 2s ease;
      visibility: hidden;
      position: fixed;
 }
+
 #menu-right {
     background-color: #1a1a1a;
     height: 100%;
@@ -141,7 +185,7 @@ visibility: visible;
 #menu-right li {
     border-top: solid 1px #2f2f2f;
 }
-#menu-right li:hover {
+#menu-right li:hover, #menu-right li:hover a.active {
     background-color: #242424;
     color: white;
 }
@@ -150,7 +194,7 @@ visibility: visible;
     display: block;
     width: 100%;
 }
-#menu-right a:hover {
+#menu-right a:hover,  #menu-right a.active {
     color: white;
     text-decoration: none;
 }
@@ -235,8 +279,11 @@ p#show-menu-btn {
     padding: 10px 15px;
     margin-bottom: 0px;
 }
+p#show-menu-btn {
+  cursor: pointer;
+}
 .pushed .go-up {
-    right: 310px;
+    right: 330px;
 }
 .text-content {
     background-color: white;
@@ -251,9 +298,15 @@ p#show-menu-btn {
 }
 .text-content p {
     margin: 0px;
+    font-family: 'ubuntulight';
+
+    /*font-family: 'colaboratelightregular';*/
+
 }
 .text-content h2 {
     font-weight: bold;
+    font-family: 'ubunturegular';
+    font-size: 1.8em;
 }
 .box-icon {
     background-repeat: no-repeat;
@@ -337,19 +390,19 @@ p#show-menu-btn {
 .icon-about {
     background-image: url(../images/sidebar/about_us.png);
 }
-.icon-about:hover {
+.icon-about:hover, a.active .icon-about {
     background-image: url(../images/sidebar/about_us_action.png);
 }
 .icon-landing {
     background-image: url(../images/sidebar/landing.png);
 }
-.icon-landing:hover {
+.icon-landing:hover, a.active .icon-landing {
     background-image: url(../images/sidebar/landing_action.png);
 }
 .icon-projects {
     background-image: url(../images/sidebar/projects.png);
 }
-.icon-projects:hover {
+.icon-projects:hover, a.active .icon-projects {
     background-image: url(../images/sidebar/projects_action.png);
 }
 .icon-journal {
@@ -361,13 +414,13 @@ p#show-menu-btn {
 .icon-contact {
     background-image: url(../images/sidebar/contact.png);
 }
-.icon-contact:hover {
+.icon-contact:hover, a.active .icon-contact {
     background-image: url(../images/sidebar/contact_action.png);
 }
 .icon-kickstart {
     background-image: url(../images/sidebar/kickstart_project.png);
 }
-.icon-kickstart:hover {
+.icon-kickstart:hover, a.active .icon-kickstart {
     background-image: url(../images/sidebar/kickstart_project_action.png);
 }
 .icon-twitter {
@@ -629,3 +682,33 @@ p#show-menu-btn {
 /*-----  End of Scroll Animation  ------*/
 
 
+select:hover, select:focus, input:hover, input:focus, textarea:hover, textarea:focus
+{
+    box-shadow: 0 0 10px rgba(199, 199, 199, 1);
+    outline: 0 none;
+}
+input{
+  width: 100%;
+}
+.row
+{
+  margin-bottom: 30px;
+}
+ .row .has-feedback .form-control-feedback 
+{
+  top: 0px;
+  right: 15px;
+}
+ .has-feedback .form-control-feedback 
+{
+  top: 0px;
+  right: 0px;
+}
+.has-feedback .form-control-feedback 
+{
+  display: none;
+}
+.has-feedback.has-error .form-control-feedback
+{
+  display: block;
+}

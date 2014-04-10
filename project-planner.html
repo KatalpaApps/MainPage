@@ -28,13 +28,13 @@
         <div class="pusher" id="pusher">
             <nav class="auto-height" id="menu-right">
                 <ul>
-                    <li><a href="#" id="close-menu-btn" ><img src="images/sidebar/menu_close.png"</a></li>
-                    <li><a href="#" ><span class="icon icon-landing">landing page</span></a></li>
-                    <li><a href="#" ><span class="icon icon-projects">our projects</span></a></li>
-                    <li><a href="#" ><span class="icon icon-about">about us</span></a></li>
-                    <li><a href="#" ><span class="icon icon-journal">our journal<span></a></li>
-                    <li><a href="#" ><span class="icon icon-contact">contact us</a></li>
-                    <li><a href="#" ><span class="icon icon-kickstart">kickstart project</span></a></li>
+                     <li><a href="#" id="close-menu-btn" ><img src="images/sidebar/menu_close.png"</a></li>
+                    <li><a href="#"><span class="icon icon-landing">landing page</span></a></li>
+                    <li><a href="projects.html" ><span class="icon icon-projects">our projects</span></a></li>
+                    <li><a href="about-us.html" ><span class="icon icon-about">about us</span></a></li>
+                    <li><a href="journal.html" ><span class="icon icon-journal">our journal<span></a></li>
+                    <li><a href="contact.html" ><span class="icon icon-contact">contact us</a></li>
+                    <li><a class="active" href="project-planner.html" ><span class="icon icon-kickstart">kickstart project</span></a></li>
                 </ul>
                 <ul id="menu-right-social-media">
                     <li><a href="#"><span class="icon icon-only icon-twitter"></span></a></li>
@@ -44,7 +44,7 @@
                 </ul>
             </nav>
             <div class="st-content" id="st-content">
-                <nav class="navbar navbar-fixed-top menu-top" role="navigation">
+                <nav id="menu-top" class="navbar navbar-fixed-top" role="navigation">
                     <div class="navbar-inner">
                         <div class="container-fluid">
                             <div class="navbar-header col-sm-20">
@@ -69,28 +69,34 @@
                         <h3>All about you and your company</h3>
                         <hr>
                         <form role="form">
-                            <div class="form-group">
-                                <input type="text" placeholder="Your name *" name="name" />
-                                <input type="text" placeholder="Email address *" name="email" />
+                            <div class="row">
+                            <div class="col-sm-10 has-feedback"><input class="form-control" type="text" placeholder="Your name *" name="name" /> <span class="glyphicon glyphicon-remove form-control-feedback"></span></div>
+                            <div class="col-sm-10 has-feedback"><input class="form-control" type="text" placeholder="Email address *" name="email" /><span class="glyphicon glyphicon-remove form-control-feedback"></div>
                             </div>
-                            <div class="form-group">
-                                <input type="text" placeholder="Company or project name " name="company" />
-                                <input type="text" placeholder="Phone number" name="phonenumber" />
+                            <div class="row">
+                                <div class="col-sm-10"><input class="form-control" type="text" placeholder="Company or project name " name="company" /></div>
+                                <div class="col-sm-10"><input class="form-control" type="text" placeholder="Phone number" name="phonenumber" /></div>
                             </div>
-                            <div class="form-group"><textarea class="" placeholder="Describe your organization" name="organization" rows="4"></textarea></div>
+                            <div class="row"><div class="col-sm-20"><textarea class="" placeholder="Describe your organization" name="organization" rows="4"></textarea></div></div>
                             <h3>Project details and important information</h3>
                             <hr>
-                            <div class="form-group">
-                                <input class="full-width" type="text" placeholder="Project type " name="projecttype" />
+                            <div class="form-group styled-select full-width">
+                                <select type="text" placeholder="Project type " name="projecttype" >
+                                <option>Project type</option>
+                                <option>Mobile app</option>
+                                <option>Web app</option>
+                                <option>Visual identification</option>
+                                </select>
                             </div>
-                            <div class="form-group">
-                                <textarea class="" placeholder="Describe your project with details *" name="organizationdetails" rows="4"></textarea>
+                            <div class="form-group has-feedback">
+                                <textarea class="form-control" placeholder="Describe your project with details *" name="organizationdetails" rows="4"></textarea>
+                                <span class="glyphicon glyphicon-remove form-control-feedback">
                             </div>
                             <div class="form-group"><textarea class="" placeholder="Project architecture (wireframe, user flow, site map, content )" name="projectarchitecture" rows="4"></textarea></div>
                             <div class="form-group"><textarea class="" placeholder="Thoughts insipations, links to mobile or web apps" name="projectinspirations" rows="4"></textarea></div>
-                            <div class="form-group">
-                                <input type="text" placeholder="Start date " name="startdate" />
-                                <input type="text" placeholder="Budget" name="budget" />
+                            <div class="row ">
+                               <div class="col-sm-10"> <input type="text" placeholder="Start date " name="startdate" /> </div>
+                               <div class="col-sm-10"> <input type="text" placeholder="Budget" name="budget" /> </div>
                             </div>
                             <h3>Other things we should know</h3>
                             <hr>

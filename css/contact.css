@@ -7,6 +7,15 @@
 #contact {
     text-align: left;
 }
+#contact a
+{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#contact a:hover
+{
+    font-weight: bold;
+}
 #contact h3 {
     font-weight: bold;
     font-size: 1em;
@@ -24,8 +33,11 @@
 .underline {
     text-decoration: underline;
 }
-.light-gray {
+.light-gray a {
     color: #c7c7c7;
+}
+.light-gray a:hover {
+    color: black;
 }
 .bold {
     font-weight: bold;
@@ -34,8 +46,7 @@
     font-weight: 200;
 }
 #contact-form {
-    color: #1a1a1a;
-    text-align: center;
+    color: #1a1a1a
 }
 #contact-form p {
     margin: -10px 0 10px 0;
@@ -44,12 +55,13 @@
 #contact-form input {
     border-width: 2px;
     padding: 0.5em;
-    width: 49%;
+    border: solid 2px #C7C7C7;
 }
 #contact-form textarea {
     min-width: 100%;
     padding: 0.5em;
     min-height: 6em;
+    border: solid 2px #C7C7C7;
 }
 .extra-padding {
     padding-bottom: 3%;
@@ -70,4 +82,15 @@
 .form-group
 {
     margin-bottom: 25px;
+}
+.btn-link
+{
+    font-size: .8em;
+    color: black;
+}
+.btn-link:hover
+{
+    text-decoration: underline;
+    color: black;
+    font-size: .8em;
 }

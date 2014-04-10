@@ -20,16 +20,16 @@
     padding-top: 0px;
 }
 #bitcoins p {
-    height: 69px;
 }
 .page-title-small {
-    font-size: 2em;
+    font-size: 1.6em;
     font-weight: bold;
 }
 .page-title-extra-small {
     font-size: 1em;
     font-weight: bold;
 }
+
 .page-title-one-third {
     padding-top: 7%;
     padding-bottom: 7%;
