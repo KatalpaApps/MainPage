@@ -31,9 +31,8 @@
 }
 
 .page-title-one-third {
-    padding-top: 7%;
-    padding-bottom: 7%;
+    padding-top: 15%;
+    padding-bottom: 15%;
     position: static;
-    width: 33.333%;
     background-size: cover;
 }

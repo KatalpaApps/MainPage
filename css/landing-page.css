@@ -34,7 +34,7 @@
 #landing-home .page-title {
     position: static;
 }
-#landing-home .carousel-indicators {
+.carousel-indicators {
     bottom: -150%;
 }
 

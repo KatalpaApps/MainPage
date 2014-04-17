@@ -4,6 +4,7 @@
 #map {
     width: 100%;
 }
+
 #contact {
     text-align: left;
 }
@@ -14,7 +15,7 @@
 }
 #contact a:hover
 {
-    font-weight: bold;
+    text-decoration: underline;
 }
 #contact h3 {
     font-weight: bold;
@@ -53,15 +54,17 @@
     font-size: 1.2em;
 }
 #contact-form input {
+    font-size: 0.8em;
     border-width: 2px;
     padding: 0.5em;
-    border: solid 2px #C7C7C7;
+    border-radius: 0px;
 }
 #contact-form textarea {
+    font-size: 0.8em;
+    border-width: 2px;
     min-width: 100%;
     padding: 0.5em;
-    min-height: 6em;
-    border: solid 2px #C7C7C7;
+    border-radius: 0px;
 }
 .extra-padding {
     padding-bottom: 3%;

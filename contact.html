@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1 max-scale=1" />
         <!--css section-->
         <link href="css/font.css" rel="stylesheet" type="text/css" />
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
@@ -24,15 +24,44 @@
         <script src="js/app/general.js" type="text/javascript"></script>
         <script src="js/app/contact.js" type="text/javascript"></script>
         <script type="text/javascript" src="js/lib/jquery.form.js"></script>
+             <script type="text/javascript" src="js/lib/jquery.validate.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
         <!--end of javascript-->
+                       <script type="text/javascript"> 
+        // wait for the DOM to be loaded 
+       
+
+$().ready(function() {
+
+    $("#form-contact").validate({
+        errorPlacement: function(error, element){
+           
+        },
+         highlight: function(element, errorClass, validClass) {
+$(element).parent('div').addClass('has-error').removeClass(validClass);
+},
+unhighlight: function(element, errorClass, validClass) {
+$(element).parent('div').removeClass('has-error').addClass(validClass);
+},
+         rules: {
+name: "required",
+message: "required",
+email: {
+required: true,
+email: true
+}
+}
+    });
+});
+
+    </script> 
     </head>
     <body>
         <main id="content" class="group moduleContact" role="main">
         <div class="pusher" id="pusher">
             <nav class="auto-height" id="menu-right">
                 <ul>
-              <li><a href="#" id="close-menu-btn" ><img src="images/sidebar/menu_close.png"</a></li>
+              <li><a href="#" id="close-menu-btn" ><img src="images/sidebar/menu_close.png"></a></li>
                     <li><a href="#"><span class="icon icon-landing">landing page</span></a></li>
                     <li><a href="projects.html" ><span class="icon icon-projects">our projects</span></a></li>
                     <li><a href="about-us.html" ><span class="icon icon-about">about us</span></a></li>
@@ -64,11 +93,13 @@
                         <p>meet us in our office</p>
                         <div class="hr-down"></div>
                     </div>
+                    <div id="map-overlay"></div>
                 </section>
                 <section id="map" class="auto-height auto-padding">
+
                 </section>
                 <section id="contact" class="text-content">
-                    <div class="container-fluid">
+                    <div class="container-fluid text-center">
                         <div class="col-sm-4 col-sm-offset-1">
                             <h3>katalpa</h3>
                             <hr>
@@ -85,8 +116,9 @@
                         <div class="col-sm-4 col-sm-offset-1">
                             <h3>positions</h3>
                             <hr>
-                            <button type="button" class="btn btn-link no-padding" data-toggle="modal" data-target="#Jr-Android-Developer">Junior Android Developer</button>
-                            <button type="button" class="btn btn-link no-padding" data-toggle="modal" data-target="#Jr-Php-Developer">Junior PHP Developer</button>
+                            <button type="button" class="btn btn-link no-padding" data-toggle="modal" data-target="#Jr-Android-Developer">Junior Android Developer</button><br>
+
+                           <button type="button" class="btn btn-link no-padding" data-toggle="modal" data-target="#Jr-Php-Developer">Junior PHP Developer</button>
                         </div>
                         <div class="col-sm-4 col-sm-offset-1">
                             <h3>company</h3>
@@ -114,22 +146,22 @@
                         </div>
                     </div>
                 </section>
-                <section id="contact-form" class="">
+                <section id="contact-form">
                     <div class="container">
                         <div class="text-center">
-                            <h1 class="bold no-padding"><span class="underline">Say Hello to our team </span><span class="light">or </span><span class="light-gray"><a href="#">start planning your project</a></span></h1>
+                            <h1 class="bold no-padding extra-padding"><span class="underline">Say Hello to our team </span><span class="light">or </span><span class="light-gray"><a href="#">start planning your project</a></span></h1>
                             <p>dont be shy, we dont bite, feel free to contact us go to</p>
                             <p class="extra-padding">out project planner and start cooperation</p>
                         </div>
-                        <div class="form-holder col-sm-8 col-sm-offset-6">
-                            <form role="form">
+                        <div class="form-holder col-sm-10 col-sm-offset-5">
+                            <form id="form-contact" role="form" novalidate="novalidate">
                                 <div class="row">
-                                    <div class="col-sm-10"><input  type="text" placeholder="Your name *" name="name" /></div>
-                                    <div class="col-sm-10"><input  type="text" placeholder="Email address *" name="email" /></div>
+                                    <div class="col-sm-10 has-feedback"><input class="form-control" type="text" placeholder="Your name *" name="name" requierd=""/><span class="glyphicon glyphicon-remove form-control-feedback"></span></div>
+                                    <div class="col-sm-10 has-feedback"><input class="form-control" type="text" placeholder="Email address *" name="email" requierd=""/><span class="glyphicon glyphicon-remove form-control-feedback"></span></div>
                                 </div>
-                                <div class="row"><div class="col-sm-20"><textarea placeholder="Your message here. *" name="message" rows="6"></textarea></div></div>
-                            <div class="text-center">    
-                            <a href="#" class="stdbtn black">send messeage</a>
+                                <div class="row"><div class="col-sm-20 has-feedback"><textarea class="form-control" placeholder="Your message here. *" name="message" rows="6" requierd=""></textarea><span class="glyphicon glyphicon-remove form-control-feedback"></span></div></div>
+                            <div class="text-center extra-padding">    
+                            <button type="submit" class="btn btn-lg btn-white">send messeage</button>
                             </div>
                             </form>
                         </div>
@@ -137,7 +169,7 @@
                 </section>
             </div>
             <div class="container">
-                <div class="social-media col-sm-offset-8 col-sm-4">
+                <div class="social-media col-sm-offset-8 col-sm-4 text-center">
                     <a href="#"><span class="icon-grey-twitter"></span></a>
                     <a href="#"><span class="icon-grey-github"></span></a>
                     <a href="#"><span class="icon-grey-facebook"></span></a>

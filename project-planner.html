@@ -9,6 +9,7 @@
         <link href="css/app.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" type="text/css" href="css/app-responsive.css" />
         <link rel="stylesheet" type="text/css" href="css/project-planner.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.9.2.custom.css" />
         <!--files holds styling for nav sidebar & dot animiations-->
         <link href="css/carousel-dots.css" rel="stylesheet" type="text/css" />
         <!--end of css-->
@@ -20,8 +21,39 @@
         <script src="js/app.js" type="text/javascript"></script>
         <script src="js/app/general.js" type="text/javascript"></script>
         <script type="text/javascript" src="js/app/project-planner.js"></script>
+        <script type="text/javascript" src="js/lib/jquery.form.js"></script>
+         <script type="text/javascript" src="js/lib/jquery.validate.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
         <!--end of javascript-->
+         <script type="text/javascript"> 
+        // wait for the DOM to be loaded 
+       
+
+$().ready(function() {
+    $("#datepicker").datepicker();
+
+    $("#form-project-planner").validate({
+        errorPlacement: function(error, element){
+           
+        },
+         highlight: function(element, errorClass, validClass) {
+$(element).parent('div').addClass('has-error').removeClass(validClass);
+},
+unhighlight: function(element, errorClass, validClass) {
+$(element).parent('div').removeClass('has-error').addClass(validClass);
+},
+         rules: {
+name: "required",
+projectdetails: "required",
+email: {
+required: true,
+email: true
+}
+}
+    });
+});
+
+    </script> 
     </head>
     <body>
         <main id="content" class="group moduleProjectPlanner" role="main">
@@ -62,16 +94,17 @@
                     </div>
                 </section>
                 <section id="project-plan-form" class="text-content text-center">
+                <div class="container-fluid">
                     <h1 class="bold no-padding">Please fill out forms, they will help us in project planing</h1>
                     <p>Forms witch star “*” are necesery to first cantacy with you. Some
                     <p class="extra-padding">questions may be strange but they are importnant for us.</p>
-                    <div class="form-holder col-sm-8 col-sm-offset-6">
+                    <div class="form-holder col-sm-10 col-sm-offset-5">
                         <h3>All about you and your company</h3>
                         <hr>
-                        <form role="form">
+                        <form id="form-project-planner" role="form" action="" method="post" novalidate="novalidate">
                             <div class="row">
-                            <div class="col-sm-10 has-feedback"><input class="form-control" type="text" placeholder="Your name *" name="name" /> <span class="glyphicon glyphicon-remove form-control-feedback"></span></div>
-                            <div class="col-sm-10 has-feedback"><input class="form-control" type="text" placeholder="Email address *" name="email" /><span class="glyphicon glyphicon-remove form-control-feedback"></div>
+                            <div class="col-sm-10 has-feedback"><input class="form-control" type="text" placeholder="Your name *" name="name" required="" /> <span class="glyphicon glyphicon-remove form-control-feedback"></span></div>
+                            <div class="col-sm-10 has-feedback"><input class="form-control" type="text" placeholder="Email address * " name="email" required="" /><span class="glyphicon glyphicon-remove form-control-feedback"></span></div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-10"><input class="form-control" type="text" placeholder="Company or project name " name="company" /></div>
@@ -89,26 +122,27 @@
                                 </select>
                             </div>
                             <div class="form-group has-feedback">
-                                <textarea class="form-control" placeholder="Describe your project with details *" name="organizationdetails" rows="4"></textarea>
+                                <textarea class="form-control" placeholder="Describe your project with details *" name="projectdetails" rows="4" required=""></textarea>
                                 <span class="glyphicon glyphicon-remove form-control-feedback">
                             </div>
                             <div class="form-group"><textarea class="" placeholder="Project architecture (wireframe, user flow, site map, content )" name="projectarchitecture" rows="4"></textarea></div>
                             <div class="form-group"><textarea class="" placeholder="Thoughts insipations, links to mobile or web apps" name="projectinspirations" rows="4"></textarea></div>
                             <div class="row ">
-                               <div class="col-sm-10"> <input type="text" placeholder="Start date " name="startdate" /> </div>
+                               <div class="col-sm-10"> <input id="datepicker" type="text" placeholder="Start date dd-mm-yyyy " name="startdate" /> </div>
                                <div class="col-sm-10"> <input type="text" placeholder="Budget" name="budget" /> </div>
                             </div>
                             <h3>Other things we should know</h3>
                             <hr>
                             <div class="form-group"><textarea class="" placeholder="Anything else we should know" name="anythingelse" rows="4"></textarea></div>
                             <div class="form-group"><textarea class="" placeholder="Meeting date and time" name="meetingdatetime" rows="4"></textarea></div>
-                            <a href="#" class="stdbtn black">send messeage</a>
+                            <button type="submit" class="btn btn-lg btn-white">send messeage</button>
                         </form>
                     </div>
+                    </span>
                 </section>
             </div>
-            <div class="container">
-                <div class="social-media col-sm-offset-8 col-sm-4">
+            <div class="container-fluid block-center extra-padding">
+                <div class="social-media col-sm-4 col-sm-offset-8 text-center">
                     <a href="#"><span class="icon-grey-twitter"></span></a>
                     <a href="#"><span class="icon-grey-github"></span></a>
                     <a href="#"><span class="icon-grey-facebook"></span></a>

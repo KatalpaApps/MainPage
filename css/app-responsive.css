@@ -1,75 +1,171 @@
-@media screen and (max-width: 639px), (-webkit-min-device-pixel-ratio: 3) {
-  
- 
-  #lading-home .carousel-indicators {
-       bottom: 25%;
-  }
-  #menu right
-  {
-  	transition: all 1s ease;
-  }
- .pushed #menu-right {
-     width: 100%;
-}
- .pushed .menu-top{
-  display: hidden;
- }
- .pushed #show-menu-btn
- {
- 	display: none;
- }
- .page-title
- {
- 	font-size: 2em;
- }
-.navbar-brand
- {
- 	padding-left: 0px;
- }
- .pushed .navbar-brand
- {
- 	padding-left: 0px;
- 	opacity: 1;
- }
- .go-up
- {
- 	padding: 0px;
- 	border: 0px;
- 	right: 5px;
- 	bottom: 3px;
- }
- .go-up:hover
- {
- 	border: 0px;
- }
 
- .pushed .st-content
- {
- 	opacity: 0;
- }
+
+@media screen {
+    #menu-right a#close-menu-btn {
+        text-align: right;
+        padding: 9px;
+    }
+
+    .carousel-indicators {
+        bottom: -150%;
+    }
+
+    .pushed {
+        padding-right: 320px;
+    }
+
+
+    .pushed #menu-top {
+        margin-right: 320px;
+    }
+    .pushed .go-up {
+    right: 330px;
 }
-@media screen and (-webkit-min-device-pixel-ratio: 1.3){
- section
- {
- 	background-attachment: scroll;
- }
+
+
+    #menu-right {
+
+        width: 320px;
+        right: 0px;
+
+
+    }
+
 }
-@media screen and (max-width: 768px) {
-    .page-title {
-        padding-left: 20px;
+@media only screen and (orientation: portrait), only screen and (max-width : 800px) and (orientation: landscape){
+    body{
+        font-size: 16px;
+    }
+    section {
+        background-attachment: scroll;
+        background-position: center center;
+  }
+    .carousel {
+        position: static;
+    }
+    .page-title
+    {
         padding-right: 20px;
-   }
-   .hr-up, .hr-down {
-       width: 50%;
-  }
-  .page-title:hover .hr-up, .page-title:hover .hr-down {
-      width: 70%;
- }
-  .carousel{
-  	position: static;
-  } 
-  section{
-  	background-position: center;
+        padding-left: 20px;
+        font-size: 3em;
+    }
+    
+    .page-title div.hr-up, .page-title div.hr-down {
+        width: 50%;
+    }
+    .page-title:hover div.hr-up, .page-title:hover div.hr-down {
+        width: 70%;
+    }
+    #menu-right {
+        width: 100%;
+        top: -100%;
+        transition: all 0.8s ease;
+    }
+    .pushed #menu-right {
+        top: 0%;
+        z-index: 500;
+    }
+    .pushed #menu-top {
 
-  }
+
+        margin-right: 0px;
+
+    }
+    .pushed #menu-top p#show-menu-btn
+    {
+        display: none;
+    }
+
+    .pushed {
+
+        padding-right: 0px;
+    }
+    #menu-right a#close-menu-btn {
+        padding-right: 30px;
+    }
+    .go-up, .go-up:hover
+    {
+        border:none;
+        right: 0px;
+        bottom: 5px;
+    }
+    .stdbtn,.stdbtn:hover{
+     
+      padding: 4px 20px;
+    }
+  
+    .page-title img
+    {
+        max-height: 1.5em;
+    }
+
+    
+
 }
+@media screen and (orientation: portrait){
+    
+        #landing-home .carousel-indicators {
+        bottom: 30%;
+    }
+    #hello-we-are-katalpa .carousel-indicators{
+        bottom: -15%;
+    }
+    #hello-we-are-katalpa
+    {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    #our-services
+    {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    #our-services h2
+    {
+     margin-top: 1.75em;
+    }
+    .box
+    {
+        margin-bottom: 1em;
+    }
+    #clients
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .row input:last-of-type
+    {
+        margin-top: 20px;
+    }
+    hr
+    {
+        display: none;
+    }
+    #map
+    {
+        position: relative;
+    }
+#map-overlay
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    z-index: 100000;
+}
+    
+}
+@media only screen and (max-width : 800px) and (orientation: landscape) {
+/* Styles */
+#menu-right-social-media{
+    display: none;
+}
+#landing-home .carousel-indicators {
+        bottom: 20%;
+    }
+.page-title
+{
+    font-size: 2.5em;
+}
+}
+

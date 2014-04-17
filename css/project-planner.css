@@ -6,6 +6,7 @@
     font-weight: bold;
     font-size: 1.4em;
     text-align: center;
+    padding-top: 5px;
 }
 #project-plan-form p {
     font-weight: 200;
@@ -15,7 +16,7 @@
 #project-plan-form hr {
     border-color: #1a1a1a;
     border-width: 2px;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 30px auto;
     width: 20%;
 }
 .underline {
@@ -37,6 +38,8 @@
 #project-plan-form p {
     margin: -10px 0 10px 0;
     font-size: 0.8em;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 #project-plan-form input:focus{
         /*border-color: solid 1px black;*/
@@ -102,4 +105,8 @@ select option
     /*width: 80%;*/
     overflow: hidden;
     padding: .3em;      
+}
+.ui-widget
+{
+    font-size: 0.7em !important;
 }
