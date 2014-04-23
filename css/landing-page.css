@@ -25,17 +25,5 @@
 /*==========  bootstrap carousel customization  ==========*/
 
 /* Reset of the default carousel indicators background */
-.carousel-indicators .active {
-    background-color: transparent !important;
-}
-.item {
-    position: relative;
-}
-#landing-home .page-title {
-    position: static;
-}
-.carousel-indicators {
-    bottom: -150%;
-}
 
 /*==========  end of bootstrap carousel customization  ==========*/
