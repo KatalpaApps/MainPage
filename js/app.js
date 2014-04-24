@@ -48,5 +48,5 @@
 	function defaultResizeWindow()
 	{
 		if(g_sActiveModule)
-			g_aModuleList[g_sActiveModule]['resize'](jQuery(window).height(),jQuery(window).height());
+			g_aModuleList[g_sActiveModule]['resize'](jQuery(window).height(),jQuery(window).innerHeight());
 	}

@@ -30,10 +30,15 @@
        $(window).scroll(function() {
            if ($(window).scrollTop() > $(window).height() * 0.9) {
                $(".go-up").fadeIn();
+               $("#menu-top").addClass("almost-black");
+                 
            } else {
                $(".go-up").fadeOut();
+               $("#menu-top").removeClass("almost-black");
            }
+         
        });
+       
    }
 
    function bouncingArrow() {
@@ -51,7 +56,7 @@
    }
     function resizeWindow(__iWindowHeight,__iWindowWidth)
   {
-    $(".auto-height").css("height",__iWindowHeight+"px");
+    $(".auto-height").css("height",$(window).innerHeight()+"px");
     $(".auto-padding").css("padding-top",__iWindowHeight * 0.5 +"px");
   }
   
