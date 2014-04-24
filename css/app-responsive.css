@@ -1,4 +1,4 @@
-@media only screen and (orientation: landscape){
+@media only screen and (orientation: landscape) {
     nav.push-menu-right {
     right: -300px
 }
@@ -9,7 +9,7 @@ body.pmr-open #wrapper {
     left: -300px
 }
 }
-@media only screen and (orientation: portrait){
+@media only screen and (orientation: portrait), only screen and (orientation: landscape) and (max-width: 1023px){
 section
 {
     background-attachment: scroll;
@@ -50,17 +50,38 @@ body.pmr-open nav.push-menu-right {
     }
 }
 @media screen and (max-width: 480px) {
-  .photo
+  section.photo
   {
-      padding-top: 50%;
+      padding-top: 40%;
+  }
+    .page-title
+  {
+      font-size: 2.2em;
+      
+  }
+}
+ @media screen and (min-width: 640px) and (max-width: 800px) {
+  section.photo
+  {
+      padding-top: 60%;
   }
   .page-title
   {
-      font-size: 2.2em;
-      padding: 40px 20px;
+      font-size: 3em;
+      
   }
   .carousel-indicators
   {
-      bottom: -1em;
+      bottom: -3em;
   }
-} 
+} @media screen and (max-width: 800px) and (orientation: landscape) {
+  section.photo
+  {
+      padding-top: 10%;
+  }
+    .page-title
+  {
+      font-size: 2.2em;
+      
+  }
+}

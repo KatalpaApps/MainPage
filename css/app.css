@@ -56,11 +56,11 @@ body {
     z-index: 10;
     top: 0;
     left: 0;
-    -webkit-transition: all 0.3s;
+    -webkit-transition: all 0.3s, height 0.1s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
-    transition: all 0.3s;
+    transition: all 0.3s, height 0.1s;
 }
 .mask {
     position: fixed;
@@ -75,13 +75,13 @@ body {
 nav.menu {
     position: fixed;
     z-index: 20;
-    background-color: #1a1a1a;
+    background-color: #181818;
     overflow: hidden;
-    -webkit-transition: all 0.3s, height 0s;
-    -moz-transition: all 0.3s, height 0s;
-    -ms-transition: all 0.3s, height 0s;
-    -o-transition: all 0.3s, height 0s;
-    transition: all 0.3s, height 0s;
+   -webkit-transition: all 0.3s, height 0.1s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s, height 0.1s;
 }
 nav.menu ul {
     list-style-type: none;
@@ -111,7 +111,7 @@ nav.push-menu-right li {
 a.close-menu-btn{
     border-top: none;
     text-align: right;
-    padding: 10px 15px 12px;
+    padding: 5px 25px 12px;
 }
 a.close-menu-btn:hover{
 background-color: #1a1a1a;
@@ -203,17 +203,25 @@ nav.push-menu-right button.close-menu {
 {
     margin-top: 10px;
 }
+.page-title a
+{
+    color: #dad6be;
+    text-decoration: none;
+}
+.page-title a:hover
+{
+    color: white;
+
+}
 .subpage-footer
 {
     position: absolute;
     bottom: 0px;
+    left: 0px;
     min-height: 70px;
     width: 100%;
-}
-.subpage-footer .stdbtn
-{
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
+    padding-bottom: 2em;
 }
 .stdbtn
 {
@@ -224,11 +232,20 @@ nav.push-menu-right button.close-menu {
     font-weight: bold;
     transition: all 0.3s;
     color: #dad6be;
+    margin-left: auto;
+    margin-right: auto;
 }
-.stdbtn:hover
+.stdbtn:hover, .stdbtn:visited
 {
     border-color: #dad6be;
     color: white;
+}
+.go-up
+{
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    display: none;
 }
 /*==========  icons  ==========*/
 
