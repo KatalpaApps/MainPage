@@ -1,4 +1,6 @@
     jQuery(document).ready(function(){
+        var windowHeight = $(window).height();
+        var windowInnerHeight = $(window).innerHeight();
 		bindMenuEvents();
 		bindArrowEvents();
 		scrollDown();
@@ -56,7 +58,7 @@
    }
     function resizeWindow(__iWindowHeight,__iWindowWidth)
   {
-    $(".auto-height").css("height",$(window).innerHeight()+"px");
+    $(".auto-height").css("height",__iWindowHeight + "px");
     $(".auto-padding").css("padding-top",__iWindowHeight * 0.5 +"px");
   }
   

@@ -25,6 +25,29 @@
         <script src="js/app/general.js" type="text/javascript"></script>
  
         <!--end of javascript-->
+        <script type="text/javascript">
+            var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+if( isMobile.any() ) alert($(window).height()+" "+$(window).innerHeight());
+        </script>
     </head>
     <body>
         <main id="content" class="group moduleLanding" role="main">
@@ -96,7 +119,7 @@
                 <section id="landing-projects" class="auto-height photo container-fluid text-center">
                     <div class="page-title">
                         <div class="hr-up"></div>
-                        <p><a href="projects.html">projects that made us proud</a></p>
+                        <p><a href="projects.html">projects <span class="visible-md visible-lg">that made us proud</span></a></p>
                         <div class="hr-down"></div>
                     </div>
                     <div class="subpage-footer center-content">

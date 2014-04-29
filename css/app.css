@@ -81,7 +81,7 @@ nav.menu {
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
-    transition: all 0.3s, height 0.1s;
+    transition: all 0.3s, height 0.01s;
 }
 nav.menu ul {
     list-style-type: none;
@@ -247,6 +247,11 @@ nav.push-menu-right button.close-menu {
     bottom: 5px;
     display: none;
 }
+
+.page-title .visible-xs, .page-title .visible-sm, .page-title .visible-md, .page-title .visible-lg {
+display: none !important;
+}
+
 /*==========  icons  ==========*/
 
 .icon {
