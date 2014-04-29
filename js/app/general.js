@@ -1,48 +1,32 @@
-    jQuery(document).ready(function(){
-        var windowHeight = $(window).height();
-        var windowInnerHeight = $(window).innerHeight();
-		bindMenuEvents();
-		bindArrowEvents();
-		scrollDown();
-//		bouncingArrow();
+var  isMobile = detectMobile();
+
+jQuery(document).ready(function() {
+    bindArrowEvents();
+    scrollDown();
     resizeWindow();
-    }); 
+});
 
-   function bindMenuEvents() {
-       $('#show-menu-btn, #close-menu-btn').on('click', function(event) {
-           $('.pusher').toggleClass('pushed');
-       });
-       $('#st-content').on('click', function(event) {
-           //check up in DOM structure to figure out if container has been pushed or not
-           if ($(this).parents().hasClass('pushed')) {
-               $('.pusher').toggleClass('pushed');
-           }
-       });
-   }
+function bindArrowEvents() {
+    $('.arrow').on('click', function(event) {
+        $('html, body').animate({
+            scrollTop: $(window).height()
+        }, 1000);
+    });
+}
+function scrollDown() {
+    
+    $(window).scroll(function(event) {
+        console.log($(window).height());
+        if ($(window).scrollTop() > $(window).height() * 0.9) {
+            $(".go-up").fadeIn();
+            $("#menu-top").addClass("almost-black");
 
-   function bindArrowEvents(){   
-       $('.arrow').on('click', function(event) {
-           $('html, body').animate({
-               scrollTop: $(window).height()
-           }, 1000);
-       });
-   }
-
-   function scrollDown() {
-       $(window).scroll(function() {
-           if ($(window).scrollTop() > $(window).height() * 0.9) {
-               $(".go-up").fadeIn();
-               $("#menu-top").addClass("almost-black");
-                 
-           } else {
-               $(".go-up").fadeOut();
-               $("#menu-top").removeClass("almost-black");
-           }
-         
-       });
-       
-   }
-
+        } else {
+            $(".go-up").fadeOut();
+            $("#menu-top").removeClass("almost-black");
+        }
+    });
+}
 //   function bouncingArrow() {
 //       // ie hack
 //       if ($(window).scrollTop() < $(window).height()) {
@@ -56,9 +40,39 @@
 //           bouncingArrow()
 //       }, 3500)
 //   }
-    function resizeWindow(__iWindowHeight,__iWindowWidth)
-  {
-    $(".auto-height").css("height",__iWindowHeight + "px");
-    $(".auto-padding").css("padding-top",__iWindowHeight * 0.5 +"px");
-  }
+function resizeWindow(__iWindowHeight, __iWindowWidth)
+{
+    if (isMobile) {
+        $(".auto-height").css("height", window.screen.height + "px");
+    }
+    else {
+        $(".auto-height").css("height", __iWindowHeight + "px");
+    }
+    $(".auto-padding").css("padding-top", __iWindowHeight * 0.3 + "px");
+}
+function detectMobile()
+{
+    var isMobile = {
+        Android: function() {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function() {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function() {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function() {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function() {
+            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+        }
+    };
+    return isMobile;
+}
+
   

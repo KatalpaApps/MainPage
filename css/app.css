@@ -254,7 +254,27 @@ nav.push-menu-right button.close-menu {
 .page-title .visible-xs, .page-title .visible-sm, .page-title .visible-md, .page-title .visible-lg {
 display: none !important;
 }
+.text-content
+{
+    background-color: #fff;
+    color: #1a1a1a;
+}
+.text-content .form-control
+{
+    border-radius: 0px;
+    border: solid 2px;
+    margin-top: 30px;
+    font-size: 0.9em;
+    
+    
+}
+.text-content .has-feedback .form-control-feedback {
+position: absolute;
+top: 30px;
+right: 15px;
 
+
+}
 /*==========  icons  ==========*/
 
 .icon {
