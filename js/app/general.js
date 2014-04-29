@@ -4,7 +4,7 @@
 		bindMenuEvents();
 		bindArrowEvents();
 		scrollDown();
-		bouncingArrow();
+//		bouncingArrow();
     resizeWindow();
     }); 
 
@@ -43,19 +43,19 @@
        
    }
 
-   function bouncingArrow() {
-       // ie hack
-       if ($(window).scrollTop() < $(window).height()) {
-           $(".arrow").effect('bounce', {
-               directon: 'down',
-               distance: 30,
-               times: 2
-           }, 1000);
-       }
-       window.setTimeout(function() {
-           bouncingArrow()
-       }, 3500)
-   }
+//   function bouncingArrow() {
+//       // ie hack
+//       if ($(window).scrollTop() < $(window).height()) {
+//           $(".arrow").effect('bounce', {
+//               directon: 'down',
+//               distance: 30,
+//               times: 2
+//           }, 1000);
+//       }
+//       window.setTimeout(function() {
+//           bouncingArrow()
+//       }, 3500)
+//   }
     function resizeWindow(__iWindowHeight,__iWindowWidth)
   {
     $(".auto-height").css("height",__iWindowHeight + "px");

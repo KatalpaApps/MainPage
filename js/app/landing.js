@@ -7,7 +7,7 @@
 	{
         
             if( isMobile.any()){
-                $(".auto-height").css("height",window.screen.height+"px");     
+                $(".auto-height").css("height",window.screen.height+"px");           
             }
             else{
            $(".auto-height").css("height",__iWindowHeight+"px");
