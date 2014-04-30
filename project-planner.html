@@ -26,14 +26,14 @@
          <script type="text/javascript" src="js/lib/jquery.validate.js"></script>
          <script type="text/javascript" src="js/lib/jquery-ui-1.9.2.custom.min.js"></script>
         <!--end of javascript-->
-<!--         <script type="text/javascript"> 
+        <script type="text/javascript"> 
         // wait for the DOM to be loaded 
        
 
 $().ready(function() {
     $("#datepicker").datepicker();
 
-    $("#form-project-planner").validate({
+    $("#project-planner").validate({
         errorPlacement: function(error, element){
            
         },
@@ -54,7 +54,7 @@ email: true
     });
 });
 
-    </script> -->
+    </script>
     </head>
     <body>
         <main id="content" class="group moduleLanding" role="main">
@@ -94,13 +94,14 @@ email: true
                     </div>
                 </section> 
                     <section id="project-planner-form" class="text-content text-center container-fluid">
-               <h1 class="bold no-padding">Please fill out forms, they will help us in project planing</h1>
-                    <p>Forms witch star “*” are necesery to first cantacy with you. Some
-                    <p class="extra-padding">questions may be strange but they are importnant for us.</p>
+               <h1 class="extra-padding">Please fill out forms, they will help us in project planing</h1>
+               <p class="paragraph-tight">Forms witch star “*” are necesery to first cantacy with you. Some
+               <p class="paragraph-tight">questions may be strange but they are importnant for us.</p>
                  
-                    <div class="form-holder col-md-6 col-md-offset-3">
+                    <div class="form-holder col-md-4 col-md-offset-4">
                         <form id="project-planner" novalidate="novalidate">
-                            <h3>All about you and your company</h3>
+                            <h3 class="extra-padding">All about you and your company</h3>
+                            <hr>
                             <div class="row">
                             <div class="col-sm-6 col-xs-12 has-feedback"><input class="form-control" type="text" placeholder="Your name *" name="name" required="" /> <span class="glyphicon glyphicon-remove form-control-feedback"></span></div>
                             <div class="col-sm-6 col-xs-12 has-feedback"><input class="form-control" type="text" placeholder="Email address * " name="email" required="" /><span class="glyphicon glyphicon-remove form-control-feedback"></span></div>
@@ -110,7 +111,8 @@ email: true
                                 <div class="col-sm-6 col-xs-12"><input class="form-control" type="text" placeholder="Phone number" name="phonenumber" /></div>  
                                 <div class="col-xs-12"><textarea class="form-control" placeholder="Describe your organization" name="organization" rows="5"></textarea></div>
                             </div>
-                            <h3>Project details and important information</h3>
+                            <h3 class="extra-padding">Project details and important information</h3>
+                            <hr>
                             <div class="row">
                            <div class="col-xs-12">
                                 <select name="projecttype" class="form-control" >
@@ -133,7 +135,7 @@ email: true
                                 <div class="col-sm-6 col-xs-12"> <input id="datepicker" class="form-control" type="text" placeholder="Start date dd-mm-yyyy " name="startdate" /> </div>
                                <div class="col-sm-6 col-xs-12"> <input type="text" class="form-control" placeholder="Budget" name="budget" /> </div>
                             </div>
-                            <h3>Other things we should know</h3>
+                            <h3 class="extra-padding">Other things we should know</h3>
                             <hr>
                             <div class="row">
                             <div class="col-xs-12"><textarea class="form-control" placeholder="Anything else we should know" name="anythingelse" rows="4"></textarea></div>
@@ -198,7 +200,7 @@ email: true
                     <a href="#"><span class="icon-grey-google-plus"></span></a>
                 </div>
             </div>
-            <button class="go-up">
+            <button class="go-up btn-link">
             <img src="images/scroll_up.png" />
             </button>
        

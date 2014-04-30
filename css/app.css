@@ -23,8 +23,7 @@ section {
     background-color: white;
     position: relative;
     color: #dad6be;
-   
-}
+ }
 section.photo
 {
     padding-top: 20%;
@@ -259,21 +258,42 @@ display: none !important;
     background-color: #fff;
     color: #1a1a1a;
 }
+
 .text-content .form-control
 {
     border-radius: 0px;
-    border: solid 2px;
     margin-top: 30px;
-    font-size: 0.9em;
-    
-    
+    font-size: 0.8em;
+    font-family: 'ubunturegular';
+    border-width: 2px;
 }
 .text-content .has-feedback .form-control-feedback {
 position: absolute;
 top: 30px;
 right: 15px;
-
-
+}
+.text-content h1, .text-content h3{
+    font-weight: bold;
+    font-family: 'ubunturegular';
+}
+.extra-padding
+{
+    padding-top: 1.5em;
+}
+.paragraph-tight
+{
+    margin-bottom: 0px;
+}
+.text-content hr
+{
+    width: 20%;
+    border: solid 1px #1a1a1a;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+.text-content select{
+    font-size: 0.8em;
 }
 /*==========  icons  ==========*/
 
