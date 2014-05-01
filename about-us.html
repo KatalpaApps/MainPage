@@ -1,71 +1,72 @@
-<!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+        <meta charset="UTF-8" lang="EN"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>All About Katalpa it</title>
+        
         <!--css section-->
         <link href="css/font.css" rel="stylesheet" type="text/css" />
+        <!--<link href="css/fontello.css" rel="stylesheet" type="text/css" />-->
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
         <link href="css/app.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" type="text/css" href="css/app-responsive.css" />
-        <link rel="stylesheet" type="text/css" href="css/landing-page.css" />
         <link rel="stylesheet" type="text/css" href="css/about-us.css" />
-        <!--files holds styling for nav sidebar & dot animiations-->
         <link href="css/carousel-dots.css" rel="stylesheet" type="text/css" />
         <!--end of css-->
         <!--javascript section-->
-        <script src="js/lib/jquery-1.9.1.js" type="text/javascript"></script>
-        <script src="js/lib/jquery-ui-1.9.2.custom.min.js"></script>
-        <script src="js/lib/bootstrap.min.js"></script>
+        <script src="js/lib/jquery-1.9.1.js"></script>
+        <script src="js/lib/bootstrap.min.js"></script>  
+        <script src="js/lib/jquery.util.js" type="text/javascript"></script>
         <script src="js/app.js" type="text/javascript"></script>
+        <script src="js/app/landing.js" type="text/javascript"></script>
         <script src="js/app/general.js" type="text/javascript"></script>
-        <script type="text/javascript" src="js/app/about-us.js"></script>
-        <script type="text/javascript" src="js/lib/jquery.util.js"></script>
+
         <!--end of javascript-->
+        <script type="text/javascript">
+
+        </script>
     </head>
     <body>
         <main id="content" class="group moduleAboutUs" role="main">
-        <div class="pusher" id="pusher">
-            <nav class="auto-height" id="menu-right">
+            <nav class="menu push-menu-right">
                 <ul>
-                    <li><a href="#" id="close-menu-btn" ><img src="images/sidebar/menu_close.png"></a></li>
-                    <li><a href="#"><span class="icon icon-landing">landing page</span></a></li>
-                    <li><a href="projects.html" ><span class="icon icon-projects">our projects</span></a></li>
-                    <li><a class="active" href="about-us.html" ><span class="icon icon-about">about us</span></a></li>
-                    <li><a href="journal.html" ><span class="icon icon-journal">our journal<span></a></li>
-                    <li><a href="contact.html" ><span class="icon icon-contact">contact us</a></li>
-                    <li><a href="project-planner.html" ><span class="icon icon-kickstart">kickstart project</span></a></li>
+                    <li><a href="#" class="close-menu-btn" ><img src="images/sidebar/menu_close.png" alt="close"/></a></li>
+                    <li><a href="index.htm" ><span class="icon"><i class="icon-desktop"></i>landing page</span></a></li>
+                    <li><a href="projects.html" ><span class="icon"><i class="icon-beaker"></i>our projects</span></a></li>
+                    <li><a href="about-us.html" class="active"><span class="icon"><i class="icon-user"></i>about us</span></a></li>
+                    <li><a href="journal.html" ><span class="icon"><i class="icon-cup"></i>our journal</span></a></li>
+                    <li><a href="contact.html" ><span class="icon"><i class="icon-location-1"></i>contact us</span></a></li>
+                    <li><a href="project-planner.html" ><span class="icon"><i class="icon-pencil-1"></i>kickstart project</span></a></li>
                 </ul>
-                <ul id="menu-right-social-media">
-                    <li><a href="#"><span class="icon icon-only icon-twitter"></span></a></li>
-                    <li><a href="#"><span class="icon icon-only icon-github"></span></a></li>
-                    <li><a href="#"><span class="icon icon-only icon-facebook"></span></a></li>
-                    <li><a href="#"><span class="icon icon-only icon-gooogle-plus"></span></a></li>
+                <ul id="menu-right-social-media" class="list-inline">
+                    <li><a href="#"><span class="icon-only icon-twitter"></span></a></li>
+                    <li><a href="#"><span class="icon-only icon-github"></span></a></li>
+                    <li><a href="#"><span class="icon-only icon-facebook"></span></a></li>
+                    <li><a href="#"><span class="icon-only icon-gooogle-plus"></span></a></li>
                 </ul>
             </nav>
-            <div class="st-content" id="st-content">
-                <nav class="navbar navbar-fixed-top" id="menu-top" role="navigation">
-                    <div class="navbar-inner">
-                        <div class="container-fluid">
-                            <div class="navbar-header col-sm-20">
-                                <a class="navbar-brand" href="#"><img src="images/logo.png" /></a>
-                                <p id="show-menu-btn" class="pull-right"><img src="images/menu_open.png" /></p>
+            <div id="wrapper">
+                <div class="st-content" id="st-content">
+                    <nav id="menu-top" class="navbar navbar-fixed-top" role="navigation">
+                        <div class="navbar-inner">
+                            <div class="container-fluid">       
+                                <a class="navbar-brand" href="index.htm"><img src="images/logo.png" alt="Katalpa It" /></a>
+                                <button id="show-menu-btn" class="btn btn-link pull-right nav-toggler toggle-push-right"><img src="images/menu_open.png" alt="menu"/></button>          
                             </div>
                         </div>
-                    </div>
-                </nav>
-                <section id="few-words-about-us" class="auto-height">
+                    </nav>
+                <section id="few-words-about-us" class="auto-height photo">
                     <div class="page-title">
                         <div class="hr-up"></div>
                         <p>few words about us</p>
                         <div class="hr-down"></div>
                     </div>
-                    <!--     <div class="arrow animated bounce">
-                                                <img src="images/scroll_down_100.png" />
-                    </div> -->
+                 
                 </section>
-                <section id="hello-we-are-katalpa" class="text-content container-fluid">
-                    <h1>Hello, we are Katalpa software development team</h1>
+                <section id="hello-we-are-katalpa" class="text-content text-center container-fluid">
+                    <h1 class="extra-padding">Hello, we are Katalpa software development team</h1>
                     <div data-ride="carousel" class="carousel slide dotstyle dotstyle-fillup" id="about-katalpa">
                         <ol class="carousel-indicators">
                             <li class="active" data-slide-to="0" data-target="#about-katalpa"><a href="#"></a></li>
@@ -92,33 +93,36 @@
                                 <p>give us a chance to make You happy.</p>
                             </div>
                         </div>
+                    </div>
                     </section>
-                    <section id="our-services"class="text-content container-fluid">
-                        <h2>Our services</h2>
-                        <div class="container text-left">
+                    <section id="our-services" class="text-content extra-padding container-fluid">
+                        <h2 class="extra-padding text-center">Our services</h2>
+                        <div class="col-sm-8 col-sm-offset-2">
+                           
                             <div class="row">
-                                <div class="box box-icon icon-mobile-apps col-sm-7 col-sm-offset-3">
+                                <div class="box box-icon icon-mobile-apps col-sm-5">
                                     <h3>Mobile apps</h3>
                                     <p>We dont create only apps, we made usefull software for making life easier, funnier and bring new dimension of human and computer interaction and communication.</p>
                                 </div>
-                                <div class="box box-icon icon-web-apps col-sm-7 col-sm-offset-3">
+                                <div class="box box-icon icon-web-apps col-sm-5 col-sm-offset-2">
                                     <h3>Web apps</h3>
                                     <p>Take all Your software to the cloud, forget about updates, crashes and problematic services. Take your buisness to the internet, start selling or coordinating your team by the web.</p>
                                 </div>
                        
                           
-                                <div class="box box-icon icon-user-experience col-sm-7 col-sm-offset-3">
+                                <div class="box box-icon icon-user-experience col-sm-5">
                                     <h3>User experience</h3>
                                     <p>Less clicking, more action. We made apps for end users. We are listening people and understand what they need.  We know how to call to action and what should be exposure.</p>
                                 </div>
-                                <div class="box box-icon icon-outsourcing col-sm-7 col-sm-offset-3">
+                                <div class="box box-icon icon-outsourcing col-sm-5 col-sm-offset-2">
                                     <h3>Software outsourcing</h3>
                                     <p>We are cooperating with leading brands and small startups. We care the same for every single client. We support Your projects with our experience and human resources.</p>
                                 </div>
                             </div>
                         </div>
+                        
                     </section>
-                    <section id="team-slider" class="">
+                    <section id="team-slider" class="container-fluid extra-padding no-padding">
                         <div data-ride="carousel" class="carousel slide dotstyle dotstyle-fillup" id="carousel-what-we-are">
                             <ol class="carousel-indicators">
                                 <li class="active" data-slide-to="0" data-target="#carousel-what-we-are"><a href="#"></a></li>
@@ -138,38 +142,45 @@
                             </div>
                         </div>
                     </section>
-                    <section id="clients" class="text-content">
-                        <h2>Some of our happy clients</h2>
+                    <section id="clients" class="text-content container-fluid text-center">
+                        <h2 class="extra-padding">Some of our happy clients</h2>
                         <h5>We <img src="images/about-us/ico_heart.png"> every single one </h5>
-                        <div class="container">
+                       <div class="row">
+                           <div class="col-sm-8 col-sm-offset-2 extra-padding extra-margin">
                             <div class="row">
-                                <div class="col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset" ><a href=""><span class="icon-netia"></span></a></div>
-                                <div class="col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset"><a href=""><span class="icon-eltel"></span></a></div>
-                                <div class="col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset"><a href=""><span class="icon-vectra"></span></a></div>
-                                <div class="col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset"><a href=""><span class="icon-tp"></span></a></div>
-                                <div class="col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset"><a href=""><span class="icon-plus"></span></a></div>
-                                <div class="col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset"><a href=""><span class="icon-inea"></span></a></div>
-                                <div class="col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset"><a href=""><span class="icon-orange"></span></a></div>
-                                <div class="col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset"><a href=""><span class="icon-upc"></span></a></div>
-                                <div class="col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset"><a href=""><span class="icon-tk-telekom"></span></a></div>
-                                <div class="col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset"><a href=""><span class="icon-korbank"></span></a></div>
-                                <div class="col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset"><a href=""><span class="icon-sellbox"></span></a></div>
-                                <div class="col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset"><a href=""><span class="icon-umowiony"></span></a></div>
+                                <div class="col-sm-4  col-xs-6" ><a href="#"><span class="icon-netia"></span></a></div>
+                                <div class="col-sm-4  col-xs-6"><a href="#"><span class="icon-eltel"></span></a></div>
+                                <div class="col-sm-4  col-xs-6"><a href="#"><span class="icon-vectra"></span></a></div>
+                                <div class="col-sm-4  col-xs-6"><a href="#"><span class="icon-tp"></span></a></div>
+                                <div class="col-sm-4  col-xs-6"><a href="#"><span class="icon-plus"></span></a></div>
+                                <div class="col-sm-4  col-xs-6"><a href="#"><span class="icon-inea"></span></a></div>
+                                <div class="col-sm-4  col-xs-6"><a href="#"><span class="icon-orange"></span></a></div>
+                                <div class="col-sm-4  col-xs-6"><a href="#"><span class="icon-upc"></span></a></div>
+                                <div class="col-sm-4  col-xs-6"><a href="#"><span class="icon-tk-telekom"></span></a></div>
+                                <div class="col-sm-4  col-xs-6"><a href="#"><span class="icon-korbank"></span></a></div>
+                                <div class="col-sm-4  col-xs-6"><a href="#"><span class="icon-sellbox"></span></a></div>
+                                <div class="col-sm-4  col-xs-6"><a href="#"><span class="icon-umowiony"></span></a></div>
                             </div>
+                           </div>
                         </div>
                     </section>
-                    <div class="container">
-                        <div class="social-media col-sm-offset-8 col-sm-4 col-xs-14 col-xs-offset-3 text-center">
+                    <div class="container-fluid text-center extra-margin">
+                        <div class="row">
+                        <div class="social-media col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 text-center">
                             <a href="#"><span class="icon-grey-twitter"></span></a>
                             <a href="#"><span class="icon-grey-github"></span></a>
                             <a href="#"><span class="icon-grey-facebook"></span></a>
                             <a href="#"><span class="icon-grey-google-plus"></span></a>
+                        </div>
                         </div>
                     </div>
                     <button class="go-up">
                     <img src="images/scroll_up.png" />
                     </button>
                 </div>
+            </div>
                 </main>
+        <script src="js/lib/classie.js" type="text/javascript"></script>
+        <script src="js/lib/nav.js" type="text/javascript"></script>
             </body>
         </html>

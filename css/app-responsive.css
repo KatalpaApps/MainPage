@@ -13,9 +13,18 @@ body.pmr-open #wrapper {
     .page-title{
         font-size: 3.5em;
     }
+body.pmr-open section.photo
+{
+    transition: all 0.3s ease;
+    background-position-x: -300px;
+}
 .page-title .visible-lg {
 display: inline !important;
 }
+ .subpage-footer
+ {
+     bottom: 72px;
+ }
 }
 @media (max-width: 767px) {
 .page-title .visible-xs {
@@ -25,6 +34,7 @@ section
 {
     background-attachment: scroll;
     background-position: center center;
+    
 }
 
 .hr-up,.hr-down
@@ -57,6 +67,21 @@ body.pmr-open nav.push-menu-right {
 .pmr-open
 {
     overflow: hidden;
+}
+hr
+{
+    display: none;
+}
+.extra-padding{
+  padding-top: 0.3em;
+}
+.text-content .form-control
+{
+    margin-top: 15px;
+}
+.text-content .has-feedback .form-control-feedback
+{
+    top: 20px;
 }
 }
 @media (max-width: 767px) and (orientation : portrait) {
@@ -91,4 +116,5 @@ body.pmr-open nav.push-menu-right {
         padding-bottom: 2px;
         padding-top: 2px;
     }
+    
 }

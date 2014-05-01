@@ -88,22 +88,3 @@
 .icon-vectra:hover {
     background-image: url(../images/about-us/companies/vectra_a.png);
 }
-.carousel-indicators .active {
-    background-color: transparent !important;
-}
-.item {
-    position: relative;
-}
-#landing-home .page-title {
-    position: static;
-}
-.text-content .carousel-indicators {
-    bottom: -50%;
-
-}
-.text-content .carousel-indicators li{
-    border-color:black;
-  
-}
-
-

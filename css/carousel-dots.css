@@ -89,6 +89,10 @@
 .dotstyle-fillup li a:focus {
 	background-color: rgba(0, 0, 0, 0.2);
 }
+#about-katalpa.dotstyle-fillup li a:hover,
+#about-katalpa.dotstyle-fillup li a:focus {
+	background-color: transparent;
+}
 
 .dotstyle-fillup li.active a::after {
 	height: 100%;

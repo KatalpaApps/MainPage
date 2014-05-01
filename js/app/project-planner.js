@@ -1,5 +1,5 @@
 jQuery(document).ready(function(){
-	
+	        landscapeMenuHide(isMobile);
 		initModule('ProjectPlanner',resizeWindow,initProjects,false);
 	});	
 	
@@ -15,3 +15,15 @@ function initProjects()
 			event.stopPropagation();
 		});
 }
+//function landscapeMenuHide(isMobile)
+//{
+//    if(isMobile){
+//    $("input, textarea").focus(function(event){
+//        $("#menu-top").addClass("hidden");
+//    });
+//    $("input, textarea").blur(function(event){
+//        $("#menu-top").removeClass("hidden");
+//    });
+//}
+//    
+//}
