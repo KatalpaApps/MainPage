@@ -44,6 +44,7 @@ function resizeWindow(__iWindowHeight, __iWindowWidth)
 {
     if (isMobile) {
         $(".auto-height").css("height", window.screen.height + "px");
+        
     }
     else {
         $(".auto-height").css("height", __iWindowHeight + "px");

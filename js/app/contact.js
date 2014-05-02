@@ -17,3 +17,14 @@ function initContact()
 			event.stopPropagation();
 		});
 }
+function resizeContactWindow(__iWindowHeight, __iWindowWidth)
+{
+    if (isMobile) {
+        $(".auto-height").css("height", window.screen.height + "px");
+        
+    }
+    else {
+        $(".auto-height").css("height", __iWindowHeight + "px");
+    }
+    $(".auto-padding").css("padding-top", __iWindowHeight * 0.3 + "px");
+}

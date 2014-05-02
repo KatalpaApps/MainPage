@@ -22,7 +22,7 @@ section {
     background-color: white;
     position: relative;
     color: #dad6be;
-    transition: all 0.3s ease;
+    transition: position 0.3s ease;
 }
 section.photo
 {
@@ -380,6 +380,15 @@ nav.push-menu-right button.close-menu {
 .btn:hover, .btn:focus, btn-link:hover btn-link:focus
 {
     outline-color: transparent !important;
+}
+.modal-open #wrapper
+{
+    z-index: auto;
+}
+.text-content .btn.btn-link
+{
+    color: #1a1a1a;
+    font-size: 0.8em;
 }
 /*==========  icons  ==========*/
 

@@ -5,8 +5,11 @@
     width: 100%;
 }
 
-#contact {
-    text-align: left;
+#contact .box{
+    
+}  
+#contact .container-fluid div{
+;
 }
 #contact a
 {
@@ -22,15 +25,24 @@
     font-size: 1em;
 }
 #contact p {
-    font-weight: 200;
-    font-size: 0.8em
+    font-weight: 300;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+    
+}
+#contact-form p{
+    margin-bottom: 0px;
 }
 #contact hr {
     width: 10%;
-    margin-top: 0px;
-    margin-bottom: 10px;
     border-color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -0.3em;
+    margin-bottom: .7em;
 }
+
 .underline {
     text-decoration: underline;
 }
@@ -49,51 +61,7 @@
 #contact-form {
     color: #1a1a1a
 }
-#contact-form p {
-    margin: -10px 0 10px 0;
-    font-size: 1.2em;
-}
-#contact-form input {
-    font-size: 0.8em;
-    border-width: 2px;
-    padding: 0.5em;
-    border-radius: 0px;
-}
-#contact-form textarea {
-    font-size: 0.8em;
-    border-width: 2px;
-    min-width: 100%;
-    padding: 0.5em;
-    border-radius: 0px;
-}
-.extra-padding {
-    padding-bottom: 3%;
-}
-.black
-{
-    color: #1a1a1a;
-    border-color: #1a1a1a;
-    border-width: 1px;
-}
-.black:hover
-{
-    color: #1a1a1a;
-    border-color: #1a1a1a;
-    border-width: 1px;
-    text-decoration: underline;
-}
-.form-group
-{
-    margin-bottom: 25px;
-}
-.btn-link
-{
-    font-size: .8em;
-    color: black;
-}
-.btn-link:hover
-{
-    text-decoration: underline;
-    color: black;
-    font-size: .8em;
-}
+
+
+
+
