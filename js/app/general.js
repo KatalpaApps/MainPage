@@ -44,12 +44,13 @@ function resizeWindow(__iWindowHeight, __iWindowWidth)
 {
     if (isMobile) {
         $(".auto-height").css("height", window.screen.height + "px");
+        $('.auto-height-one-third').css("height", Math.round((window.screen.height / 2),0) + "px");
         
     }
     else {
-        $(".auto-height").css("height", __iWindowHeight + "px");
+        $(".auto-height").css("height", $(window).height() + "px");
+         $('.auto-height-one-third').css("height", Math.round($(window).height() / 2 ), 0 + "px");
     }
-    $(".auto-padding").css("padding-top", __iWindowHeight * 0.3 + "px");
 }
 function detectMobile()
 {
@@ -73,7 +74,8 @@ function detectMobile()
             return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
         }
     };
-    return isMobile;
+    return isMobile.any();
+   
 }
 
   

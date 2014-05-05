@@ -47,9 +47,10 @@ a:hover, a:visited
 {
     text-decoration: none;
 }
-body {
+body.pmr-open {
     overflow-x: hidden
 }
+
 .almost-black
 {
     background-color: #1a1a1a;
@@ -177,7 +178,6 @@ nav.push-menu-right button.close-menu {
 {
     font-family: 'ubunturegular';
     font-weight: bold;
-    top: 30%;
     text-align: center;
 
 }

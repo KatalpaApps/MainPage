@@ -16,3 +16,18 @@
 #win-lose-bitcoins {
     background-image: url(../images/projects/minefield_small_dark.jpg);
 }
+#bitcoins div
+{
+    /*background-attachment: fixed;*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.photo-mini
+{
+    padding-top: 12%;
+}
+.photo-mini .page-title
+{
+ font-size: 2em;
+}
