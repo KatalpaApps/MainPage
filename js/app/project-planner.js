@@ -1,5 +1,4 @@
 jQuery(document).ready(function(){
-	        landscapeMenuHide(isMobile);
 		initModule('ProjectPlanner',resizeWindow,initProjects,false);
 	});	
 	

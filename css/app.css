@@ -305,9 +305,17 @@ nav.push-menu-right button.close-menu {
 {
     padding-top: 1.5em;
 }
+.extra-padding-lg
+{
+    padding-top: 2.5em;
+}
 .extra-margin
 {
     margin-top: 1.5em;
+}
+.extra-margin-lg
+{
+   margin-top:  3em;
 }
 .paragraph-tight
 {
@@ -356,7 +364,7 @@ nav.push-menu-right button.close-menu {
 #clients a
 {
     width: 160px;
-    height: 80px;
+    height: 110px;
     display: inline-block;
 }
 #clients span
@@ -377,7 +385,27 @@ nav.push-menu-right button.close-menu {
     background-repeat: no-repeat;
 
 }
-.btn:hover, .btn:focus, btn-link:hover btn-link:focus
+#map-holder
+{
+    position: relative;
+}
+#map
+{
+    position: absolute;
+}
+#map-overlay{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    z-index: 25;
+}
+.ui-datepicker {
+width: 13.5em !important;
+padding: .2em .2em 0;
+display: none;
+}
+
+.btn:hover, .btn:focus, .btn-link:hover, .btn-link:focus, .btn-link:active, btn-link:visited
 {
     outline-color: transparent !important;
 }

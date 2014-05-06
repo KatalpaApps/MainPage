@@ -27,7 +27,8 @@ display: inline !important;
  }
 }
 @media (max-width: 767px) {
-.page-title .visible-xs {
+
+    .page-title .visible-xs {
 display: inline !important;
 }
 section
@@ -93,10 +94,44 @@ hr
  {
      padding-top: 45%;
  }
+ .photo-mini
+{
+    padding-top: 60%;
+}
  .subpage-footer
  {
      bottom: 36px;
  }
+ #hello-we-are-katalpa p
+ {
+     padding-left: 20px;
+     padding-right: 20px;
+ }
+ #hello-we-are-katalpa .carousel-indicators
+ {
+     bottom: -2.25em;
+ }
+  #hello-we-are-katalpa h3{
+  font-weight: bold;
+  }
+ #hello-we-are-katalpa h5{
+     font-size: 1em;
+ }
+ #our-services
+ {
+     margin-top: 1.5em;
+ }
+ #team-slider .carousel-indicators{
+     bottom: -0.5em;
+ }
+ .extra-padding{
+     padding-top: .5em;
+ }
+ h5
+ {
+     font-size: 1em;
+ }
+
 }
 @media (max-width: 767px) and (orientation: landscape) {
     #menu-right-social-media{
@@ -106,6 +141,10 @@ hr
     {
         font-size: 1.1em;
     }
+     .photo-mini
+{
+    padding-top: 25%;
+}
     nav.push-menu-right span
     {
         padding-top: 5px;

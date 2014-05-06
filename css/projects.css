@@ -16,6 +16,10 @@
 #win-lose-bitcoins {
     background-image: url(../images/projects/minefield_small_dark.jpg);
 }
+#bitcoins
+{
+    background-color: #1a1a1a;
+}
 #bitcoins div
 {
     /*background-attachment: fixed;*/
@@ -25,7 +29,7 @@
 }
 .photo-mini
 {
-    padding-top: 12%;
+    padding-top: 11%;
 }
 .photo-mini .page-title
 {

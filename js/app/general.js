@@ -16,7 +16,6 @@ function bindArrowEvents() {
 function scrollDown() {
     
     $(window).scroll(function(event) {
-        console.log($(window).height());
         if ($(window).scrollTop() > $(window).height() * 0.9) {
             $(".go-up").fadeIn();
             $("#menu-top").addClass("almost-black");
@@ -44,7 +43,7 @@ function resizeWindow(__iWindowHeight, __iWindowWidth)
 {
     if (isMobile) {
         $(".auto-height").css("height", window.screen.height + "px");
-        $('.auto-height-one-third').css("height", Math.round((window.screen.height / 2),0) + "px");
+        $('.auto-height-one-third').css("height", window.screen.height + "px");
         
     }
     else {

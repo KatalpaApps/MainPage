@@ -84,23 +84,24 @@ email: true
                         </div>
                     </div>
                 </nav>
-                <section id="meet-us" class="auto-height auto-padding">
+                <section id="meet-us" class="photo auto-height auto-padding">
                     <div class="page-title">
                         <div class="hr-up"></div>
                         <p>meet us in our office</p>
                         <div class="hr-down"></div>
                     </div>
-                    <div id="map-overlay"></div>
+                 
                 </section>
-                <section id="map" class="auto-height auto-padding">
-
+                <section id="map-holder" class="auto-height-one-third auto-padding">
+                    <div id="map-overlay" class="auto-height-one-third auto-padding"></div>
+                    <div id="map" class="auto-height-one-third auto-padding"></div>
                 </section>
                 <section id="contact" class="text-content extra-padding">
                     <div class="container-fluid text-center">
                         <div class="row">
-                            <div class="col-sm-10 col-sm-offset-1">
+                            <div class="col-md-10 col-md-offset-1">
                                 <div class="row">
-                        <div class="col-sm-3 ">
+                        <div class="col-md-3 ">
                             <div class="box">
                             <h3>katalpa</h3>
                             <hr>
@@ -109,7 +110,7 @@ email: true
                             <p>Poland(European Union)</p>
                             </div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-md-3">
                             <div class="box">
                             <h3>contact</h3>
                             <hr>
@@ -117,7 +118,7 @@ email: true
                             <p>p: +48 531 53 90 60</p>
                         <p><a href="#">t: @katalpadev</a></p> </div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-md-3">
                             <div class="box">
                             <h3>positions</h3>
                             <hr>
@@ -126,7 +127,7 @@ email: true
                            <button type="button" class="btn btn-link no-padding" data-toggle="modal" data-target="#Jr-Php-Developer">Junior PHP Developer</button>
                             </div>
                             </div>
-                        <div class="col-sm-3">
+                        <div class="col-md-3">
                             <div class="box">
                             <h3>company</h3>
                             <hr>
@@ -142,7 +143,7 @@ email: true
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                    <h2 class="modal-title" id="myModalLabel">Wanted Junior Android Developer</h4>
+                                    <h2 class="modal-title" id="myModalLabel">Wanted Junior Android Developer</h2>
                                 </div>
                                 <div class="modal-body">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -163,11 +164,11 @@ email: true
                             <p>dont be shy, we dont bite, feel free to contact us go to</p>
                             <p class="">out project planner and start cooperation</p>
                     
-                        <div class="form-holder col-lg-6 col-lg-offset-3 col-sm-8 col-sm-offset-2">
+                        <div class="form-holder col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
                             <form id="form-contact" role="form" novalidate="novalidate">
                                 <div class="row">
-                                <div class="col-sm-6 col-xs-12 has-feedback"><input class="form-control" type="text" placeholder="Your name *" name="name" required="" /> <span class="glyphicon glyphicon-remove form-control-feedback"></span></div>
-                                <div class="col-sm-6 col-xs-12 has-feedback"><input class="form-control" type="text" placeholder="Email address * " name="email" required="" /><span class="glyphicon glyphicon-remove form-control-feedback"></span></div>                        
+                                <div class="col-md-6 col-xs-12 has-feedback"><input class="form-control" type="text" placeholder="Your name *" name="name" required="" /> <span class="glyphicon glyphicon-remove form-control-feedback"></span></div>
+                                <div class="col-md-6 col-xs-12  has-feedback"><input class="form-control" type="text" placeholder="Email address * " name="email" required="" /><span class="glyphicon glyphicon-remove form-control-feedback"></span></div>                        
                                  <div class="col-xs-12 has-feedback">
                                     <textarea class="form-control" placeholder="Describe your project with details *" name="projectdetails" rows="4" required=""></textarea>
                                     <span class="glyphicon glyphicon-remove form-control-feedback"></span>
@@ -179,7 +180,7 @@ email: true
                 
                 </section>
           
-             <div class="container-fluid extra-padding text-content extra-padding">
+             <div class="container-fluid extra-padding text-content extra-margin">
                 <div class="row">
                 <div class="social-media col-sm-6 col-sm-offset-3 text-center">
                     <a href="#"><span class="icon-grey-twitter"></span></a>
@@ -190,7 +191,7 @@ email: true
             </div>
             </div>
             <button class="go-up btn-link">
-                <img src="images/scroll_up.png" />
+                <img src="images/scroll_up.png" alt="scroll top" />
             </button>
 
                   </div>
@@ -212,7 +213,7 @@ email: true
                                                 var marker = new google.maps.Marker({
                                                 position: new google.maps.LatLng(51.0295711, 16.9680158),
                                                 map: map,
-                                                icon: 'images/contact/marker.png'
+                                                icon: 'images/contact/marker.png'                             
                                                 });
             </script>
         </body>
