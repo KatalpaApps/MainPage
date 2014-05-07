@@ -20,6 +20,7 @@
 {
     background-color: #1a1a1a;
 }
+
 #bitcoins div
 {
     /*background-attachment: fixed;*/
@@ -27,11 +28,22 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+section
+{
+    background-attachment: scroll;
+}
 .photo-mini
 {
     padding-top: 11%;
 }
 .photo-mini .page-title
 {
- font-size: 2em;
+ font-size: 1.75em;
+}
+.page-title .title{
+   width: 100%;
+   text-align: center;
+}
+.page-title .text{
+    font-size: 0.5em;
 }
