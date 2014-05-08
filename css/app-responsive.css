@@ -1,6 +1,6 @@
 
 /*fixed height menu chrome mobile*/
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.1)
+@media screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.1)
 {
      body.pmr-open
     {
@@ -24,7 +24,7 @@
     body.pmr-open section.photo
     {
         transition: all 0.3s ease;
-        background-position-x: -300px;
+        background-position: -300px 0;
     }
     .page-title .visible-lg {
         display: inline !important;

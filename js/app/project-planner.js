@@ -50,15 +50,3 @@ function initProjects()
     });
 
 }
-//function landscapeMenuHide(isMobile)
-//{
-//    if(isMobile){
-//    $("input, textarea").focus(function(event){
-//        $("#menu-top").addClass("hidden");
-//    });
-//    $("input, textarea").blur(function(event){
-//        $("#menu-top").removeClass("hidden");
-//    });
-//}
-//    
-//}

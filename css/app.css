@@ -343,10 +343,12 @@ nav.push-menu-right button.close-menu {
     background-color: #1a1a1a;
     color:white;
 }
+
 .btn-white.btn-success:hover
 {
     background-color: #5cb85c;
     color:white;
+    
 }
 .box-icon
 {
