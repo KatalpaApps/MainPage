@@ -343,6 +343,11 @@ nav.push-menu-right button.close-menu {
     background-color: #1a1a1a;
     color:white;
 }
+.btn-white.btn-success:hover
+{
+    background-color: #5cb85c;
+    color:white;
+}
 .box-icon
 {
     padding-left: 80px;
@@ -395,9 +400,10 @@ nav.push-menu-right button.close-menu {
 }
 #map-overlay{
     position: absolute;
-    background-color: black;
+    background-color: transparent;
     width: 100%;
     z-index: 25;
+    display: none;
 }
 .ui-datepicker {
 width: 13.5em !important;
@@ -432,7 +438,7 @@ display: none;
     background-repeat: no-repeat;
 
 }
-.icon-about {
+/*.icon-about {
     background-image: url(../images/sidebar/about_us.png);
 }
 .icon-about:hover, a.active .icon-about {
@@ -468,7 +474,7 @@ display: none;
 }
 .icon-kickstart:hover, a.active .icon-kickstart {
     background-image: url(../images/sidebar/kickstart_project_action.png);
-}
+}*/
 .icon-twitter {
     background-image: url(../images/sidebar/twitter.png);
 }

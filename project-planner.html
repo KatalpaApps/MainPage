@@ -26,36 +26,6 @@
         <script type="text/javascript" src="js/lib/jquery.validate.js"></script>
         <script type="text/javascript" src="js/lib/jquery-ui-1.9.2.custom.min.js"></script>
         <!--end of javascript-->
-        <script type="text/javascript">
-            // wait for the DOM to be loaded 
-
-
-            $().ready(function() {
-                $("#datepicker").datepicker();           
-                $( "#datepicker" ).datepicker( "option", "dateFormat", "dd-mm-yy" );
-
-                $("#project-planner").validate({
-                    errorPlacement: function(error, element) {
-
-                    },
-                    highlight: function(element, errorClass, validClass) {
-                        $(element).parent('div').addClass('has-error').removeClass(validClass);
-                    },
-                    unhighlight: function(element, errorClass, validClass) {
-                        $(element).parent('div').removeClass('has-error').addClass(validClass);
-                    },
-                    rules: {
-                        name: "required",
-                        projectdetails: "required",
-                        email: {
-                            required: true,
-                            email: true
-                        }
-                    }
-                });
-            });
-
-        </script>
     </head>
     <body>
     <main id="content" class="group moduleProjectPlanner" role="main">

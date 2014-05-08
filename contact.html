@@ -26,35 +26,7 @@
         <script type="text/javascript" src="js/lib/jquery-ui-1.9.2.custom.min.js"></script>
         <script type="text/javascript" src="js/lib/jquery.validate.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-        <!--end of javascript-->
-                       <script type="text/javascript"> 
-        // wait for the DOM to be loaded 
-       
 
-$().ready(function() {
-
-    $("#form-contact").validate({
-        errorPlacement: function(error, element){
-           
-        },
-         highlight: function(element, errorClass, validClass) {
-$(element).parent('div').addClass('has-error').removeClass(validClass);
-},
-unhighlight: function(element, errorClass, validClass) {
-$(element).parent('div').removeClass('has-error').addClass(validClass);
-},
-         rules: {
-name: "required",
-message: "required",
-email: {
-required: true,
-email: true
-}
-}
-    });
-});
-
-    </script> 
     </head>
     <body>
         <main id="content" class="group moduleContact" role="main">
@@ -92,9 +64,9 @@ email: true
                     </div>
                  
                 </section>
-                <section id="map-holder" class="auto-height-one-third auto-padding">
-                    <div id="map-overlay" class="auto-height-one-third auto-padding"></div>
-                    <div id="map" class="auto-height-one-third auto-padding"></div>
+                <section id="map-holder" class="auto-height-two-third auto-padding">
+                    <div id="map-overlay" class="auto-height-two-third auto-padding"></div>
+                    <div id="map" class="auto-height-two-third auto-padding"></div>
                 </section>
                 <section id="contact" class="text-content extra-padding">
                     <div class="container-fluid text-center">

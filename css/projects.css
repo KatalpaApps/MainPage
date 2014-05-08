@@ -34,16 +34,40 @@ section
 }
 .photo-mini
 {
-    padding-top: 11%;
+    padding-top: 8%;
 }
 .photo-mini .page-title
 {
- font-size: 1.75em;
+    font-size: 1.75em;
 }
 .page-title .title{
-   width: 100%;
-   text-align: center;
+    width: 100%;
+    text-align: center;
 }
 .page-title .text{
     font-size: 0.5em;
 }
+p.text
+{
+    display: none;
+}
+.page-title{
+    position: relative;
+}
+.page-title p
+{
+    position: absolute;
+    top: 0;
+    width: 98%;
+    text-align: center;
+    height: 2em;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.page-title .hr-down,.page-title:hover .hr-down
+{
+    margin-top: 1.7em;
+}
+
+
+

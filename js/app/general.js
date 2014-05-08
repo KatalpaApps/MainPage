@@ -41,15 +41,9 @@ function scrollDown() {
 //   }
 function resizeWindow(__iWindowHeight, __iWindowWidth)
 {
-    if (isMobile) {
-        $(".auto-height").css("height", window.screen.height + "px");
-        $('.auto-height-one-third').css("height", window.screen.height + "px");
-        
-    }
-    else {
-        $(".auto-height").css("height", $(window).height() + "px");
-         $('.auto-height-one-third').css("height", Math.round($(window).height() / 2 ), 0 + "px");
-    }
+     $(".auto-height").css("height", window.screen.height + "px"); 
+
+   
 }
 function detectMobile()
 {

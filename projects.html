@@ -20,58 +20,16 @@
         <script src="js/lib/bootstrap.min.js"></script>  
         <script src="js/lib/jquery.util.js" type="text/javascript"></script>
         <script src="js/app.js" type="text/javascript"></script>
-        <script src="js/app/landing.js" type="text/javascript"></script>
+        <script src="js/app/projects.js" type="text/javascript"></script>
         <script src="js/app/general.js" type="text/javascript"></script>
         <!--end of javascript-->
         <script type="text/javascript">
             jQuery(document).ready(function() {
-                $(".page-title").hover(function(event) {
-                    $(this).children('p.title').addClass('animated fadeOutLeft');
-                    $(this).children('p.text').show().removeClass('fadeOutRight').addClass('animated fadeInRight')
-
-                },
-                        function(event) {
-                            $(this).children('p.text').removeClass('fadeInRight').addClass('fadeOutRight');
-                            $(this).children('p.title').removeClass('fadeOutLeft').addClass('fadeInLeft');
-
-                        }
-                );
+             
             });
+            
         </script>
-<!--<script type="text/javascript">
-    $(document).ready(function(){
-    $(".page-title").hover(function(event){
-        $(this).children("p.title").addClass('none');
-        $(this).children("p.text").addClass('any');
-    });
-    $(".page-title").blur(function(){
-        
-    });
-});
-</script>-->
-<style type="text/css">
-    p.text
-    {
-        display: none;
-    }
-    .page-title{
-        position: relative;
-    }
-    .page-title p
-    {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        text-align: center;
-        height: 2em;
-    }
-    .page-title .hr-down,.page-title:hover .hr-down
-    {
-        margin-top: 1.75em;
-    }
-    
-</style>
-    </head>
+   </head>
     <body>
         <main id="content" class="group moduleProjects" role="main">
             <nav class="menu push-menu-right">
@@ -102,10 +60,10 @@
                         </div>
                     </nav>
                                             <section id="umowiony" class="auto-height photo">
-                                                <div class="page-title">
+                                                <div class="page-title title-two-line">
                                                     <div class="hr-up"></div>
-                                                    <p class="title">umowiony mobile</p>
-                                                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pulvinar ac sem in fringilla.</p>
+                                                    <p class="title ">umowiony mobile</p>
+                                                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class="visible-lg"><br></span> Pellentesque pulvinar ac sem in fringilla.</p>
                                                     <div class="hr-down"></div>
                                                 </div>
                                                 <div class="subpage-footer center-content">
@@ -114,7 +72,7 @@
                                             </section>
                                         </div>
                                         <section id="zielony-solar" class="auto-height photo">
-                                            <div class="page-title">
+                                            <div class="page-title title-two-line">
                                                 <div class="hr-up"></div>
                                                 <p>zielony solar mobile</p>
                                                 <div class="hr-down"></div>
