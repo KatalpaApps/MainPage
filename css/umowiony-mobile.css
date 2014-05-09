@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-05-08, 12:37:00
+    Author     : tosiek
+*/
+
+#umowiony
+{
+    background-image: url(../images/projects/umowiony_dark.jpg);
+}
+@media (min-width: 1025px){
+#umowiony {
+    background-image: url(../images/projects/umowiony_dark.jpg)
+}
+}
+@media (max-width: 1024px){
+#umowiony {
+    background-image: url(../images/projects/umowiony_dark_sm.jpg)
+}
+}
+#phones
+{
+    height: 559px;
+    position: relative;
+    top: -160px;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+}
+#phones img{
+    position: absolute;
+    border: solid 1px red;
+}
+img.phone-right
+{
+    z-index: 1;
+}
+img.phone-top{
+    z-index: 2;
+    overflow: hidden;
+    left:210px;
+    top: -20px;
+}
+img.phone-left{
+    z-index: 1;
+    left: 450px;
+}

@@ -334,9 +334,14 @@ nav.push-menu-right button.close-menu {
 }
 .btn-white
 {
-    background: white;
+    background-color: white;
     border: solid 2px black;
     transition: all 0.2s ease;
+}
+.btn-white:active
+{
+    background-color: #aaaaaa;
+    color: white
 }
 .btn-white:hover
 {
