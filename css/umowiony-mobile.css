@@ -34,7 +34,6 @@ and open the template in the editor.
 }
 #phones img{
     position: absolute;
-    border: solid 1px red;
 }
 img.phone-right
 {
@@ -49,4 +48,19 @@ img.phone-top{
 img.phone-left{
     z-index: 1;
     left: 450px;
+}
+
+#zdrowie-bez-kolejki
+{
+    margin-top: -4em;
+}
+#doctor-photos .column
+{
+    width: 20%;
+    float: left;
+}
+#doctor-photos img
+{
+    width: 100%;
+    min-height: 285px;
 }
