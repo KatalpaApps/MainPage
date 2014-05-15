@@ -53,6 +53,7 @@ section
 .photo-mini .page-title
 {
     font-size: 1.75em;
+    margin-top: -0.2em;
 }
 .page-title .title{
     width: 100%;

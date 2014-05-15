@@ -448,6 +448,18 @@ display: none;
     background-repeat: no-repeat;
 
 }
+body {
+overflow-y: scroll;
+}
+
+body.modal-open {
+overflow-y: scroll;
+margin: 0;
+}
+
+.modal {
+overflow: auto;
+}
 /*.icon-about {
     background-image: url(../images/sidebar/about_us.png);
 }
