@@ -309,6 +309,9 @@ nav.push-menu-right button.close-menu {
 {
     padding-top: 2.5em;
 }
+.extra-padding-bottom-lg{
+ padding-bottom: 4.5em;   
+}
 .extra-margin
 {
     margin-top: 1.5em;

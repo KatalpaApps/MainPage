@@ -33,6 +33,34 @@
     {
         bottom: 72px;
     }
+    #phones
+{
+    height: 559px;
+    position: relative;
+    top: -160px;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+}
+#phones img{
+    position: absolute;
+}
+img.phone-right
+{
+    z-index: 1;
+}
+img.phone-top{
+    z-index: 2;
+    overflow: hidden;
+    left:210px;
+    top: -20px;
+}
+img.phone-left{
+    z-index: 1;
+    left: 450px;
+}
+
 }
 @media (max-width: 767px) {
 
@@ -103,6 +131,8 @@
     #clients{
         margin-top: 0px;
     }
+   
+
 }
 @media (max-width: 767px) and (orientation : portrait) {
     .page-title
@@ -159,7 +189,52 @@
     {
         font-size: 1em;
     }
-
+        #phones{
+        width: 200px;
+        height: 180px;
+        
+    }
+    #phones img{
+    position: absolute;
+    width: 80%;
+  
+}
+img.phone-top{
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+    left:95px;
+    top: -210px;
+    
+}
+img.phone-right{
+    z-index: 1;
+    left: 200px;
+      top: -200px;
+}
+img.phone-left{
+    z-index: 1;
+      top: -200px;
+    
+}
+ #doctor-photos .column {
+    width: 50%;
+    float: left;
+    height: 270px;
+}
+  #doctor-photos .column img {
+    height: 270px;
+}
+#clock-male-doctor img, #form-tablet img
+{
+    max-height: 135px;
+}
+#doctor-photos img
+{
+    
+width: 30%;
+ 
+}
 }
 @media (max-width: 767px) and (orientation: landscape) {
     #menu-right-social-media{
@@ -183,5 +258,23 @@
         padding-bottom: 2px;
         padding-top: 2px;
     }
+     #doctor-photos .column {
+    width: 50%;
+    float: left;
+
+}
+  #doctor-photos .column img {
+    height: 400px;
+}
+#clock-male-doctor img, #form-tablet img
+{
+    max-height: 200px;
+}
+#doctor-photos img
+{
+    
+width: 30%;
+ 
+}
 
 }

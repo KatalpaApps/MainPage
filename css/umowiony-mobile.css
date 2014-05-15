@@ -8,59 +8,222 @@ and open the template in the editor.
     Author     : tosiek
 */
 
-#umowiony
-{
-    background-image: url(../images/projects/umowiony_dark.jpg);
-}
 @media (min-width: 1025px){
 #umowiony {
     background-image: url(../images/projects/umowiony_dark.jpg)
+}
+        #doctor-photos .column
+{
+    width: 20%;
+    float: left;
+    min-height: 50%;
+}
+#doctor-photos .column {
+    float: left;
+    height: 404px;
+    max-height: 404px;
+}
+#doctor-photos img
+{
+    max-height: 520px;
+}
+#clock-male-doctor img, #form-tablet img
+{
+    min-height: 202px;
+    max-height: 260px;
 }
 }
 @media (max-width: 1024px){
 #umowiony {
     background-image: url(../images/projects/umowiony_dark_sm.jpg)
 }
+
 }
-#phones
+@media (min-width: 769px){
+.box
 {
-    height: 559px;
-    position: relative;
-    top: -160px;
-    width: 750px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: transparent;
+    margin-top: 3em;
+    
 }
-#phones img{
+#project-next-prev a{
+     position: absolute;
+    top:50%;
+ 
+}
+#prev-project a{
+     right:20%;
+}
+#next-project a{
+    left:20%;
+}
+}
+@media (max-width: 768px){
+    .page-title p{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+#umowiony {
+    background-image: url(../images/projects/umowiony_dark_sm.jpg)
+}
+.extra-padding-bottom-lg{
+   padding-bottom: 0em;
+}
+.extra-margin-lg{
+    margin-top: 1em;
+}
+p{
+    margin-bottom: 5px;
+}
+.box{
+    margin-top: 1.5em;
+}
+#testimonial p
+{
+    text-align: center;
+}
+
+}
+@media (max-width : 1024px) and (oriantation: landscape)
+{
+     #phones{
+        width: 200px;
+        height: 380px;
+        margin-left: 100px;
+    }
+    #phones img{
     position: absolute;
-}
-img.phone-right
-{
-    z-index: 1;
+    width: 100%;
+  
 }
 img.phone-top{
+    position: absolute;
     z-index: 2;
     overflow: hidden;
-    left:210px;
-    top: -20px;
+    left:95px;
+    top: -100px;
+    
+}
+img.phone-right{
+    z-index: 1;
+    left: 200px;
+      top: -80px;
 }
 img.phone-left{
     z-index: 1;
-    left: 450px;
+      top: -80px;
+    
 }
-
+}
+@media (max-width: 800px) and (orientation: landscape){
+    #zdrowie-bez-kolejki p{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+     
+    #testimonial p{
+        margin-left: 2em;
+        margin-right: 2em;
+        text-align: center;
+    }
+    #phones{
+        width: 200px;
+        height: 380px;
+        margin-left: 100px;
+    }
+    #phones img{
+    position: absolute;
+    width: 100%;
+  
+}
+img.phone-top{
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+    left:95px;
+    top: -100px;
+    
+}
+img.phone-right{
+    z-index: 1;
+    left: 200px;
+      top: -80px;
+}
+img.phone-left{
+    z-index: 1;
+      top: -80px;
+    
+}
+    #next-project, #prev-project{
+    padding-top:12%
+}
+}
+@media (max-width: 768px) and (orientation: portrait){
+    #next-project, #prev-project{
+    padding-top:39%
+}
+#project-next-prev a{
+    margin-top: -1em;
+}
+}
 #zdrowie-bez-kolejki
 {
     margin-top: -4em;
 }
-#doctor-photos .column
-{
-    width: 20%;
-    float: left;
-}
+
 #doctor-photos img
 {
     width: 100%;
-    min-height: 285px;
 }
+
+#testimonial img
+{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+#testimonial p{
+    padding-top: 1.5em;
+}
+#project-next-prev div
+{
+    height: 100%;
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+}
+#project-next-prev a{
+    font-family: 'ubunturegular';
+    font-weight: bold;
+    color: #dad6be;
+}
+#project-next-prev a:hover{  
+    color: white;
+}
+#prev-project{
+    background-image: url('../images/projects/local_btc_small_dark.jpg');    
+}
+
+#next-project{
+    background-image: url('../images/projects/zielony_solar_dark.jpg');
+   
+}
+#umowiony
+{
+    background-image: url(../images/projects/umowiony_dark.jpg);
+}
+#nerdy-facts{
+    background-image: url(../images/umowiony-mobile/bcg.png);
+    background-attachment: initial;
+    background-position: center center;
+    background-size: cover;
+    
+}
+p{
+    margin-bottom: 5px;
+}
+
