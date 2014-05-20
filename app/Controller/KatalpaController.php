@@ -30,6 +30,7 @@ App::uses('AppController', 'Controller');
  */
 class KatalpaController extends AppController {
 	public $layout = 'katalpa';
+        public $helpers = array('Form', 'Html', 'Js');
 /**
  * This controller does not use a model
  *
@@ -45,6 +46,10 @@ class KatalpaController extends AppController {
  * @throws NotFoundException When the view file could not be found
  *	or MissingViewException in debug mode.
  */
-	public function white() {
-	}
+	
+        public function index(){
+                 
+
+        }
+        
 }

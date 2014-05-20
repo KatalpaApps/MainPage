@@ -1,0 +1,548 @@
+/**
+*
+* Katalpa's website
+*
+**/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-size: 21px;
+    font-family: 'ubuntulight';
+}
+main {
+    display: block;
+}
+
+section {
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: white;
+    position: relative;
+    color: #dad6be;
+    transition: position 0.3s ease;
+}
+section.photo
+{
+    padding-top: 20%;
+}
+.no-padding
+{
+    padding: 0px;
+}
+.no-margin
+{
+    margin: 0px;
+}
+#show-menu-btn
+{
+    padding: 10px 15px;
+}
+a{
+    color:white;
+}
+a:hover, a:visited
+{
+    text-decoration: none;
+}
+body.pmr-open {
+    overflow-x: hidden
+}
+
+.almost-black
+{
+    background-color: #1a1a1a;
+}
+#wrapper {
+    position: relative;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.3s, height 0.1s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s, height 0.1s;
+}
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+nav.menu {
+    position: fixed;
+    z-index: 20;
+    background-color: #181818;
+    overflow: hidden;
+    -webkit-transition: all 0.3s, height 0.1s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s, height 0.01s;
+}
+nav.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: solid 1px #2f2f2f;
+    border-top: solid 1px #2f2f2f;
+}
+nav.menu a {
+    color: #787878;
+}
+nav.menu a:hover, nav.menu a.active {
+    color: white;
+    background-color: #242424;
+}
+
+nav.push-menu-right {
+    top: 0px;
+    width: 300px;
+    height: 100%;
+    display: block;
+}
+nav.push-menu-right li {
+    border-top: solid 1px #2f2f2f; 
+}
+
+a.close-menu-btn{
+    border-top: none;
+    text-align: right;
+    padding: 5px 25px 12px;
+}
+a.close-menu-btn:hover{
+    background-color: #1a1a1a;
+}
+nav.push-menu-right li:first-child a:hover
+{
+    background-color: #2f2f2f;
+}
+nav.push-menu-right li:last-child {
+    border-bottom: none
+}
+nav.push-menu-right a {
+    display: inline-block;
+    width: 100%;
+}
+nav.push-menu-right span
+{
+    background-position: 10px;
+    padding: 10px 10px 10px 0.5em;
+    width: 100%;
+}
+nav.push-menu-right button.close-menu {
+    margin: 10px 0;
+    padding: 10px 30px;
+    background-color: #3184a1;
+}
+
+#menu-right-social-media
+{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+#menu-right-social-media li
+{
+    border: none;
+}
+#menu-right-social media span
+{
+    background-position: center center;
+    padding-top: 10px;
+    height: 44px
+}
+
+#menu-right-social-media a
+{
+    border: none;
+    text-align: center;
+}
+#menu-right-social-media a span
+{
+    height: 30px;
+    width: 100%;
+    background-position: center center;
+    padding: 25px;
+}
+
+.page-title
+{
+    font-family: 'ubunturegular';
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.carousel-indicators{
+    bottom: -3em;
+}
+.carousel-indicators li.active
+{
+    background-color: transparent;
+}
+
+.hr-up, .hr-down
+{
+    border: solid 2px white;
+    width: 25%;
+    display: block;
+    margin: auto;
+    transition: all 0.7s;
+}
+.page-title:hover .hr-up, .page-title:hover .hr-down
+{
+    border: solid 2px #dad6be;
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+.page-title p
+{
+    margin-top: 10px;
+}
+.page-title a
+{
+    color: #dad6be;
+    text-decoration: none;
+}
+.page-title a:hover
+{
+    color: white;
+
+}
+.subpage-footer
+{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    min-height: 70px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2em;
+}
+.stdbtn
+{
+    font-size: 1.1em;
+    border: solid 3px white;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: all 0.3s;
+    color: #dad6be;
+    margin-left: auto;
+    margin-right: auto;
+}
+.stdbtn:hover, .stdbtn:visited
+{
+    border-color: #dad6be;
+    color: white;
+}
+.go-up
+{
+    position: fixed;
+    right: 0.5em;
+    bottom: 0.5em;
+    display: none;
+}
+
+.page-title .visible-xs, .page-title .visible-sm, .page-title .visible-md, .page-title .visible-lg {
+    display: none !important;
+}
+.text-content
+{
+    background-color: #fff;
+    color: #1a1a1a;
+}
+
+.text-content .form-control
+{
+    border-radius: 0px;
+    margin-top: 30px;
+    font-size: 0.8em;
+    font-family: 'ubuntulight';
+    font-weight: bold;
+    border-width: 2px;
+}
+.text-content .form-control:focus
+{
+    border-color: #aaaaaa;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0, 0, 0, .3);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0, 0, 0, .3);
+}
+.text-content .has-error .form-control:focus{
+    border-color: #a94442;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.text-content input.form-control, .text-content select.form-control
+{
+    height: 2.5em;
+}
+.text-content .has-feedback .form-control-feedback {
+    position: absolute;
+    top: 33px;
+    right: 15px;
+    display: none;
+}
+.text-content .has-error .form-control-feedback {
+    display: block;
+}
+.text-content h1, .text-content h3{
+    font-weight: bold;
+    font-family: 'ubunturegular';
+}
+.extra-padding
+{
+    padding-top: 1.5em;
+}
+.extra-padding-lg
+{
+    padding-top: 2.5em;
+}
+.extra-padding-bottom-lg{
+ padding-bottom: 4.5em;   
+}
+.extra-margin
+{
+    margin-top: 1.5em;
+}
+.extra-margin-lg
+{
+   margin-top:  3em;
+}
+.paragraph-tight
+{
+    margin-bottom: 0px;
+}
+.text-content hr
+{
+    width: 20%;
+    border: solid 1px #1a1a1a;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+.text-content select{
+    font-size: 0.8em;
+}
+.btn-white
+{
+    background-color: white;
+    border: solid 2px black;
+    transition: all 0.2s ease;
+}
+.btn-white:active
+{
+    background-color: #aaaaaa;
+    color: white
+}
+.btn-white:hover
+{
+    background-color: #1a1a1a;
+    color:white;
+}
+
+.btn-white.btn-success:hover
+{
+    background-color: #5cb85c;
+    color:white;
+    
+}
+.box-icon
+{
+    padding-left: 80px;
+}
+.box-icon
+{
+    background-repeat: no-repeat;
+    background-position: 0 20px;
+}
+#team-slider img
+{
+    width: 100%;
+}
+#team-slider .carousel-indicators
+{
+    bottom: 1em;
+}
+
+#clients a
+{
+    width: 160px;
+    height: 110px;
+    display: inline-block;
+}
+#clients span
+{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.social-media a, .social-media span
+{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+#map-holder
+{
+    position: relative;
+}
+#map
+{
+    position: absolute;
+}
+#map-overlay{
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    z-index: 25;
+    display: none;
+}
+.ui-datepicker {
+width: 13.5em !important;
+padding: .2em .2em 0;
+display: none;
+}
+
+.btn:hover, .btn:focus, .btn-link:hover, .btn-link:focus, .btn-link:active, btn-link:visited
+{
+    outline-color: transparent !important;
+}
+.modal-open #wrapper
+{
+    z-index: auto;
+}
+.text-content .btn.btn-link
+{
+    color: #1a1a1a;
+    font-size: 0.8em;
+}
+/*==========  icons  ==========*/
+
+.icon {
+    background-repeat: no-repeat;
+    display: block;
+    padding-left: 24px;
+    background-position: 24px center;
+}
+.icon-only {
+    background-position: center center;
+    display: inline-block;
+    background-repeat: no-repeat;
+
+}
+body {
+overflow-y: scroll;
+}
+
+body.modal-open {
+overflow-y: scroll;
+margin: 0;
+}
+
+.modal {
+overflow: auto;
+}
+/*.icon-about {
+    background-image: url(../images/sidebar/about_us.png);
+}
+.icon-about:hover, a.active .icon-about {
+    background-image: url(../images/sidebar/about_us_action.png);
+}
+.icon-landing {
+    background-image: url(../images/sidebar/landing.png);
+}
+.icon-landing:hover, a.active .icon-landing {
+    background-image: url(../images/sidebar/landing_action.png);
+}
+.icon-projects {
+    background-image: url(../images/sidebar/projects.png);
+}
+.icon-projects:hover, a.active .icon-projects {
+    background-image: url(../images/sidebar/projects_action.png);
+}
+
+.icon-journal {
+    background-image: url(../images/sidebar/journal.png);
+}
+.icon-journal:hover {
+    background-image: url(../images/sidebar/journal_action.png);
+}
+.icon-contact {
+    background-image: url(../images/sidebar/contact.png);
+}
+.icon-contact:hover, a.active .icon-contact {
+    background-image: url(../images/sidebar/contact_action.png);
+}
+.icon-kickstart {
+    background-image: url(../images/sidebar/kickstart_project.png);
+}
+.icon-kickstart:hover, a.active .icon-kickstart {
+    background-image: url(../images/sidebar/kickstart_project_action.png);
+}*/
+.icon-twitter {
+    background-image: url(../images/sidebar/twitter.png);
+}
+.icon-twitter:hover {
+    background-image: url(../images/sidebar/twitter_action.png);
+}
+.icon-facebook {
+    background-image: url(../images/sidebar/facebook.png);
+}
+.icon-facebook:hover {
+    background-image: url(../images/sidebar/facebook_action.png);
+}
+.icon-github {
+    background-image: url(../images/sidebar/github.png);
+}
+.icon-github:hover {
+    background-image: url(../images/sidebar/github_action.png);
+}
+.icon-gooogle-plus {
+    background-image: url(../images/sidebar/google_plus.png);
+}
+.icon-gooogle-plus:hover {
+    background-image: url(../images/sidebar/google_plus_action.png);
+}
+.icon-grey-facebook {
+    background-image: url(../images/general/facebook.png);
+}
+.icon-grey-facebook:hover {
+    background-image: url(../images/general/facebook_a.png);
+}
+.icon-grey-twitter {
+    background-image: url(../images/general/twitter.png);
+}
+.icon-grey-twitter:hover {
+    background-image: url(../images/general/twitter_a.png);
+}
+.icon-grey-github {
+    background-image: url(../images/general/github.png);
+}
+.icon-grey-github:hover {
+    background-image: url(../images/general/github_a.png);
+}
+.icon-grey-google-plus {
+    background-image: url(../images/general/google_plus.png);
+}
+.icon-grey-google-plus:hover {
+    background-image: url(../images/general/google_plus_a.png);
+}
+/*==========  end of icons  ==========*/

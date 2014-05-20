@@ -1,0 +1,280 @@
+
+/*fixed height menu chrome mobile*/
+@media screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.1)
+{
+     body.pmr-open
+    {
+        overflow: hidden;
+    }
+}
+@media (min-width: 768px){
+
+    nav.push-menu-right {
+        right: -300px;
+    }
+    body.pmr-open nav.push-menu-right {
+        right: 0;
+    }
+    body.pmr-open #wrapper {
+        left: -300px;
+    }
+    .page-title{
+        font-size: 3.5em;
+    }
+    body.pmr-open section.photo
+    {
+        transition: all 0.3s ease;
+        background-position: -300px 0;
+    }
+    .page-title .visible-lg {
+        display: inline !important;
+    }
+    .subpage-footer
+    {
+        bottom: 15%;
+    }
+    #phones
+{
+    height: 559px;
+    position: relative;
+    top: -160px;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+}
+#phones img{
+    position: absolute;
+}
+img.phone-right
+{
+    z-index: 1;
+}
+img.phone-top{
+    z-index: 2;
+    overflow: hidden;
+    left:210px;
+    top: -20px;
+}
+img.phone-left{
+    z-index: 1;
+    left: 450px;
+}
+
+}
+@media (max-width: 767px) {
+
+    .page-title .visible-xs {
+        display: inline !important;
+    }
+    section
+    {
+        background-attachment: scroll;
+        background-position: center center;
+
+    }
+
+    .hr-up,.hr-down
+    {
+        width: 50%;
+    }
+    .page-title:hover .hr-up, .page-title:hover .hr-down
+    {
+        width: 70%;
+    }
+    .page-title
+    {
+        font-size: 2.2em;
+    }
+    nav.push-menu-right {
+        top: -100%;
+        width: 100%;
+    }
+    body.pmr-open nav.push-menu-right {
+        top: 0;
+    }
+    .brand
+    {
+        padding-left: 0px;
+    }
+    .close-menu-btn
+    {
+        padding-right: 0px;
+    }
+   
+    hr
+    {
+        display: none;
+    }
+    .extra-padding{
+        padding-top: 0.3em;
+    }
+    .text-content .form-control
+    {
+        margin-top: 15px;
+    }
+    .text-content .has-feedback .form-control-feedback
+    {
+        top: 20px;
+    }
+    #map-overlay{
+        display: block;
+    }
+    .photo-mini
+    {
+        padding-top: 100%;
+    }
+    
+    .box{
+        margin-top: 20px;
+    }
+    #clients{
+        margin-top: 0px;
+    }
+   
+
+}
+@media (max-width: 767px) and (orientation : portrait) {
+    .page-title
+    {
+        top: 5%
+    }
+    .photo-mini .page-title
+    {
+        margin-top: -30%;
+    }
+   
+    .page-title.title-two-line .hr-down
+    {
+       margin-top: 3em;
+    }
+    section.photo
+    {
+        padding-top: 45%;
+    }
+    .photo-mini
+    {
+        padding-top: 100%;
+    }
+    .subpage-footer
+    {
+        bottom: 36px;
+    }
+    #hello-we-are-katalpa p
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #hello-we-are-katalpa .carousel-indicators
+    {
+        bottom: -2.25em;
+    }
+    #hello-we-are-katalpa h3{
+        font-weight: bold;
+    }
+    #hello-we-are-katalpa h5{
+        font-size: 1em;
+    }
+    #our-services
+    {
+        margin-top: 1.5em;
+    }
+    #team-slider .carousel-indicators{
+        bottom: -0.5em;
+    }
+    .extra-padding{
+        padding-top: .5em;
+    }
+    h5
+    {
+        font-size: 1em;
+    }
+        #phones{
+        width: 200px;
+        height: 180px;
+        
+    }
+    #phones img{
+    position: absolute;
+    width: 80%;
+  
+}
+img.phone-top{
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+    left:95px;
+    top: -210px;
+    
+}
+img.phone-right{
+    z-index: 1;
+    left: 200px;
+      top: -200px;
+}
+img.phone-left{
+    z-index: 1;
+      top: -200px;
+    
+}
+ #doctor-photos .column {
+    width: 50%;
+    float: left;
+    height: 270px;
+}
+  #doctor-photos .column img {
+    height: 270px;
+}
+#clock-male-doctor img, #form-tablet img
+{
+    max-height: 135px;
+}
+#doctor-photos img
+{
+    
+width: 30%;
+ 
+}
+}
+@media (max-width: 767px) and (orientation: landscape) {
+    #menu-right-social-media{
+        display: none;
+    }
+    #menu a
+    {
+        font-size: 1.1em;
+    }
+    .photo-mini
+    {
+        padding-top: 25%;
+    }
+    nav.push-menu-right span
+    {
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+    }
+    a.close-menu-btn{
+        padding-bottom: 2px;
+        padding-top: 2px;
+    }
+     #doctor-photos .column {
+    width: 50%;
+    float: left;
+
+}
+  #doctor-photos .column img {
+    height: 400px;
+}
+#clock-male-doctor img, #form-tablet img
+{
+    max-height: 200px;
+}
+#doctor-photos img
+{
+    
+width: 30%;
+ 
+}
+
+}

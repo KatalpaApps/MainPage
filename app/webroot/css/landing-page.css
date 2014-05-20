@@ -1,0 +1,45 @@
+/*==========  custom backgrounds  ==========*/
+@media (min-width: 1025px ){
+#landing-home {
+    background-image: url('../images/landing/landing_dark.jpg');
+}
+#landing-projects {
+    background-image: url('../images/landing/projects_dark.jpg');
+}
+#landing-about-us {
+    background-image: url('../images/landing/about_us_dark.jpg');
+}
+#landing-meet-us {
+    background-image: url('../images/landing/contact_dark.jpg');
+}
+#landing-planner {
+    background-image: url('../images/landing/kickstart_dark.jpg');
+}
+#landing-journal
+{
+	background-image: url('../images/landing/journal_dark.jpg');
+}
+}
+
+@media (max-width: 1024px ){
+#landing-home {
+    background-image: url('../images/landing/landing_dark_sm.jpg');
+}
+#landing-projects {
+    background-image: url('../images/landing/projects_dark_sm.jpg');
+}
+#landing-about-us {
+    background-image: url('../images/landing/about_us_dark_sm.jpg');
+}
+#landing-meet-us {
+    background-image: url('../images/landing/contact_dark_sm.jpg');
+}
+#landing-planner {
+    background-image: url('../images/landing/kickstart_dark_sm.jpg');
+}
+#landing-journal
+{
+	background-image: url('../images/landing/journal_dark_sm.jpg');
+}
+}
+/*==========  end of custom backgrounds  ==========*/

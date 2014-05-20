@@ -1,0 +1,88 @@
+@media (min-width: 1025px){
+#umowiony {
+    background-image: url(../images/projects/umowiony_dark.jpg)
+}
+#zielony-solar {
+    background-image: url(../images/projects/zielony_solar_dark.jpg)
+}
+#sellbox {
+    background-image: url(../images/projects/sellbox_dark.jpg)
+}
+}
+@media (max-width: 1024px){
+#umowiony {
+    background-image: url(../images/projects/umowiony_dark_sm.jpg)
+}
+#zielony-solar {
+    background-image: url(../images/projects/zielony_solar_dark_sm.jpg)
+}
+#sellbox {
+    background-image: url(../images/projects/sellbox_dark_sm.jpg)
+}
+}
+#local-bitcoins {
+    background-image: url(../images/projects/local_btc_small_dark.jpg);
+}
+#all4btc {
+    background-image: url(../images/projects/all4btc_small_dark.jpg);
+}
+#win-lose-bitcoins {
+    background-image: url(../images/projects/minefield_small_dark.jpg);
+}
+
+#bitcoins
+{
+    background-color: #1a1a1a;
+}
+
+#bitcoins div
+{
+    /*background-attachment: fixed;*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section
+{
+    background-attachment: scroll;
+}
+.photo-mini
+{
+    padding-top: 8%;
+}
+.photo-mini .page-title
+{
+    font-size: 1.75em;
+    margin-top: -0.2em;
+}
+.page-title .title{
+    width: 100%;
+    text-align: center;
+}
+.page-title .text{
+    font-size: 0.5em;
+}
+p.text
+{
+    display: none;
+}
+.page-title{
+    position: relative;
+}
+.page-title p
+{
+    position: absolute;
+    top: 0;
+    width: 98%;
+    text-align: center;
+    height: 2em;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.page-title .hr-down,.page-title:hover .hr-down
+{
+    margin-top: 1.7em;
+}
+
+
+
