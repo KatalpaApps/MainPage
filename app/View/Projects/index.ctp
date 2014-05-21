@@ -1,7 +1,7 @@
 <?php
 $this->set('title', 'Checkout our stunning projects ');
 $this->set('moduleName', 'Projects');
-$this->Html->script(array('/js/app/projects','/js/lib/jquery.form','/js/lib/jquery.validate.js'), array('inline' => false));
+$this->Html->script(array('/js/app/projects'), array('inline' => false));
 $this->Html->css(array('projects','animate'), null, array('inline' => false));
 
 ?>
@@ -9,13 +9,13 @@ $this->Html->css(array('projects','animate'), null, array('inline' => false));
                                                 <div class="page-title title-two-line">
                                                     <div class="hr-up"></div>
                                                     <a href="umowiony-mobile.html">
-                                                    <p class="title ">umowiony mobile</p>
-                                                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class="visible-lg"><br></span> Pellentesque pulvinar ac sem in fringilla.</p>
+                                                    <p class="title "><span class="hidden-xs hidden-sm"><?php echo __("projects_umowiony");?></span><span class="hidden-md hidden-lg"><?php echo __("projects_umowiony_mobile");?></span></p>
+                                                    <p class="text"><span class="hidden-xs hidden-sm"><?php echo __("projects_umowiony_hover_text");?></span><span class="hidden-md hidden-lg"><?php echo __("projects_umowiony_hover_text_mobile");?></span></p>
                                                     </a>
                                                     <div class="hr-down"></div>
                                                 </div>
                                                 <div class="subpage-footer center-content">
-                                                    <a href="#" class="stdbtn">find doctor</a>
+                                                    <a href="#" class="stdbtn"><?php echo __("projects_umowiony_button");?></a>
                                                 </div>
                                             </section>
                                         </div>
