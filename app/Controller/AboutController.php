@@ -11,8 +11,8 @@
  *
  * @author tosiek
  */
-App::uses('KatalpaController', 'Controller');
-class AboutController extends KatalpaController {
+App::uses('AppController', 'Controller');
+class AboutController extends AppController {
     public $components = array('RequestHandler');
 
     public function beforeFilter() {
@@ -27,5 +27,7 @@ class AboutController extends KatalpaController {
             // or Atom
         }
     }
-    
+    public function index() {
+        
+    }
 }

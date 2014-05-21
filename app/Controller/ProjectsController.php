@@ -11,8 +11,8 @@
  *
  * @author tosiek
  */
-App::uses('KatalpaController', 'Controller');
-class ProjectsController extends KatalpaController {
+App::uses('AppController', 'Controller');
+class ProjectsController extends AppController {
    
     public function index(){
         

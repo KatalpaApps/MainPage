@@ -2,7 +2,6 @@
     '/js/lib/bootstrap.min.js',
     '/js/lib/jquery.util.js',
     '/js/app.js',
-    '/js/app/landing.js',
     '/js/app/general.js'  
     ));
     

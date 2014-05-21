@@ -16,21 +16,21 @@ $this->Html->css(array('landing-page','carousel-dots'), null, array('inline' => 
                                 <div class="item active">
                                     <div class="page-title">
                                         <div class="hr-up"></div>
-                                        <p> we have fun with apps</p>
+                                        <p><?php echo __("landing_first_slide");?></p>
                                         <div class="hr-down"></div>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <div class="page-title">
                                         <div class="hr-up"></div>
-                                        <p>people for people</p>
+                                        <p><?php echo __("landing_second_slide");?></p>
                                         <div class="hr-down"></div>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <div class="page-title">
                                         <div class="hr-up"></div>
-                                        <p>click, tap and swipe</p>
+                                        <p><?php echo __("landing_third_slide");?></p>
                                         <div class="hr-down"></div>
                                     </div>
                                 </div>
@@ -40,50 +40,50 @@ $this->Html->css(array('landing-page','carousel-dots'), null, array('inline' => 
                     <section id="landing-projects" class="auto-height photo container-fluid text-center">
                         <div class="page-title">
                             <div class="hr-up"></div>
-                            <p><a href="projects.html">projects <span class="hidden-xs hidden-sm">that made us proud</span></a></p>
+                            <p><a href="<?php echo $this->webroot; ?>projects"><span class="hidden-xs hidden-sm"><?php echo __("landing_projects");?></span><span class="hidden-md hidden-lg"><?php echo __("landing_projects_mobile");?></span></a></p>
                             <div class="hr-down"></div>
                         </div>
                         <div class="subpage-footer center-content">
-                            <a href="projects.html" class="stdbtn">check them out</a>
+                            <a href="<?php echo $this->webroot; ?>projects" class="stdbtn"><?php echo __("landing_projects_button");?></a>
                         </div>
                     </section>
                     <section id="landing-about-us" class="auto-height photo container-fluid text-center">
                         <div class="page-title">
                             <div class="hr-up"></div>
-                            <p><a href="about-us.html"><span class="hidden-xs hidden-sm">few words</span> about us</a></p>
+                            <p><a href="<?php echo $this->webroot; ?>about"><span class="hidden-xs hidden-sm"><?php echo __("landing_about");?></span><span class="hidden-md hidden-lg"><?php echo __("landing_about_mobile");?></span></p>
                             <div class="hr-down"></div>
                         </div>
                         <div class="subpage-footer center-content">
-                            <a href="about-us.html" class="stdbtn">get some info</a>
+                            <a href="<?php echo $this->webroot; ?>about" class="stdbtn"><?php echo __("landing_about_button");?></a>
                         </div>
                     </section>
                     <section id="landing-meet-us" class="auto-height photo container-fluid text-center">
                         <div class="page-title">
                             <div class="hr-up"></div>
-                            <p><a href="contact.html"><span class="hidden-xs hidden-sm">meet us in our office</span><span class="visible-xs visible-sm">contact us</span></a></p>
+                            <p><a href="<?php echo $this->webroot; ?>contact"><span class="hidden-xs hidden-sm"><?php echo __("landing_contact");?></span><span class="hidden-md hidden-lg"><?php echo __("landing_contact_mobile");?></span></a></p>
                             <div class="hr-down"></div>
                         </div>
                         <div class="subpage-footer center-content">
-                            <a href="contact.html" class="stdbtn">contact us</a>
+                            <a href="<?php echo $this->webroot; ?>" class="stdbtn"><?php echo __("landing_contact_button");?></a>
                         </div>
                     </section>
                     <section id="landing-journal" class="auto-height photo container-fluid text-center">
                         <div class="page-title">
                             <div class="hr-up"></div>
-                            <p><a href="journal.html">journal<span class="hidden-xs hidden-sm">, tweets and photos</span></a></p>
+                            <p><a href="<?php echo $this->webroot; ?>journal"><span class="hidden-xs hidden-sm"><?php echo __("landing_journal");?></span><span class="hidden-md hidden-lg"><?php echo __("landing_journal_mobile");?></span></a></p>
                             <div class="hr-down"></div>
                         </div>
                         <div class="subpage-footer center-content">
-                            <a href="journal.html" class="stdbtn">take a look</a>
+                            <a href="<?php echo $this->webroot; ?>journal" class="stdbtn"><?php echo __("landing_journal_button");?></a>
                         </div>
                     </section>
                     <section id="landing-planner" class="auto-height photo container-fluid text-center">
                         <div class="page-title">
                             <div class="hr-up"></div>
-                            <p><a href="project-planner.html">project planner</a></p>
+                            <p><a href="<?php echo $this->webroot; ?>projectplanner"><span class="hidden-xs hidden-sm"><?php echo __("landing_project_planner");?></span><span class="hidden-md hidden-lg"><?php echo __("landing_project_planner_mobile");?></span></a></p>
                             <div class="hr-down"></div>
                         </div>
                         <div class="subpage-footer center-content">
-                            <a href="project-planner.html" class="stdbtn">kickstart project</a>
+                            <a href="<?php echo $this->webroot; ?>projectplanner" class="stdbtn"><?php echo __("landing_project_planner_button");?></a>
                         </div>
                     </section>

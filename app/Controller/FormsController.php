@@ -11,8 +11,8 @@
  *
  * @author tosiek
  */
-App::uses('KatalpaController', 'Controller');
-class FormsController extends KatalpaController{
+App::uses('AppController', 'Controller');
+class FormsController extends AppController{
     //put your code here
     function process()
     {

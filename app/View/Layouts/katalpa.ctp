@@ -6,12 +6,12 @@
 
         <title><?php echo $title; ?></title>
 
-        <?php
-               echo $this->element('css');
-               echo $this->element('script');
-echo $this->fetch('meta');
-echo $this->fetch('css');
-echo $this->fetch('script');
+    <?php
+    echo $this->element('css');
+    echo $this->element('script');
+    echo $this->fetch('meta');
+    echo $this->fetch('css');
+    echo $this->fetch('script');
 ?>
 
         <!--css section-->

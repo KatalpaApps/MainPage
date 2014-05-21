@@ -20,6 +20,7 @@
 
 App::uses('AppController', 'Controller');
 
+
 /**
  * Static content controller
  *
@@ -29,7 +30,7 @@ App::uses('AppController', 'Controller');
  * @link http://book.cakephp.org/2.0/en/controllers/pages-controller.html
  */
 class KatalpaController extends AppController {
-	public $layout = 'katalpa';
+	
         public $helpers = array('Form', 'Html', 'Js');
 /**
  * This controller does not use a model
@@ -49,7 +50,7 @@ class KatalpaController extends AppController {
 	
         public function index(){
                  
-
+  
         }
         
 }

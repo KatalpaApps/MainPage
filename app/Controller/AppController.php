@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Application level Controller
  *
@@ -18,8 +19,8 @@
  * @since         CakePHP(tm) v 0.2.9
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-
 App::uses('Controller', 'Controller');
+App::uses('GeoIpLocation', 'GeoIp.Model');
 
 /**
  * Application Controller
@@ -31,4 +32,24 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+
+    public $components = array('Session');
+    public $layout = 'katalpa';
+
+    public function beforeFilter() {
+
+
+        if (!$this->Session->check('Config.language')) {
+            $GeoIpLocation = new GeoIpLocation();
+            $ipAdress = $this->request->clientIp();
+            $location = $GeoIpLocation->find($ipAdress);
+            if ($location == "pl") {
+                Configure::write('Config.language', 'pl');
+                $this->Session->write('Config.language', 'pl');
+            } else {
+                $this->Session->write('Config.language', 'en');
+            }
+        }
+    }
+
 }

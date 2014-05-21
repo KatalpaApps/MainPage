@@ -1,0 +1,98 @@
+#############
+#menu
+#############
+
+msgid "landing page"
+msgstr "landing page"
+
+msgid "our projects"
+msgstr "our projects"
+
+msgid "about us"
+msgstr "about us"
+
+msgid "journal"
+msgstr "journal"
+
+msgid "contact us"
+msgstr "contact us"
+
+msgid "kickstart project"
+msgstr "kickstart project"
+
+#############
+#landing
+#############
+
+msgid "landing_first_slide"
+msgstr "we have fun with apps"
+
+msgid "landing_second_slide"
+msgstr "people for people"
+
+msgid "landing_third_slide"
+msgstr "click, tap and swipe"
+
+msgid "landing_projects"
+msgstr "projects that made us proud"
+
+msgid "landing_projects_mobile"
+msgstr "projects"
+
+msgid "landing_projects_button"
+msgstr "check them out"
+
+msgid "landing_about"
+msgstr "few words about us"
+
+msgid "landing_about_mobile"
+msgstr "about us"
+
+msgid "landing_about_button"
+msgstr "get some info"
+
+msgid "landing_contact"
+msgstr "meet us in our office"
+
+msgid "landing_contact_mobile"
+msgstr "conact us"
+
+msgid "landing_contact_button"
+msgstr "contact us"
+
+msgid "landing_journal"
+msgstr "journal, tweets and photos"
+
+msgid "landing_journal_mobile"
+msgstr "journal"
+
+msgid "landing_journal_button"
+msgstr "take a look"
+
+msgid "landing_project_planner"
+msgstr "project planner"
+
+msgid "landing_project_planner_mobile"
+msgstr "project planner"
+
+msgid "landing_project_planner_button"
+msgstr "kickstart project"
+
+#############
+#projects
+#############
+
+msgid "projects_umowiony"
+msgstr "umowiony mobile"
+
+msgid "projects_umowiony_hover_text"
+msgstr "hover lorem ipsum"
+
+msgid "projects_umowiony_mobile"
+msgstr "umowiony"
+
+msgid "projects_umowiony_mobile_hover_text"
+msgstr "mobile hover lorem ipsum"
+
+msgid "projects_umowiony_button"
+msgstr "find doctor"
