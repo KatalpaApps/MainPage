@@ -12,10 +12,27 @@
  * @author tosiek
  */
 App::uses('AppController', 'Controller');
-class FormsController extends AppController{
+App::uses('CakeEmail', 'Network/Email');
+
+class FormsController extends AppController {
+
     //put your code here
-    function process()
-    {
-        
+    function process() {
+        $form = $_POST;
+        $message = "";
+        foreach ($form as $key => $value) {
+            $value = strip_tags($value);
+        }
+        foreach ($form as $key => $value) {
+            if (isset($value)) {
+                $message .= "<h1>" . $key . "</h1><br>" . $value;
+            }
+        }
+        $Email = new CakeEmail();
+        $Email->from(array($form['email'] => 'Katalpa Contact Form'));
+        $Email->to('teodor.busse@gmail.com');
+        $Email->subject('Formularz kontaktowy katalpy');
+        $Email->send($message);
     }
+
 }

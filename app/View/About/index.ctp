@@ -8,13 +8,13 @@ $this->Html->css(array('about-us','carousel-dots'), null, array('inline' => fals
 <section id="few-words-about-us" class="auto-height photo">
                     <div class="page-title">
                         <div class="hr-up"></div>
-                        <p>few words about us</p>
+                        <p><span class="hidden-xs hidden-sm"><?php echo __("about_few_words");?></span><span class="hidden-md hidden-lg"><?php echo __("about_few_words_mobile");?></span></p>
                         <div class="hr-down"></div>
                     </div>
                  
                 </section>
                 <section id="hello-we-are-katalpa" class="text-content text-center container-fluid extra-margin">
-                    <h1 class="">Hello, we are Katalpa software development team</h1>
+                    <h1 class=""><?php echo __("about_hello_title");?></h1>
                     <div data-ride="carousel" class="carousel slide dotstyle dotstyle-fillup" id="about-katalpa">
                         <ol class="carousel-indicators">
                             <li class="active" data-slide-to="0" data-target="#about-katalpa"><a href="#"></a></li>
@@ -23,48 +23,48 @@ $this->Html->css(array('about-us','carousel-dots'), null, array('inline' => fals
                         </ol>
                         <div class="carousel-inner">
                             <div class="item active">
-                                <p>we love mobile and web apps with great user experience, every single day bring us</p>
-                                <p>new chalanges that made us happy. When You start colaboration with us, you</p>
-                                <p>become part of our team. We care about code quality and clarity,</p>
-                                <p>give us a chance to make You happy.</p>
+                                <p><?php echo __("about_first_slide_line_1"); ?></p>
+                                <p><?php echo __("about_first_slide_line_2"); ?></p>
+                                <p><?php echo __("about_first_slide_line_3"); ?></p>
+                                <p><?php echo __("about_first_slide_line_4"); ?></p>
                             </div>
                             <div class="item">
-                                <p>we love mobile and web apps with great user experience, every single day bring us</p>
-                                <p>new chalanges that made us happy. When You start colaboration with us, you</p>
-                                <p>become part of our team. We care about code quality and clarity,</p>
-                                <p>give us a chance to make You happy.</p>
+                                <p><?php echo __("about_second_slide_line_1"); ?></p>
+                                <p><?php echo __("about_second_slide_line_2"); ?></p>
+                                <p><?php echo __("about_second_slide_line_3"); ?></p>
+                                <p><?php echo __("about_second_slide_line_4"); ?></p>
                             </div>
                             <div class="item">
-                                <p>we love mobile and web apps with great user experience, every single day bring us</p>
-                                <p>new chalanges that made us happy. When You start colaboration with us, you</p>
-                                <p>become part of our team. We care about code quality and clarity,</p>
-                                <p>give us a chance to make You happy.</p>
+                                <p><?php echo __("about_third_slide_line_1"); ?></p>
+                                <p><?php echo __("about_third_slide_line_2"); ?></p>
+                                <p><?php echo __("about_third_slide_line_3"); ?></p>
+                                <p><?php echo __("about_third_slide_line_4"); ?></p>
                             </div>
                         </div>
                     </div>
                     </section>
                     <section id="our-services" class="text-content container-fluid extra-margin-lg">
-                        <h2 class="text-center">Our services</h2>
+                        <h2 class="text-center"><?php echo __("about_our_services"); ?></h2>
                         <div class="col-sm-10 col-sm-offset-1">
                            
                             <div class="row">
                                 <div class="box box-icon icon-mobile-apps col-md-5">
-                                    <h3>Mobile apps</h3>
-                                    <p>We dont create only apps, we made usefull software for making life easier, funnier and bring new dimension of human and computer interaction and communication.</p>
+                                    <h3><?php echo __("about_box_title_mobile_apps"); ?></h3>
+                                    <p><?php echo __("about_box_text_mobile_apps"); ?></p>
                                 </div>
                                 <div class="box box-icon icon-web-apps col-md-5 col-md-offset-2">
-                                    <h3>Web apps</h3>
-                                    <p>Take all Your software to the cloud, forget about updates, crashes and problematic services. Take your buisness to the internet, start selling or coordinating your team by the web.</p>
+                                    <h3><?php echo __("about_box_title_web_apps"); ?></h3>
+                                    <p><?php echo __("about_box_text_web_apps"); ?></p>
                                 </div>
                        
                           
                                 <div class="box box-icon icon-user-experience col-md-5">
-                                    <h3>User experience</h3>
-                                    <p>Less clicking, more action. We made apps for end users. We are listening people and understand what they need.  We know how to call to action and what should be exposure.</p>
+                                    <h3><?php echo __("about_box_title_user_experience"); ?></h3>
+                                    <p><?php echo __("about_box_text_user_experience"); ?></p>
                                 </div>
                                 <div class="box box-icon icon-outsourcing col-md-5 col-md-offset-2">
-                                    <h3>Software outsourcing</h3>
-                                    <p>We are cooperating with leading brands and small startups. We care the same for every single client. We support Your projects with our experience and human resources.</p>
+                                    <h3><?php echo __("about_box_title_software_outsourcing"); ?></h3>
+                                    <p><?php echo __("about_box_text_software_outsourcing"); ?></p>
                                 </div>
                             </div>
                         </div>
@@ -91,8 +91,8 @@ $this->Html->css(array('about-us','carousel-dots'), null, array('inline' => fals
                         </div>
                     </section>
                     <section id="clients" class="text-content container-fluid text-center extra-margin">
-                        <h2 class=" ">Some of our happy clients</h2>
-                        <h5>We <img src="images/about-us/ico_heart.png" alt="heart icon"> every single one </h5>
+                        <h2 class=" "><?php echo __("about_some_clients"); ?></h2>
+                        <h5><?php echo __("about_heart_before"); ?><img src="images/about-us/ico_heart.png" alt="heart icon"> <?php echo __("about_heart_after"); ?></h5>
                        <div class="row">
                            <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
                             <div class="row">

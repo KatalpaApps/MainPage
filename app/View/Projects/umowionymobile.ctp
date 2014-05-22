@@ -8,7 +8,7 @@ $this->Html->css('umowiony-mobile', null, array('inline' => false));
 <section id="umowiony" class="auto-height photo">
                     <div class="page-title">
                         <div class="hr-up"></div>
-                        <p><img src="<?php echo $this->webroot; ?>images/projects/umowiony_logo.png" alt="umowiony mobile logo"> Umowiony <span class="hidden-xs hidden-sm">Mobile</span></p>
+                        <p><img src="<?php echo $this->webroot; ?>images/projects/umowiony_logo.png" alt="umowiony mobile logo"> <span class="hidden-xs hidden-sm"><?php echo __("umowiony_page_title");?></span><span class="hidden-md hidden-lg"><?php echo __("umowiony_page_title_mobile");?></span></p>
                         <div class="hr-down"></div>
                     </div>
 
@@ -19,12 +19,14 @@ $this->Html->css('umowiony-mobile', null, array('inline' => false));
                     <img src="<?php echo $this->webroot; ?>images/umowiony-mobile/phone_left.png" alt="phone right" class="phone-right">
                 </section>
                 <section id="zdrowie-bez-kolejki" class="text-content text-center container-fluid">
-                    <h1 class="">Zdrowie Bez kolejki</h1>
+                    <h1 class=""><?php echo __("umowiony_zdrowie_bez_kolejki_title");?></h1>
 
-                    <p>Umożliwia, szybkie dodanie nowej wizyty do skojarzonego z kontem</p>
-                    <p>kalendarza wystarczy podać datę i numer telefonu pacjenta. Przed</p>
-                    <p>planowanym spotkaniem pacjent otrzyma wiadomość SMS z </p>
-                    <p>przypomnieniem o dacie i miejscu wizyty</p>                        
+
+
+                    <p><?php echo __("umowiony_zdrowie_bez_kolejki_line_1");?></p>
+                    <p><?php echo __("umowiony_zdrowie_bez_kolejki_line_2");?></p>
+                    <p><?php echo __("umowiony_zdrowie_bez_kolejki_line_3");?></p>
+                    <p><?php echo __("umowiony_zdrowie_bez_kolejki_line_4");?></p>                        
                 </section>
                 <section id="doctor-photos" class="container-fluid no-padding extra-margin-lg">
                     <div id="female-doctor" class="column"><img src="<?php echo $this->webroot; ?>images/umowiony-mobile/photo_1.jpg" alt="doctor photo" /></div>
@@ -34,7 +36,7 @@ $this->Html->css('umowiony-mobile', null, array('inline' => false));
                     <div id="assistant" class="column hidden-xs"><img src="<?php echo $this->webroot; ?>images/umowiony-mobile/photo_3.jpg" alt="doctor photo" /></div>
                 </section>
                 <section id="our-tasks" class="text-content text-center container-fluid extra-margin-lg">
-                    <h1 class="">What we did</h1>
+                    <h1 class=""><?php echo __("umowiony_what_we_did");?></h1>
                     <div class="row">
                         <div class="col-sm-10 col-sm-offset-1">
 
@@ -42,23 +44,23 @@ $this->Html->css('umowiony-mobile', null, array('inline' => false));
                                 <div class="col-md-6">
                                     <div class="box">
                                         <img src="<?php echo $this->webroot; ?>images/umowiony-mobile/ico_dev.png" alt="developer-icon">
-                                        <h3>development</h3>
-                                        <p>android native app</p>
-                                        <p>web services</p>
-                                        <p>communication architecture</p>
-                                        <p>ux documentation</p>
-                                        <p>wire frame</p>
+                                        <h3><?php echo __("umowiony_development_title");?></h3>
+                                        <p><?php echo __("umowiony_development_line 1"); ?></p>
+                                        <p><?php echo __("umowiony_development_line 2"); ?></p>
+                                        <p><?php echo __("umowiony_development_line 3"); ?></p>
+                                        <p><?php echo __("umowiony_development_line 4"); ?></p>
+                                        <p><?php echo __("umowiony_development_line 5"); ?></p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="box">
                                         <img src="<?php echo $this->webroot; ?>images/umowiony-mobile/ico_design.png" alt="design-icon">
-                                        <h3>design</h3>
-                                        <p>art direction</p>
-                                        <p>creative concepts</p>
-                                        <p>mobile design</p>
-                                        <p>user interface design</p>
-                                    </div>
+                                        <h3><?php echo __("umowiony_design_title");?></h3>
+                                        <p><?php echo __("umowiony_design_line 1"); ?></p>
+                                        <p><?php echo __("umowiony_design_line 2"); ?></p>
+                                        <p><?php echo __("umowiony_design_line 3"); ?></p>
+                                        <p><?php echo __("umowiony_design_line 4"); ?></p>
+                                   </div>
                                 </div>
                             </div>  
                         </div>
@@ -74,28 +76,32 @@ $this->Html->css('umowiony-mobile', null, array('inline' => false));
                                 <div class="col-md-6">
                                     <div class="box">
                                         <img src="<?php echo $this->webroot; ?>images/umowiony-mobile/ico_task.png"/>
-                                        <h3>tasks</h3>
-                                        <p>more then 150 tasks in the</p>
-                                        <p>original developmnet plan</p></div>
+                                        <h3><?php echo __("umowiony_tasks_title");?></h3>
+                                        <p><?php echo __("umowiony_tasks_line 1"); ?></p>
+                                        <p><?php echo __("umowiony_tasks_line 2"); ?></p>
+                                        
+
+                                        
                                     <div class="box">
                                         <img src="<?php echo $this->webroot; ?>images/umowiony-mobile/ico_time.png"/>
-                                        <h3>hours</h3>
-                                        <p>nearly 350 hours spent on</p>
-                                        <p>design development testing</p>
+                                       <h3><?php echo __("umowiony_hours_title");?></h3>
+                                        <p><?php echo __("umowiony_hours_line 1"); ?></p>
+                                        <p><?php echo __("umowiony_hours_line 2"); ?></p>
                                     </div>
+                                </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="box">
                                         <img src="<?php echo $this->webroot; ?>images/umowiony-mobile/ico_bugs.png"/>
-                                        <h3>bugs</h3>
-                                        <p>more then 100 bugs</p>
-                                        <p>during automated testing</p>
+                                        <h3><?php echo __("umowiony_bugs_title");?></h3>
+                                        <p><?php echo __("umowiony_bugs_line 1"); ?></p>
+                                        <p><?php echo __("umowiony_bugs_line 2"); ?></p>
                                     </div>
                                     <div class="box">
                                         <img src="<?php echo $this->webroot; ?>images/umowiony-mobile/ico_page.png"/>
-                                        <h3>pages</h3>                
-                                        <p>nearly 430 pages of </p>
-                                        <p>source code an ui elements</p></div>
+                                        <h3><?php echo __("umowiony_pages_title");?></h3>
+                                        <p><?php echo __("umowiony_pages_line 1"); ?></p>
+                                        <p><?php echo __("umowiony_pages_line 2"); ?></p>
                                 </div> 
 
                             </div>
@@ -111,8 +117,9 @@ $this->Html->css('umowiony-mobile', null, array('inline' => false));
                                 </div>
                                 <div class="col-md-8">
                                     <p>
-                                        “We choose katalpa, because they teach us and show what we really need, they helped us in mobile app concetption and made really good job with us, design and code. In next project, we will definetly cooperate together again."<br>
-                                        <strong class="small">WACŁAW ZALEWSKI, UMOWIONY.PL PROJECT MANAGER</strong></p>
+                                       "<?php echo __("umowiony_testimonials");?>"
+                                                                               <br>
+                                        <strong class="small"><?php echo __("umowiony_testimonial_author");?></strong></p>
                                 </div>
                             </div>
 
@@ -121,8 +128,36 @@ $this->Html->css('umowiony-mobile', null, array('inline' => false));
                 </section>
                 <section id="project-next-prev" class="container-fluid text-center no-padding extra-margin-lg">
                     <div class="row">
-                        <div class="col-md-6 auto-height-one-third"><div id="prev-project"><a href="projects.html">PREVIOUS PROJECT</a></div></div>
-                        <div class="col-md-6 auto-height-one-third"><div id="next-project"><a href="projects.html">NEXT PROJECT</a></div>  </div>
+                        <div class="col-md-6 auto-height-one-third"><div id="prev-project"><a href="projects.html"><?php echo __("umowiony_previous");?></a></div></div>
+                        <div class="col-md-6 auto-height-one-third"><div id="next-project"><a href="projects.html"><?php echo __("umowiony_next");?></a></div>  </div>
                     
                     </div>
                 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        

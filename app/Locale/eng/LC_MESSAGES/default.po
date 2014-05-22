@@ -96,3 +96,375 @@ msgstr "mobile hover lorem ipsum"
 
 msgid "projects_umowiony_button"
 msgstr "find doctor"
+
+msgid "projects_zielony_solar"
+msgstr "zielony solar mobile"
+
+msgid "projects_zielony_solar_mobile"
+msgstr "zielony solar"
+
+msgid "projects_zielony_solar_button"
+msgstr "find park"
+
+msgid "projects_sellbox"
+msgstr "sellbox"
+
+msgid "projects_sellbox_mobile"
+msgstr "sellbox"
+
+msgid "projects_sellbox_button"
+msgstr "sell files"
+
+msgid "projects_local_bitcoin"
+msgstr "local bit coin app"
+
+msgid "projects_local_bitcoing_mobile"
+msgstr "local bit coin app"
+
+msgid "projects_all4btc"
+msgstr "all 4 btc app"
+
+msgid "projects_all4btc_mobile"
+msgstr "all 4 btc app"
+
+msgid "projects_minefield"
+msgstr "minefield"
+
+msgid "projects_minefield_hover_text"
+msgstr "win bitcoins or loose them <br>its your choice"
+
+msgid "projects_minefield_mobile"
+msgstr "minefield"
+
+msgid "projects_minefield_mobile_hover_text"
+msgstr "win bitcoins or loose them <br>its your choice"
+
+#############
+#umowiony
+#############
+msgid "umowiony_page_title"
+msgstr "Umowiony Mobile"
+
+msgid "umowiony_page_title_mobile"
+msgstr "Umowiony"
+
+msgid "umowiony_zdrowie_bez_kolejki_title"
+msgstr "Zdrowie bez kolejki"
+
+msgid "umowiony_zdrowie_bez_kolejki_line_1"
+msgstr "Umożliwia, szybkie dodanie nowej wizyty do skojarzonego z kontem"
+
+msgid "umowiony_zdrowie_bez_kolejki_line_2"
+msgstr "kalendarza wystarczy podać datę i numer telefonu pacjenta. Przed"
+
+msgid "umowiony_zdrowie_bez_kolejki_line_3"
+msgstr "planowanym spotkaniem pacjent otrzyma wiadomość SMS z"
+
+msgid "umowiony_zdrowie_bez_kolejki_line_4"
+msgstr "przypomnieniem o dacie i miejscu wizyty"        
+
+msgid "umowiony_what_we_did" 
+msgstr "What we did"
+                                       
+msgid "umowiony_development_title"
+msgstr "development"
+
+msgid "umowiony_development_line 1"
+msgstr "android native app"
+                                       
+msgid "umowiony_development_line 2"
+msgstr "web services"
+                                       
+msgid "umowiony_development_line 3"
+msgstr "communication architecture"
+                                       
+msgid "umowiony_development_line 4"
+msgstr "ux documentation"
+                                       
+msgid "umowiony_development_line 5"
+msgstr "wire frame"
+
+msgid "umowiony_design_title"
+msgstr "design"
+
+msgid "umowiony_design_line 1"
+msgstr "art direction"
+
+msgid "umowiony_design_line 2"
+msgstr "creative concepts"
+
+msgid "umowiony_design_line 3"
+msgstr "mobile design"
+
+msgid "umowiony_design_line 4"
+msgstr "user interface design"
+                                                           
+msgid "umowiony_nerdy_facts"
+msgstr "Nerdy Facts"
+
+msgid "umowiony_tasks_title"
+msgstr "tasks"    
+
+msgid "umowiony_tasks_line 1"
+msgstr "more then 150 tasks in the"
+
+msgid "umowiony_tasks_line 2"
+msgstr "original developmnet plan"
+
+msgid "umowiony_bugs_title"
+msgstr "bugs"
+
+msgid "umowiony_bugs_line 1"
+msgstr "more then 100 bugs"
+
+msgid "umowiony_bugs_line 2"
+msgstr "during automated testing"
+
+msgid "umowiony_hours_title"
+msgstr "hours"
+
+msgid "umowiony_hours_line 1"
+msgstr "nearly 350 hours spent on"
+
+msgid "umowiony_hours_line 2"
+msgstr "design development testing"
+
+msgid "umowiony_pages_title"
+msgstr "pages"
+
+msgid "umowiony_pages_line 1"
+msgstr "nearly 430 pages of"
+
+msgid "umowiony_pages_line 2"
+msgstr "source code an ui elements"
+
+msgid "umowiony_testimonials"
+msgstr "We choose katalpa, because they teach us and show what we really need, they helped us in mobile app concetption and made really good job with us, design and code. In next project, we will definetly cooperate together again."
+
+msgid "umowiony_testimonial_author"
+msgstr "WACŁAW ZALEWSKI, UMOWIONY.PL PROJECT MANAGER"
+
+msgid "umowiony_previous"
+msgstr "PREVIOUS PROJECT"
+
+msgid "umowiony_next"
+msgstr "NEXT PROJECT"
+
+#############
+#about
+#############
+
+msgid "about_few_words"
+msgstr "meet us in our office"
+
+msgid "about_hello_title"
+msgstr "Hello, we are Katalpa software development team"
+
+msgid "about_first_slide_line_1"
+msgstr "we love mobile and web apps with great user experience, every single day bring us"
+
+msgid "about_first_slide_line_2"
+msgstr "new chalanges that made us happy. When You start colaboration with us, you"
+
+msgid "about_first_slide_line_3"
+msgstr "become part of our team. We care about code quality and clarity,"
+
+msgid "about_first_slide_line_4"
+msgstr "give us a chance to make You happy."
+
+msgid "about_second_slide_line_1"
+msgstr "we love mobile and web apps with great user experience, every single day bring us"
+
+msgid "about_second_slide_line_2"
+msgstr "new chalanges that made us happy. When You start colaboration with us, you"
+
+msgid "about_second_slide_line_3"
+msgstr "become part of our team. We care about code quality and clarity,"
+
+msgid "about_second_slide_line_4"
+msgstr "give us a chance to make You happy."
+
+msgid "about_third_slide_line_1"
+msgstr "we love mobile and web apps with great user experience, every single day bring us"
+
+msgid "about_third_slide_line_2"
+msgstr "new chalanges that made us happy. When You start colaboration with us, you"
+
+msgid "about_third_slide_line_3"
+msgstr "become part of our team. We care about code quality and clarity,"
+
+msgid "about_third_slide_line_4"
+msgstr "give us a chance to make You happy."
+
+msgid "about_our_services"
+msgstr "our services"
+
+msgid "about_our_services"
+msgstr "our services"
+
+msgid "about_box_title_mobile_apps"
+msgstr "Mobile apps"
+
+msgid "about_box_text_mobile_apps"
+msgstr "We dont create only apps, we made usefull software for making life easier, funnier and bring new dimension of human and computer interaction and communication."
+
+msgid "about_box_title_web_apps"
+msgstr "Web apps"
+
+msgid "about_box_text_web_apps"
+msgstr "Take all Your software to the cloud, forget about updates, crashes and problematic services. Take your buisness to the internet, start selling or coordinating your team by the web."
+
+msgid "about_box_title_user_experience"
+msgstr "User experience"
+
+msgid "about_box_text_user_experience"
+msgstr "Less clicking, more action. We made apps for end users. We are listening people and understand what they need.  We know how to call to action and what should be exposure."
+
+msgid "about_box_title_software_outsourcing"
+msgstr "Software outsourcing"
+
+msgid "about_box_text_software_outsourcing"
+msgstr "We are cooperating with leading brands and small startups. We care the same for every single client. We support Your projects with our experience and human resources."
+
+msgid "about_some_clients"
+msgstr "Some of our happy clients"
+
+msgid "about_heart_before"
+msgstr "We"
+
+msgid "about_heart_after"
+msgstr "every single one"
+
+#############
+#contact
+#############
+
+msgid "contact_meet_us"
+msgstr "meet us in our office"
+
+msgid "contact_meet_us_mobile"
+msgstr "meet us"
+
+msgid "contact_contact"
+msgstr "contact"
+
+msgid "contact_positions"
+msgstr "positions"
+
+msgid "contact_company"
+msgstr "company"
+
+msgid "contact_junior_android_developer_header"
+msgstr "Wanted Junior Android Developer"
+
+msgid "contact_junior_android_developer_text"
+msgstr "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+                                  
+msgid "contact_junior_php_developer_header"
+msgstr "Wanted Junior Php Developer"
+
+msgid "contact_junior_php_developer_text"
+msgstr "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+
+msgid "contact_say_hello"
+msgstr "Say Hello to our team "
+
+msgid "contact_or"
+msgstr "or"
+
+msgid "contact_start_planning"
+msgstr "start planning your project"
+
+msgid "contact_dont_be_shy_first_line"
+msgstr "dont be shy, we dont bite, feel free to contact us go to"
+
+msgid "contact_dont_be_shy_second_line"
+msgstr "out project planner and start cooperation"
+
+msgid "contact_input_your_name"
+msgstr "Your name *"
+
+msgid "contact_input_email_address"
+msgstr "Email address *"
+
+msgid "contact_input_describe_project"
+msgstr "Describe your project with deteails *"
+
+msgid "contact_input_send_button"
+msgstr "send messeage"
+
+#############
+#project planner
+#############
+
+msgid "project_planner_send_plan"
+msgstr "send us your project plan"
+
+msgid "project_planner_send_plan_mobile"
+msgstr "send us your project plan"
+
+msgid "project_planner_field_required_title"
+msgstr "Please fill out forms, they will help us in project planing"
+
+msgid "project_planner_field_required_first_line"
+msgstr "Forms witch star “*” are necesery to first cantacy with you. Some"
+
+msgid "project_planner_field_required_second_line"
+msgstr "questions may be strange but they are importnant for us."
+
+msgid "project_planner_form_about_you"
+msgstr "All about you and your company."
+
+msgid "project_planner_input_company"
+msgstr "Company or project name "
+
+msgid "project_planner_input_phone_number"
+msgstr "Phone number"
+
+msgid "project_planner_input_organization_description"
+msgstr "Describe your organization"
+
+msgid "project_planner_form_project_details"
+msgstr "Project details and important information "
+
+msgid "project_planner_input_organization_description"
+msgstr "Describe your organization"
+
+msgid "project_planner_select_project_type"
+msgstr "Project Type"
+
+msgid "project_planner_select_mobile_app"
+msgstr "Mobile App"
+
+msgid "project_planner_select_web_app"
+msgstr "Web App"
+
+msgid "project_planner_select_visual_identification"
+msgstr "Visual Identification"
+
+msgid "project_planner_project_description"
+msgstr "Describe your project, with details *"
+
+msgid "project_planner_project_architecture"
+msgstr "Project architecture (wireframe, user flow, site map, content )"
+
+msgid "project_planner_project_inspirations"
+msgstr "Thoughts insipations, links to mobile or web apps"
+
+msgid "project_planner_start_date"
+msgstr "Start date dd-mm-yyyy "
+
+msgid "project_planner_project_budget"
+msgstr "Budget"
+
+msgid "project_planner_project_anything_else"
+msgstr "Anything else we should know"
+
+msgid "project_planner_form_other_things"
+msgstr "Other things we should know."
+
+msgid "project_planner_meeting_date_time"
+msgstr "Meeting date and time"
+
+msgid "project_planner_project_send_button"
+msgstr "send messeage"
