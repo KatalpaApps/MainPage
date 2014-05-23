@@ -65,9 +65,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'root',
-		'password' => '',
-		'database' => 'katalpa',
+		'login' => 'user',
+		'password' => 'password',
+		'database' => 'database_name',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
@@ -83,3 +83,4 @@ class DATABASE_CONFIG {
 		//'encoding' => 'utf8',
 	);
 }
+

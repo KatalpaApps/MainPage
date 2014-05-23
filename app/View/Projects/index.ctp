@@ -8,14 +8,14 @@ $this->Html->css(array('projects','animate'), null, array('inline' => false));
   <section id="umowiony" class="auto-height photo">
                                                 <div class="page-title">
                                                     <div class="hr-up"></div>
-                                                    <a href="umowiony-mobile.html">
-                                                        <p class="title "><a href="projects/umowionymobile"><span class="hidden-xs hidden-sm"><?php echo __("projects_umowiony");?></span><span class="hidden-md hidden-lg"><?php echo __("projects_umowiony_mobile");?></span></a></p>
-                                                        <p class="text"><a href="projects/umowionymobile"><span class="hidden-xs hidden-sm"><?php echo __("projects_umowiony_hover_text");?></span><span class="hidden-md hidden-lg"><?php echo __("projects_umowiony_hover_text_mobile");?></span></a></p>
+                                                    <a href="<?php echo $this->webroot ?>/projects/umowiony-mobile">
+                                                        <p class="title "><a href="<?php echo $this->webroot ?>projects/umowionymobile"><span class="hidden-xs hidden-sm"><?php echo __("projects_umowiony");?></span><span class="hidden-md hidden-lg"><?php echo __("projects_umowiony_mobile");?></span></a></p>
+                                                        <p class="text"><a href="<?php echo $this->webroot ?>projects/umowionymobile"><span class="hidden-xs hidden-sm"><?php echo __("projects_umowiony_hover_text");?></span><span class="hidden-md hidden-lg"><?php echo __("projects_umowiony_hover_text_mobile");?></span></a></p>
                                                     </a>
                                                     <div class="hr-down"></div>
                                                 </div>
                                                 <div class="subpage-footer center-content">
-                                                    <a href="#" class="stdbtn"><?php echo __("projects_umowiony_button");?></a>
+                                                    <a href="<?php echo $this->webroot ?>projects/umowionymobile" class="stdbtn"><?php echo __("projects_umowiony_button");?></a>
                                                 </div>
                                             </section>
                                         </div>

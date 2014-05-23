@@ -31,7 +31,7 @@ App::uses('AppController', 'Controller');
  */
 class KatalpaController extends AppController {
 	
-        public $helpers = array('Form', 'Html', 'Js');
+     
 /**
  * This controller does not use a model
  *

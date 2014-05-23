@@ -34,27 +34,33 @@ App::uses('GeoIpLocation', 'GeoIp.Model');
  */
 class AppController extends Controller {
 
+    public $helpers = array('Form', 'Html', 'Js');
     public $components = array('Session');
     public $layout = 'katalpa';
 
     public function beforeFilter() {
-     
+//     $this->Session->destroy('Config.language');
         if (!$this->Session->check('Config.language')) {
             $GeoIpLocation = new GeoIpLocation();
             $ipAdress = $this->request->clientIp();
-            $location = $GeoIpLocation->find($ipAdress);
-            
-            if ($location == "pl") {
-                Configure::write('Config.language', 'pl');
+            $location_table = $GeoIpLocation->find($ipAdress);
+            if(isset($location_table['GeoIpLocation']['country_code']))
+            {
+            $location = $location_table['GeoIpLocation']['country_code'];
+            }
+            else
+            {
+                $location = "EN";
+            }
+       
+            $this->Session->write('Config.language', 'en');
+            if ($location == "PL") {
+
                 $this->Session->write('Config.language', 'pl');
             }
-            if ($location == "de" || $location == "at" || $location == "ch")
-            {
-                Configure::write('Config.language', 'de');
+            if ($location == "DE" || $location == "AT" || $location == "CH")
+            {              
                 $this->Session->write('Config.language', 'de');
-            }
-                else {
-                $this->Session->write('Config.language', 'en');
             }
         }
     }

@@ -31,9 +31,10 @@
                     <div class="navbar-inner">
                         <div class="container-fluid"> 
                             <?php 
-                            $prefix = $this->base;
-$str = $this->here;
-$str = preg_replace('/^' . preg_quote($prefix, '/') . '/', '', $str);
+//                            $prefix = $this->base;
+//$str = $this->here;
+//$str = preg_replace('/^' . preg_quote($prefix, '/') . '/', '', $str);
+$str = $this->params['controller'].'/'.$this->action;
 ?>
                             <a class="navbar-brand" href="<?php echo $this->webroot; ?>"><img src="<?php echo $this->webroot; ?>images/logo.png" alt="Katalpa It" /></a>
                             <button id="show-menu-btn" class="btn btn-link pull-right nav-toggler toggle-push-right"><img src="<?php echo $this->webroot; ?>images/menu_open.png" alt="menu"/></button>          

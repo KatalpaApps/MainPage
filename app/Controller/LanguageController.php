@@ -18,20 +18,16 @@ class LanguageController extends AppController{
        $site = $this->request->query['site'];
        if($lang == "pl")
        {
-            Configure::write('Config.language', 'pl');
            $this->Session->write('Config.language', 'pl');
        }
        if($lang == "de")
-       {
-           Configure::write('Config.language', 'de');
+       {      
            $this->Session->write('Config.language', 'de');
        }
-       if($lang == "en"){
-            Configure::write('Config.language', 'en');
+       if($lang == "en"){       
            $this->Session->write('Config.language', 'en');
        }
-       $url = "..".$site; 
-       return $this->redirect($url);
-      
+       $url = "../".$site; 
+       return $this->redirect($url);     
     }
 }
