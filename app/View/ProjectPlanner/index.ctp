@@ -1,7 +1,7 @@
 <?php
 $this->set('title', 'Plan your project with us');
 $this->set('moduleName', 'ProjectPlanner');
-$this->Html->script(array('/js/app/project-planner','/js/lib/jquery.form','/js/lib/jquery.validate.js','https://maps.googleapis.com/maps/api/js?sensor=false','/js/lib/jquery-ui-1.9.2.custom.min.js'), array('inline' => false));
+$this->Html->script(array('/js/app/project-planner','/js/lib/jquery.form','/js/lib/jquery.validate.js','/js/lib/jquery-ui-1.9.2.custom.min.js'), array('inline' => false));
 $this->Html->css('project-planner', null, array('inline' => false));
 
 ?>

@@ -62,12 +62,12 @@
 class DATABASE_CONFIG {
 
 	public $default = array(
-		'datasource' => 'DummySource',
+		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'user',
-		'password' => 'password',
-		'database' => 'database_name',
+		'login' => 'root',
+		'password' => '',
+		'database' => 'katalpa',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);

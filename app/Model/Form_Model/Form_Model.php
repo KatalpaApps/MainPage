@@ -10,8 +10,8 @@ App::uses('AppModel', 'Model');
 class Form extends AppModel{
 
     public $useTable = false;
-
-public function validate($form)
+public $form = "form";
+public function validate()
 {
    echo 'git';
 }

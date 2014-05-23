@@ -384,3 +384,4 @@ Cache::config('_cake_model_', array(
 	'duration' => $duration
 ));
 Configure::write('Config.language', 'pl');
+Configure::write('Config.email', 'hello@katalpa.it');

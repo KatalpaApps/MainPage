@@ -460,6 +460,10 @@ margin: 0;
 .modal {
 overflow: auto;
 }
+.flag{
+    padding-top: 5px;
+    padding-right: 10px;
+}
 /*.icon-about {
     background-image: url(../images/sidebar/about_us.png);
 }

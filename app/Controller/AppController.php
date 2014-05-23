@@ -22,6 +22,7 @@
 App::uses('Controller', 'Controller');
 App::uses('GeoIpLocation', 'GeoIp.Model');
 
+
 /**
  * Application Controller
  *
@@ -37,19 +38,26 @@ class AppController extends Controller {
     public $layout = 'katalpa';
 
     public function beforeFilter() {
-
-
+     
         if (!$this->Session->check('Config.language')) {
             $GeoIpLocation = new GeoIpLocation();
             $ipAdress = $this->request->clientIp();
             $location = $GeoIpLocation->find($ipAdress);
+            
             if ($location == "pl") {
                 Configure::write('Config.language', 'pl');
                 $this->Session->write('Config.language', 'pl');
-            } else {
+            }
+            if ($location == "de" || $location == "at" || $location == "ch")
+            {
+                Configure::write('Config.language', 'de');
+                $this->Session->write('Config.language', 'de');
+            }
+                else {
                 $this->Session->write('Config.language', 'en');
             }
         }
     }
+   
 
 }

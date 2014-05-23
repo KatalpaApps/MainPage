@@ -1,0 +1,5 @@
+msgid "title"
+msgstr "Das tytul"
+
+msgid "landing page"
+msgstr "Das strona startowa"

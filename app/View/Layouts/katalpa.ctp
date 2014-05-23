@@ -29,12 +29,22 @@
             <div class="st-content" id="st-content">
                 <nav id="menu-top" class="navbar navbar-fixed-top" role="navigation">
                     <div class="navbar-inner">
-                        <div class="container-fluid">       
-                            <a class="navbar-brand" href="index.htm"><img src="<?php echo $this->webroot; ?>images/logo.png" alt="Katalpa It" /></a>
+                        <div class="container-fluid"> 
+                            <?php 
+                            $prefix = $this->base;
+$str = $this->here;
+$str = preg_replace('/^' . preg_quote($prefix, '/') . '/', '', $str);
+?>
+                            <a class="navbar-brand" href="<?php echo $this->webroot; ?>"><img src="<?php echo $this->webroot; ?>images/logo.png" alt="Katalpa It" /></a>
                             <button id="show-menu-btn" class="btn btn-link pull-right nav-toggler toggle-push-right"><img src="<?php echo $this->webroot; ?>images/menu_open.png" alt="menu"/></button>          
+                            <a class="pull-right flag" href="<?php echo $this->webroot."language?lang=pl&site=".$str?>"><img src="<?php echo $this->webroot; ?>images/pl.png" alt="pl-flag"/></a>
+                            <a class="pull-right flag" href="<?php echo $this->webroot."language?lang=en&site=".$str?>"><img src="<?php echo $this->webroot; ?>images/us.png" alt="us-flag"/></a>
+                            <a class="pull-right flag" href="<?php echo $this->webroot."language?lang=de&site=".$str?>"><img src="<?php echo $this->webroot; ?>images/de.png" alt="de-flag"/></a>
+                           
                         </div>
                     </div>
                 </nav>
+                
                     <?php echo $this->fetch('content'); ?>
 
                 <button class="go-up btn-link">
