@@ -18,13 +18,13 @@ function initProjects()
 
   	var options = {
 		beforeSubmit: function(formData, jqForm, options){
-		   return validate();                       
+		   return jqForm.validate();                       
 		},
 		error: function(){
 		   console.log('Server error connection');              
 		},
 		success:  function(data, statusText, xhr, $form){   
-
+                         console.log(data);
 			$(".btn-white").addClass("btn-success");
             $(".btn-white").html("success");
             $("#form-contact").find("input[type=text], textarea").val("");
@@ -47,9 +47,8 @@ function initProjects()
 		resetForm: false
 	};
 
-	$("#form-contact").ajaxForm(options);
-	function validate(){		
-    $("#form-contact").validate({       
+	$("#project-planner").ajaxForm(options);		
+    $("#project-planner").validate({       
         errorPlacement: function(error, element) {
 
         },
@@ -68,5 +67,4 @@ function initProjects()
             }
         }
     });
-}
 }

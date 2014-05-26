@@ -108,18 +108,8 @@ $this->Html->css('contact', null, array('inline' => false));
                             </form>
                         </div>
                 
-                </section>
-          
-             <div class="container-fluid extra-padding text-content extra-margin">
-                <div class="row">
-                <div class="social-media col-sm-6 col-sm-offset-3 text-center">
-                    <a href="#"><span class="icon-grey-twitter"></span></a>
-                    <a href="#"><span class="icon-grey-github"></span></a>
-                    <a href="#"><span class="icon-grey-facebook"></span></a>
-                    <a href="#"><span class="icon-grey-google-plus"></span></a>
-                </div>
-            </div>
-            </div>
+                </section>         
+                  <?php echo $this->element('social-media'); ?>
 <script type="text/javascript">
  var myOptions = {
                                                     zoom: 15,

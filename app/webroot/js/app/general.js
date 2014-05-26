@@ -4,6 +4,13 @@ jQuery(document).ready(function() {
     bindArrowEvents();
     scrollDown();
     resizeWindow();
+    
+    $("a").click(function(event){
+     
+             event.preventDefault();
+             console.log($("#wrapper").load($(this).attr("href")));
+    });
+
 });
 
 function bindArrowEvents() {

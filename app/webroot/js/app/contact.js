@@ -16,42 +16,43 @@ function initContact()
     $('#show-menu-btn').click(function(event) {
         event.stopPropagation();
     });
-	
-	
-	var options = {
-		beforeSubmit: function(formData, jqForm, options){
-		   return validate();                       
-		},
-		error: function(){
-		   console.log('Server error connection');              
-		},
-		success:  function(data, statusText, xhr, $form){   
 
-			$(".btn-white").addClass("btn-success");
+
+var options = {
+beforeSubmit: function(formData, jqForm, options){
+return jqForm.valid();
+},
+error: function(){
+alert('Server error connection');
+},
+success: function(data, statusText, xhr, $form){
+
+$(".btn-white").addClass("btn-success");
             $(".btn-white").html("success");
             $("#form-contact").find("input[type=text], textarea").val("");
-			setTimeout(function() {
-				$(".btn-white").removeClass("btn-success");
-				$(".btn-white").html("send messeage");
-			}, 5000);		
-			/*
-			try
-			{    
-				var obj = jQuery.parseJSON(data);
+setTimeout(function() {
+$(".btn-white").removeClass("btn-success");
+$(".btn-white").html("send messeage");
+}
+, 5000);
+/*
+try
+{
+var obj = jQuery.parseJSON(data);
 
-				ShowFlashMessage(obj.status?'success':'error',obj.text);				
+ShowFlashMessage(obj.status?'success':'error',obj.text);
 
-			}catch(err)
-			{
+}catch(err)
+{
 
-			}*/
-		},
-		resetForm: false
-	};
+}*/
+},
+resetForm: false
+};
 
-	$("#form-contact").ajaxForm(options);
-	function validate(){		
-    $("#form-contact").validate({       
+$("#form-contact").ajaxForm(options);	
+
+    $("#form-contact").validate({
         errorPlacement: function(error, element) {
 
         },
@@ -70,7 +71,6 @@ function initContact()
             }
         }
     });
-}
 }
 function resizeContactWindow(__iWindowHeight, __iWindowWidth)
 {

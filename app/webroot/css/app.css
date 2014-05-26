@@ -463,6 +463,45 @@ overflow: auto;
 .flag{
     padding-top: 5px;
     padding-right: 10px;
+    display: none;
+}
+#ui-datepicker-div{
+    background-color: white;
+}
+#ui-datepicker-div a{
+    cursor: pointer;
+}
+#ui-datepicker-div table{
+    width: 13em;
+}
+#ui-datepicker-div table a {
+    color: #1a1a1a;
+  
+}
+#ui-datepicker-div table a:hover {
+    text-decoration: underline;
+}
+.ui-datepicker-header{
+ text-align: center;
+ background-color: #1a1a1a;
+ color: white;
+ padding: 10px;
+}
+.ui-datepicker-header a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.ui-datepicker-prev{
+   float: left;
+}
+.ui-datepicker-next{
+    float:right;
+}
+#ui-datepicker-div table a{
+    color: #1a1a1a;
+    text-align: center;
+    cursor: pointer;
 }
 /*.icon-about {
     background-image: url(../images/sidebar/about_us.png);

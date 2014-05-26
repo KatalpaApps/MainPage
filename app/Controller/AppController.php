@@ -37,10 +37,20 @@ class AppController extends Controller {
     public $helpers = array('Form', 'Html', 'Js');
     public $components = array('Session');
     public $layout = 'katalpa';
+    public $ajax  = false;
 
     public function beforeFilter() {
 //     $this->Session->destroy('Config.language');
-        if (!$this->Session->check('Config.language')) {
+         if (!$this->Session->check('Config.language')) {
+        setLanguage();
+         }
+         if($this->request->is('ajax')){
+             $this->layout = '';
+             $this->ajax = true;
+         }
+    }
+ public  function setLanguage(){
+      
             $GeoIpLocation = new GeoIpLocation();
             $ipAdress = $this->request->clientIp();
             $location_table = $GeoIpLocation->find($ipAdress);
@@ -51,8 +61,7 @@ class AppController extends Controller {
             else
             {
                 $location = "EN";
-            }
-       
+            }    
             $this->Session->write('Config.language', 'en');
             if ($location == "PL") {
 
@@ -63,7 +72,4 @@ class AppController extends Controller {
                 $this->Session->write('Config.language', 'de');
             }
         }
-    }
-   
-
 }

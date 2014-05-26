@@ -65,14 +65,6 @@ $this->Html->css('project-planner', null, array('inline' => false));
                     </div>
                 </section>
             </div>
-            <div class="container-fluid extra-padding text-content extra-margin">
-                <div class="row">
-                <div class="social-media col-sm-6 col-sm-offset-3 text-center">
-                    <a href="#"><span class="icon-grey-twitter"></span></a>
-                    <a href="#"><span class="icon-grey-github"></span></a>
-                    <a href="#"><span class="icon-grey-facebook"></span></a>
-                    <a href="#"><span class="icon-grey-google-plus"></span></a>
-                </div>
-            </div>
+             <?php echo $this->element('social-media'); ?>
             </div>
        

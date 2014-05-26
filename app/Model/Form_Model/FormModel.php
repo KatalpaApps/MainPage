@@ -11,8 +11,12 @@ class Form extends AppModel{
 
     public $useTable = false;
 public $form = "form";
-public function validate()
+public function rediretct()
 {
-   echo 'git';
+    $this->rediretct('../');
 }
+//public function validate()
+//{
+//   echo 'git';
+//}
 }

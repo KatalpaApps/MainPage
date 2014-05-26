@@ -18,8 +18,10 @@ class FormsController extends AppController {
   
     //put your code here
     function process() {
-      
-           $form = $_POST;
+        $this->autoRender = false;
+        $this->request->onlyAllow('ajax');
+echo json_encode('ok');
+        $form = $_POST;
         $email = Configure::read('Config.email');
         $message = "";   
         foreach ($form as $key => $value) {
