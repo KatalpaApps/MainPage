@@ -2,5 +2,13 @@
     'bootstrap', 
     'app',
     'app-responsive',
-    'font'
+    'font',
+    'landing-page',
+    'carousel-dots',
+    'project-planner',
+    'about-us',
+    'projects',
+    'animate',
+    'umowiony-mobile',
+    'contact'
     )); 

@@ -1,10 +1,12 @@
 jQuery(document).ready(function() {
 
     initModule('Contact', resizeContactWindow, initContact, false);
+    
 });
 
 function initContact()
 {
+
     $('.go-up').click(function() {
 
         jQuery('html,body').animate({scrollTop: 0}, 1600, function() {

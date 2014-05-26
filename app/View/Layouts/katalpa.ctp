@@ -29,8 +29,10 @@
                         </div>
                     </div>
                 </nav>
+                <div id="dynamic-content">
                     <?php echo $this->fetch('content'); ?>
-                <button class="go-up btn-link">
+                </div>
+                    <button class="go-up btn-link">
                     <img src="<?php echo $this->webroot; ?>images/scroll_up.png" alt="scroll top" />
                 </button>
             </div>

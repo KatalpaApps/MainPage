@@ -1,12 +1,6 @@
-
 <?php
-if ($this->ajax()){
-    echo('ajax');
-}
 $this->set('title', 'About katalpa');
 $this->set('moduleName', 'AboutUs');
-$this->Html->script('/js/app/about-us', array('inline' => false));
-$this->Html->css(array('about-us','carousel-dots'), null, array('inline' => false));
 ?>
 <section id="few-words-about-us" class="auto-height photo">
     <div class="page-title">

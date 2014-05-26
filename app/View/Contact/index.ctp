@@ -1,9 +1,6 @@
 <?php
 $this->set('title', 'Contact with katalpa');
 $this->set('moduleName', 'Contact');
-$this->Html->script(array('/js/app/contact','/js/lib/jquery.form','/js/lib/jquery.validate.js','https://maps.googleapis.com/maps/api/js?sensor=false'), array('inline' => false));
-$this->Html->css('contact', null, array('inline' => false));
-
 ?>
  <section id="meet-us" class="photo auto-height auto-padding">
                     <div class="page-title">

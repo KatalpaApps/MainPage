@@ -1,8 +1,6 @@
 <?php
 $this->set('title', 'Welcome to Katalpa Home Page');
 $this->set('moduleName', 'Landing');
-$this->Html->script('/js/app/landing', array('inline' => false));
-$this->Html->css(array('landing-page','carousel-dots'), null, array('inline' => false));
 ?>
 <section id="landing-home" class="auto-height photo container-fluid text-center">
     <div data-ride="carousel" class="carousel slide dotstyle dotstyle-fillup" id="carousel-what-we-are">

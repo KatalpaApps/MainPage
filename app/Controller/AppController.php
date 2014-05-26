@@ -42,14 +42,14 @@ class AppController extends Controller {
     public function beforeFilter() {
 //     $this->Session->destroy('Config.language');
          if (!$this->Session->check('Config.language')) {
-        setLanguage();
+        $this->setLanguage();
          }
          if($this->request->is('ajax')){
              $this->layout = '';
              $this->ajax = true;
          }
     }
- public  function setLanguage(){
+ public function setLanguage(){
       
             $GeoIpLocation = new GeoIpLocation();
             $ipAdress = $this->request->clientIp();

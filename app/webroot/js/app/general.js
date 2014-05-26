@@ -8,7 +8,17 @@ jQuery(document).ready(function() {
     $("a").click(function(event){
      
              event.preventDefault();
-             console.log($("#wrapper").load($(this).attr("href")));
+             $("#dynamic-content").slideUp('1000');
+             
+                    
+                   setTimeout(
+                           $("#dynamic-content").load($(this).attr("href"), function(){
+                          $("#dynamic-content").slideDown('slow');
+                             activeModule('Contact');
+             }), 2000);     
+//            alert('zarzucam moduł');
+
+         
     });
 
 });

@@ -1,9 +1,6 @@
 <?php 
- $this->set('title', 'Umowiony Mobile');
+$this->set('title', 'Umowiony Mobile');
 $this->set('moduleName', 'UmowionyMobile');
-$this->Html->script('/js/app/umowiony-mobile', array('inline' => false));
-$this->Html->css('umowiony-mobile', null, array('inline' => false));
-
 ?>
 <section id="umowiony" class="auto-height photo">
                     <div class="page-title">
@@ -11,7 +8,6 @@ $this->Html->css('umowiony-mobile', null, array('inline' => false));
                         <p><img src="<?php echo $this->webroot; ?>images/projects/umowiony_logo.png" alt="umowiony mobile logo"> <span class="hidden-xs hidden-sm"><?php echo __("umowiony_page_title");?></span><span class="hidden-md hidden-lg"><?php echo __("umowiony_page_title_mobile");?></span></p>
                         <div class="hr-down"></div>
                     </div>
-
                 </section>
                 <section id="phones">
                     <img src="<?php echo $this->webroot; ?>images/umowiony-mobile/phone_right.png" alt="phone left" class="phone-left">
@@ -20,9 +16,6 @@ $this->Html->css('umowiony-mobile', null, array('inline' => false));
                 </section>
                 <section id="zdrowie-bez-kolejki" class="text-content text-center container-fluid">
                     <h1 class=""><?php echo __("umowiony_zdrowie_bez_kolejki_title");?></h1>
-
-
-
                     <p><?php echo __("umowiony_zdrowie_bez_kolejki_line_1");?></p>
                     <p><?php echo __("umowiony_zdrowie_bez_kolejki_line_2");?></p>
                     <p><?php echo __("umowiony_zdrowie_bez_kolejki_line_3");?></p>
@@ -39,7 +32,6 @@ $this->Html->css('umowiony-mobile', null, array('inline' => false));
                     <h1 class=""><?php echo __("umowiony_what_we_did");?></h1>
                     <div class="row">
                         <div class="col-sm-10 col-sm-offset-1">
-
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="box">
@@ -65,9 +57,7 @@ $this->Html->css('umowiony-mobile', null, array('inline' => false));
                             </div>  
                         </div>
                     </div>
-
-                </section>
-
+               </section>
                 <section id="nerdy-facts" class="container-fluid text-center text-content extra-margin extra-padding-bottom-lg">
                     <h1>Nerdy Facts</h1>
                     <div class="row">
@@ -78,10 +68,7 @@ $this->Html->css('umowiony-mobile', null, array('inline' => false));
                                         <img src="<?php echo $this->webroot; ?>images/umowiony-mobile/ico_task.png"/>
                                         <h3><?php echo __("umowiony_tasks_title");?></h3>
                                         <p><?php echo __("umowiony_tasks_line 1"); ?></p>
-                                        <p><?php echo __("umowiony_tasks_line 2"); ?></p>
-                                        
-
-                                        
+                                        <p><?php echo __("umowiony_tasks_line 2"); ?></p>                                                                           
                                     <div class="box">
                                         <img src="<?php echo $this->webroot; ?>images/umowiony-mobile/ico_time.png"/>
                                        <h3><?php echo __("umowiony_hours_title");?></h3>
@@ -103,7 +90,6 @@ $this->Html->css('umowiony-mobile', null, array('inline' => false));
                                         <p><?php echo __("umowiony_pages_line 1"); ?></p>
                                         <p><?php echo __("umowiony_pages_line 2"); ?></p>
                                 </div> 
-
                             </div>
                         </div>
                     </div>
