@@ -1,28 +1,62 @@
-var  isMobile = detectMobile();
+var isMobile = detectMobile();
 
 jQuery(document).ready(function() {
     bindArrowEvents();
     scrollDown();
     resizeWindow();
-    
-    $("a").click(function(event){
-     
-             event.preventDefault();
-             $("#dynamic-content").slideUp('1000');
-             
-                    
-                   setTimeout(
-                           $("#dynamic-content").load($(this).attr("href"), function(){
-                          $("#dynamic-content").slideDown('slow');
-                             activeModule('Contact');
-             }), 2000);     
-//            alert('zarzucam moduł');
 
-         
+    $("a").click(function(event) {
+        event.preventDefault();
+       
+        var url = $(this).attr('href');
+          loadContent(url);
+//        $('#dynamic-content').slideUp('slow', function() {
+//            loadContent(url);
+//        });
     });
-
 });
 
+
+function loadContent(url) {	
+//	$.ajax({
+//		type: "GET",
+//		url: url,
+////		data: 'page='+url,
+//		dataType: "html",
+//		success: function(msg){
+//			
+//			if(parseInt(msg)!=0)
+//			{
+//				$('#dynamic-content').html(msg);
+//			}
+//		}
+//		
+//	});
+    $("#dynamic-content").load(url, function() {
+        activeModule('Contact');
+//        var module = url.split('/');
+        var modul = module[module.length - 1];
+       
+        if(modul === "")
+        {
+            modul = "Landing";
+            alert(modul);
+              activeModule(modul);
+        }
+        else
+        {
+            
+            var mod = modul[0].toUpperCase();
+             mod += modul.substring(1,modul.length);
+            alert(mod);
+              activeModule(mod);
+        }
+       
+       
+        
+//        $("#dynamic-content").slideDown('slow');
+   });
+}
 function bindArrowEvents() {
     $('.arrow').on('click', function(event) {
         $('html, body').animate({
@@ -31,7 +65,7 @@ function bindArrowEvents() {
     });
 }
 function scrollDown() {
-    
+
     $(window).scroll(function(event) {
         if ($(window).scrollTop() > $(window).height() * 0.9) {
             $(".go-up").fadeIn();
@@ -58,9 +92,9 @@ function scrollDown() {
 //   }
 function resizeWindow(__iWindowHeight, __iWindowWidth)
 {
-     $(".auto-height").css("height", window.screen.height + "px"); 
+    $(".auto-height").css("height", window.screen.height + "px");
 
-   
+
 }
 function detectMobile()
 {
@@ -85,7 +119,7 @@ function detectMobile()
         }
     };
     return isMobile.any();
-   
+
 }
 
   

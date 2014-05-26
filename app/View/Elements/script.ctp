@@ -2,7 +2,7 @@
     '/js/lib/bootstrap.min.js',
     '/js/lib/jquery.util.js',
     '/js/app.js',
-//    '/js/require.js',
+
     '/js/app/general.js',
     '/js/app/landing',
     '/js/app/about-us',
@@ -13,6 +13,7 @@
     '/js/lib/jquery.form',
     '/js/lib/jquery.validate.js',
     '/js/lib/jquery-ui-1.9.2.custom.min.js',
+    '/js/lib/pace.min.js',
     'https://maps.googleapis.com/maps/api/js?sensor=false'
     ));
     
