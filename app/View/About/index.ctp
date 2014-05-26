@@ -2,6 +2,7 @@
 $this->set('title', 'About katalpa');
 $this->set('moduleName', 'AboutUs');
 ?>
+<input id="location" hidden="true" name="location" value="About">
 <section id="few-words-about-us" class="auto-height photo">
     <div class="page-title">
         <div class="hr-up"></div>
@@ -72,20 +73,20 @@ $this->set('moduleName', 'AboutUs');
         </ol>
         <div class="carousel-inner">
             <div class="item active">
-                <img src="images/about-us/team_slider_1_dark.jpg" alt="team member 1">
+                <img src="<?php echo $this->webroot; ?>images/about-us/team_slider_1_dark.jpg" alt="team member 1">
             </div>
             <div class="item">
-                <img src="images/about-us/team_slider_1_dark.jpg" alt="team member 2">
+                <img src="<?php echo $this->webroot; ?>images/about-us/team_slider_1_dark.jpg" alt="team member 2">
             </div>
             <div class="item">
-                <img src="images/about-us/team_slider_1_dark.jpg" alt="team member 3">
+                <img src="<?php echo $this->webroot; ?>images/about-us/team_slider_1_dark.jpg" alt="team member 3">
             </div>
         </div>
     </div>
 </section>
 <section id="clients" class="text-content container-fluid text-center extra-margin">
     <h2 class=" "><?php echo __("about_some_clients"); ?></h2>
-    <h5><?php echo __("about_heart_before"); ?><img src="images/about-us/ico_heart.png" alt="heart icon"> <?php echo __("about_heart_after"); ?></h5>
+    <h5><?php echo __("about_heart_before"); ?><img src="<?php echo $this->webroot; ?>images/about-us/ico_heart.png" alt="heart icon"> <?php echo __("about_heart_after"); ?></h5>
     <div class="row">
         <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
             <div class="row">

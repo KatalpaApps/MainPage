@@ -46,7 +46,7 @@ class AppController extends Controller {
          }
          if($this->request->is('ajax')){
              $this->layout = '';
-             $this->ajax = true;
+             $this->response->disableCache();
          }
     }
  public function setLanguage(){

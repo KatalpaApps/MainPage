@@ -5,7 +5,7 @@ jQuery(document).ready(function(){
 	
 function initProjects()
 {
-				
+                
 		$('.go-up').click(function() {
 			
 			jQuery('html,body').animate({scrollTop: 0},1600,function() {
@@ -28,6 +28,7 @@ function initProjects()
 
                         }
                 );
+        bindLinks();
 }
 function resizeProjectsWindow(__iWindowHeight, __iWindowWidth)
 {
@@ -41,4 +42,13 @@ function resizeProjectsWindow(__iWindowHeight, __iWindowWidth)
     {
          $('.auto-height-one-third').css("height", Math.round(window.screen.height * 0.33, 0) + "px");
     }
+}
+
+function bindLinks(){
+     $("a.ajax").click(function(event) {
+        event.preventDefault();
+        $('body').removeClass('pmr-open');
+        $('.mask').remove();
+        loadContent($(this).attr('href'));
+});
 }

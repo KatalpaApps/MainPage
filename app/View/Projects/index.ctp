@@ -1,22 +1,20 @@
 <?php
-
 $this->set('title', 'Checkout our stunning projects ');
 $this->set('moduleName', 'Projects');
 ?>
 <section id="umowiony" class="auto-height photo">
     <div class="page-title">
         <div class="hr-up"></div>
-        <a href="<?php echo $this->webroot ?>/projects/umowiony-mobile">
-            <p class="title "><a href="<?php echo $this->webroot ?>projects/umowionymobile"><span class="hidden-xs hidden-sm"><?php echo __("projects_umowiony");?></span><span class="hidden-md hidden-lg"><?php echo __("projects_umowiony_mobile");?></span></a></p>
-            <p class="text"><a href="<?php echo $this->webroot ?>projects/umowionymobile"><span class="hidden-xs hidden-sm"><?php echo __("projects_umowiony_hover_text");?></span><span class="hidden-md hidden-lg"><?php echo __("projects_umowiony_hover_text_mobile");?></span></a></p>
+        <a class="ajax" href="<?php echo $this->webroot ?>/projects/umowiony-mobile">
+            <p class="title "><a class="ajax" href="<?php echo $this->webroot ?>projects/umowionymobile"><span class="hidden-xs hidden-sm"><?php echo __("projects_umowiony");?></span><span class="hidden-md hidden-lg"><?php echo __("projects_umowiony_mobile");?></span></a></p>
+            <p class="text"><a class="ajax" href="<?php echo $this->webroot ?>projects/umowionymobile"><span class="hidden-xs hidden-sm"><?php echo __("projects_umowiony_hover_text");?></span><span class="hidden-md hidden-lg"><?php echo __("projects_umowiony_hover_text_mobile");?></span></a></p>
         </a>
         <div class="hr-down"></div>
     </div>
     <div class="subpage-footer center-content">
-        <a href="<?php echo $this->webroot ?>projects/umowionymobile" class="stdbtn"><?php echo __("projects_umowiony_button");?></a>
+        <a  href="<?php echo $this->webroot ?>projects/umowionymobile" class="stdbtn ajax"><?php echo __("projects_umowiony_button");?></a>
     </div>
 </section>
-</div>
 <section id="zielony-solar" class="auto-height photo">
     <div class="page-title title-two-line">
         <div class="hr-up"></div>
@@ -24,7 +22,7 @@ $this->set('moduleName', 'Projects');
         <div class="hr-down"></div>
     </div>
     <div class="subpage-footer center-content">
-        <a href="#" class="stdbtn"><?php echo __("projects_zielony_solar_button");?></a>
+        <a href="#" class="stdbtn ajax"><?php echo __("projects_zielony_solar_button");?></a>
     </div>
 </section>
 <section id="sellbox" class="auto-height photo">
@@ -34,7 +32,7 @@ $this->set('moduleName', 'Projects');
         <div class="hr-down"></div>
     </div>
     <div class="subpage-footer center-content">
-        <a href="#" class="stdbtn"><?php echo __("projects_sellbox_button");?></a>
+        <a href="#" class="stdbtn ajax"><?php echo __("projects_sellbox_button");?></a>
     </div>
 </section>
 <section id="bitcoins" class="container-fluid text-center no-padding">
@@ -62,5 +60,4 @@ $this->set('moduleName', 'Projects');
             <div class="hr-down"></div>
         </div>
     </div>
-
 </section>

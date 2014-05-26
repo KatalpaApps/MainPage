@@ -6,7 +6,8 @@
 	
 	function initLanding()
 	{
-		jQuery('.carousel').carousel();	
+	    bindLinks();	
+            jQuery('.carousel').carousel();	
 		$('.go-up').click(function() {
 			
 			jQuery('html,body').animate({scrollTop: 0},1600,function() {
