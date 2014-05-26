@@ -7,9 +7,9 @@
 			initApp();
 		
 		g_aModuleList[__sModuleName] = new Array();
-		g_aModuleList[__sModuleName]['init']=__fnInit;
-		g_aModuleList[__sModuleName]['resize']=__fnResizeWindow;
-		g_aModuleList[__sModuleName]['destroy']=__fnDestroy;
+		g_aModuleList[__sModuleName]['init']=__fnInit?__fnInit:defaultInit;
+		g_aModuleList[__sModuleName]['resize']=__fnResizeWindow?__fnResizeWindow:defaultResize;
+		g_aModuleList[__sModuleName]['destroy']=__fnDestroy?__fnDestroy:defaultDestroy;
 				
 		if(!g_sActiveModule && $('main.module'+__sModuleName).exists())
 			activeModule(__sModuleName);
@@ -44,6 +44,21 @@
 		});	
 		
 	}
+	
+	function defaultDestroy()
+	{
+		
+	}
+	
+	function defaultInit()
+	{
+		
+	}
+	
+	function defaultResize()
+	{
+		
+	}	
 	
 	function defaultResizeWindow()
 	{
