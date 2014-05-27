@@ -6,6 +6,9 @@ jQuery(document).ready(function() {
     });
 
 function bindLinks(){
+     $('a.ajax').each(function(event){
+            console.log($(this).html());
+        });
      $("a.ajax").click(function(event) {
         event.preventDefault();
         $('body').removeClass('pmr-open');
@@ -27,6 +30,7 @@ function loadContent(url) {
                     if ($(window).scrollTop() > $(window).height() * 0.9){
                     jQuery('html,body').animate({scrollTop: 0},800,function() {		
 			});
+                    bindLinks();
                 }
             }   
     }
