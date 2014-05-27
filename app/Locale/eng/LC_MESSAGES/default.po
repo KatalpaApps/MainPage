@@ -257,6 +257,9 @@ msgstr "NEXT PROJECT"
 msgid "about_few_words"
 msgstr "meet us in our office"
 
+msgid "about_few_words_mobile"
+msgstr "meet us"
+
 msgid "about_hello_title"
 msgstr "Hello, we are Katalpa software development team"
 

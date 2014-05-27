@@ -12,7 +12,7 @@ and open the template in the editor.
 #umowiony {
     background-image: url(../images/projects/umowiony_dark.jpg)
 }
-        #doctor-photos .column
+#doctor-photos .column
 {
     width: 20%;
     float: left;
@@ -83,38 +83,58 @@ p{
 }
 
 }
-@media (max-width : 1024px) and (oriantation: landscape)
-{
-     #phones{
-        width: 200px;
-        height: 380px;
-        margin-left: 100px;
+@media (max-width: 1024px) and (orientation: landscape){
+   
+    #phones{
+        height: 280px;
+        width: 50%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
     }
     #phones img{
     position: absolute;
-    width: 100%;
+    width: 80%;
   
 }
 img.phone-top{
-    position: absolute;
     z-index: 2;
     overflow: hidden;
-    left:95px;
     top: -100px;
-    
+    left: 30px;
 }
 img.phone-right{
     z-index: 1;
-    left: 200px;
       top: -80px;
+      right: -40%;
 }
 img.phone-left{
     z-index: 1;
       top: -80px;
-    
+      left: -40%;
+}
+#doctor-photos{
+    display: none;
+}
+#testimonial p
+{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#project-next-prev div{
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+#project-next-prev a{
+    position: static;
+    margin-top: 25%;
+    display: inline-block;
 }
 }
-@media (max-width: 800px) and (orientation: landscape){
+@media (max-width: 768px) and (orientation: landscape){
     #zdrowie-bez-kolejki p{
         padding-left: 1em;
         padding-right: 1em;
@@ -128,7 +148,9 @@ img.phone-left{
     #phones{
         width: 200px;
         height: 380px;
-        margin-left: 100px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
     }
     #phones img{
     position: absolute;
@@ -139,17 +161,18 @@ img.phone-top{
     position: absolute;
     z-index: 2;
     overflow: hidden;
-    left:95px;
+   
     top: -100px;
     
 }
 img.phone-right{
     z-index: 1;
-    left: 200px;
+    right : -50%;
       top: -80px;
 }
 img.phone-left{
     z-index: 1;
+     left:-50%;
       top: -80px;
     
 }

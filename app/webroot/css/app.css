@@ -15,7 +15,13 @@ body {
 main {
     display: block;
 }
-
+a{
+    color:white;
+}
+a:hover, a:visited
+{
+    text-decoration: none;
+}
 section {
     background-attachment: fixed;
     background-size: cover;
@@ -36,17 +42,12 @@ section.photo
 {
     margin: 0px;
 }
+
 #show-menu-btn
 {
     padding: 10px 15px;
 }
-a{
-    color:white;
-}
-a:hover, a:visited
-{
-    text-decoration: none;
-}
+
 body.pmr-open {
     overflow-x: hidden
 }
@@ -55,7 +56,10 @@ body.pmr-open {
 {
     background-color: #1a1a1a;
 }
+
+/* pushed out content animation */
 #wrapper {
+    
     position: relative;
     z-index: 10;
     top: 0;
@@ -75,7 +79,7 @@ body.pmr-open {
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
 }
-
+/*sidebar menu elements*/
 nav.menu {
     position: fixed;
     z-index: 20;
@@ -101,7 +105,6 @@ nav.menu a:hover, nav.menu a.active {
     color: white;
     background-color: #242424;
 }
-
 nav.push-menu-right {
     top: 0px;
     width: 300px;
@@ -111,7 +114,6 @@ nav.push-menu-right {
 nav.push-menu-right li {
     border-top: solid 1px #2f2f2f; 
 }
-
 a.close-menu-btn{
     border-top: none;
     text-align: right;
@@ -142,7 +144,6 @@ nav.push-menu-right button.close-menu {
     padding: 10px 30px;
     background-color: #3184a1;
 }
-
 #menu-right-social-media
 {
     position: absolute;
@@ -160,7 +161,6 @@ nav.push-menu-right button.close-menu {
     padding-top: 10px;
     height: 44px
 }
-
 #menu-right-social-media a
 {
     border: none;
@@ -173,15 +173,14 @@ nav.push-menu-right button.close-menu {
     background-position: center center;
     padding: 25px;
 }
-
+/*end of menu sidebar section*/
+/*standard page element section*/
 .page-title
 {
     font-family: 'ubunturegular';
     font-weight: bold;
     text-align: center;
-
 }
-
 .carousel-indicators{
     bottom: -3em;
 }
@@ -189,7 +188,6 @@ nav.push-menu-right button.close-menu {
 {
     background-color: transparent;
 }
-
 .hr-up, .hr-down
 {
     border: solid 2px white;
@@ -217,14 +215,13 @@ nav.push-menu-right button.close-menu {
 .page-title a:hover
 {
     color: white;
-
 }
 .subpage-footer
 {
     position: absolute;
     bottom: 0px;
     left: 0px;
-    min-height: 70px;
+    min-height: 10%;
     width: 100%;
     text-align: center;
     padding-bottom: 2em;

@@ -85,7 +85,7 @@ function initContact()
     var marker = new google.maps.Marker({
         position: new google.maps.LatLng(51.0295711, 16.9680158),
         map: map,
-        icon: '<?php echo $this->webroot; ?>images/contact/marker.png'
+        icon: 'images/contact/marker.png'
     });
 }
 function resizeContactWindow(__iWindowHeight, __iWindowWidth)
