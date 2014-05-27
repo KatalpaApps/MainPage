@@ -28,7 +28,7 @@ function loadContent(url) {
                     $('#dynamic-content').html(msg);
                     switchModule(url);
                     if ($(window).scrollTop() > $(window).height() * 0.9){
-                    jQuery('html,body').animate({scrollTop: 0},800,function() {		
+                    jQuery('html,body').animate({scrollTop: 0},10,function() {		
 			});
                     bindLinks();
                 }

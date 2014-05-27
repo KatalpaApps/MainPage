@@ -2,7 +2,6 @@
 $this->set('title', 'About katalpa');
 $this->set('moduleName', 'AboutUs');
 ?>
-<input id="location" hidden="true" name="location" value="About">
 <section id="few-words-about-us" class="auto-height photo">
     <div class="page-title">
         <div class="hr-up"></div>
@@ -43,7 +42,6 @@ $this->set('moduleName', 'AboutUs');
 <section id="our-services" class="text-content container-fluid extra-margin-lg">
     <h2 class="text-center"><?php echo __("about_our_services"); ?></h2>
     <div class="col-sm-10 col-sm-offset-1">
-
         <div class="row">
             <div class="box box-icon icon-mobile-apps col-md-5">
                 <h3><?php echo __("about_box_title_mobile_apps"); ?></h3>

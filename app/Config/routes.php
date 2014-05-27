@@ -25,6 +25,11 @@
  * to use (in this case, /app/View/Pages/home.ctp)...
  */
 	Router::connect('/', array('controller' => 'katalpa', 'action' => 'index', 'home'));
+	Router::connect('/#umowionymobile', array('controller' => 'projects', 'action' => 'umowionymobile'));
+	Router::connect('/#projects', array('action' => 'umowionymobile'));
+	Router::connect('/#contact', array('controller' => 'contact', 'action' => 'index'));
+	Router::connect('/#about', array('controller' => 'about', 'action' => 'index'));
+	Router::connect('/#projectplanner', array('controller' => 'projectplanner', 'action' => 'index'));
 /**
  * ...and connect the rest of 'Pages' controller's URLs.
  */

@@ -47,11 +47,11 @@ $this->set('moduleName', 'Landing');
 <section id="landing-about-us" class="auto-height photo container-fluid text-center">
     <div class="page-title">
         <div class="hr-up"></div>
-        <p><a class="ajax" href="<?php echo $this->webroot; ?>about"><span class="hidden-xs hidden-sm"><?php echo __("landing_about");?></span><span class="hidden-md hidden-lg"><?php echo __("landing_about_mobile");?></span></p>
+        <p><a class="ajax" href="<?php echo $this->webroot; ?>about"><span class="hidden-xs hidden-sm"><?php echo __("landing_about");?></span><span class="hidden-md hidden-lg"><?php echo __("landing_about_mobile");?></span></a></p>
         <div class="hr-down"></div>
     </div>
     <div class="subpage-footer center-content">
-        <a class="stdbtn ajax" href="<?php echo $this->webroot; ?>about" ><?php echo __("landing_about_button");?></a>
+        <a class="stdbtn ajax" href="<?php echo $this->webroot; ?>about"><?php echo __("landing_about_button");?></a>
     </div>
 </section>
 <section id="landing-meet-us" class="auto-height photo container-fluid text-center">

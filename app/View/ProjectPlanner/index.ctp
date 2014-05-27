@@ -61,7 +61,5 @@ $this->set('moduleName', 'ProjectPlanner');
                         </form>
                     </div>
                 </section>
-            </div>
              <?php echo $this->element('social-media'); ?>
-            </div>
        
