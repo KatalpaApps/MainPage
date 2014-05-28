@@ -20,6 +20,7 @@
     background-image: url(../images/projects/sellbox_dark_sm.jpg)
 }
 }
+
 #local-bitcoins {
     background-image: url(../images/projects/local_btc_small_dark.jpg);
 }
@@ -42,10 +43,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-section
+/*section.  .page-title-hover
 {
-    /*background-attachment: scroll;*/
-}
+    background-attachment: scroll;
+}*/
 .photo-mini
 {
     padding-top: 8%;
@@ -55,21 +56,20 @@ section
     font-size: 1.75em;
     margin-top: -0.2em;
 }
-.page-title .title{
+.page-title-hover .title{
     width: 100%;
     text-align: center;
 }
-.page-title .text{
-    font-size: 0.5em;
-}
+
 p.text
 {
     display: none;
+    font-size: 0.5em;
 }
-.page-title{
+.page-title-hover{
     position: relative;
 }
-.page-title p
+.page-title-hover p
 {
     position: absolute;
     top: 0;
@@ -79,7 +79,7 @@ p.text
     margin-right: 0px;
     margin-left: 0px;
 }
-.page-title .hr-down,.page-title:hover .hr-down
+.page-title-hover .hr-down,.page-title-hover:hover .hr-down
 {
     margin-top: 1.7em;
 }
