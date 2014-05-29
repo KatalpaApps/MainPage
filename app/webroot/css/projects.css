@@ -83,6 +83,10 @@ p.text
 {
     margin-top: 1.7em;
 }
-
+.safe-background
+{
+    background-attachment: scroll;
+    background-position: center center;
+}
 
 
