@@ -79,4 +79,5 @@ function resizeContactWindow(__iWindowHeight, __iWindowWidth)
     $(".auto-height").css("height", window.screen.height + "px");
     $('.auto-height-two-third').css("height", Math.round(window.screen.height * 0.66, 0) + "px");
 	google.maps.event.trigger(map,'resize');
+	map.setCenter(new google.maps.LatLng(51.0295711, 16.9680158), 5);
 }
