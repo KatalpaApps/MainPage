@@ -333,7 +333,7 @@ msgid "about_some_clients"
 msgstr "Some of our happy clients"
 
 msgid "about_heart_before"
-msgstr "We"
+msgstr "We "
 
 msgid "about_heart_after"
 msgstr "every single one"

@@ -1,15 +1,18 @@
 jQuery(document).ready(function() {
-    bindArrowEvents();
-    scrollDown();
-    resizeWindow();
-    bindLinks();
+    scrollDownActions();
+    scrollUp();
+    bindAjaxLinks();
     });
+function scrollUp(){
+       $('.go-up').click(function() {
 
-function bindLinks(){
-     $('a.ajax').each(function(event){
-            console.log($(this).html());
+        jQuery('html,body').animate({scrollTop: 0}, 1600, function() {
         });
-     $("a.ajax").click(function(event) {
+    });
+}
+
+function bindAjaxLinks(){
+     $("body").on('click','.ajax', function(event) {
         event.preventDefault();
         $('body').removeClass('pmr-open');
         $('.mask').remove();
@@ -28,9 +31,8 @@ function loadContent(url) {
                     $('#dynamic-content').html(msg);
                     switchModule(url);
                     if ($(window).scrollTop() > $(window).height() * 0.9){
-                    jQuery('html,body').animate({scrollTop: 0},10,function() {		
-			});
-                    bindLinks();
+                    jQuery('html,body').animate({scrollTop: 0},10,function(){});
+//                    bindAjaxLinks();
                 }
             }   
     }
@@ -59,42 +61,11 @@ function switchModule(url)
             break;
         case 'umowionymobile':
             activeModule('UmowionyMobile');
-
+            break;
     }
 }
-//    $("#dynamic-content").load(url, function() {
-////        activeModule('Contact');
 
-//       
-//        if(modul === "")
-//        {
-//            modul = "Landing";
-//            alert(modul);
-//              activeModule(modul);
-//        }
-//        else
-//        {
-//            
-//            var mod = modul[0].toUpperCase();
-//             mod += modul.substring(1,modul.length);
-//            alert(mod);
-//              activeModule(mod);
-//        }
-//       
-//       
-//        
-////        $("#dynamic-content").slideDown('slow');
-//   });
-//}
-function bindArrowEvents() {
-    $('.arrow').on('click', function(event) {
-        $('html, body').animate({
-            scrollTop: $(window).height()
-        }, 1000);
-    });
-}
-function scrollDown() {
-
+function scrollDownActions() {
     $(window).scroll(function(event) {
         if ($(window).scrollTop() > $(window).height() * 0.9) {
             $(".go-up").fadeIn();
@@ -106,6 +77,11 @@ function scrollDown() {
         }
     });
 }
+function resizeWindow(__iWindowHeight, __iWindowWidth)
+{
+    $(".auto-height").css("height", window.screen.height + "px");
+}
+
 //   function bouncingArrow() {
 //       // ie hack
 //       if ($(window).scrollTop() < $(window).height()) {
@@ -119,32 +95,10 @@ function scrollDown() {
 //           bouncingArrow()
 //       }, 3500)
 //   }
-function resizeWindow(__iWindowHeight, __iWindowWidth)
-{
-    $(".auto-height").css("height", window.screen.height + "px");
-}
-//function detectMobile()
-//{
-//    var isMobile = {
-//        Android: function() {
-//            return navigator.userAgent.match(/Android/i);
-//        },
-//        BlackBerry: function() {
-//            return navigator.userAgent.match(/BlackBerry/i);
-//        },
-//        iOS: function() {
-//            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-//        },
-//        Opera: function() {
-//            return navigator.userAgent.match(/Opera Mini/i);
-//        },
-//        Windows: function() {
-//            return navigator.userAgent.match(/IEMobile/i);
-//        },
-//        any: function() {
-//            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-//        }
-//    };
-//    return isMobile.any();
-//
+//function bindArrowEvents() {
+//    $('.arrow').on('click', function(event) {
+//        $('html, body').animate({
+//            scrollTop: $(window).height()
+//        }, 1000);
+//    });
 //}

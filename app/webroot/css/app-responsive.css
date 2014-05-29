@@ -17,12 +17,14 @@
     }
     body.pmr-open #wrapper {
         left: -300px;
+        transition: all 0.3s ease;
     }
     .page-title{
         font-size: 3.5em;
     }
     body.pmr-open section.photo
     {
+        -moz-transition: all 0.3s ease;
         transition: all 0.3s ease;
         background-position: -300px 0;
     }

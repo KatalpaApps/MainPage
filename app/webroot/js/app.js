@@ -18,8 +18,8 @@
 	}
 	
 	function activeModule(__sModuleName)
-	{			
-		if(g_sActiveModule)
+	{				
+            if(g_sActiveModule)
 			g_aModuleList[g_sActiveModule]['destroy']();
 
 		g_sActiveModule = __sModuleName;

@@ -1,25 +1,9 @@
 jQuery(document).ready(function() {
 
     initModule('Contact', resizeContactWindow, initContact, false);
-
 });
-
 function initContact()
 {
-
-    $('.go-up').click(function() {
-
-        jQuery('html,body').animate({scrollTop: 0}, 1600, function() {
-
-        });
-
-    });
-
-    $('#show-menu-btn').click(function(event) {
-        event.stopPropagation();
-    });
-
-
     var options = {
         beforeSubmit: function(formData, jqForm, options) {
             return jqForm.valid();
@@ -51,9 +35,7 @@ function initContact()
         },
         resetForm: false
     };
-
     $("#form-contact").ajaxForm(options);
-
     $("#form-contact").validate({
         errorPlacement: function(error, element) {
 
@@ -90,7 +72,6 @@ function initContact()
 }
 function resizeContactWindow(__iWindowHeight, __iWindowWidth)
 {
-
     $(".auto-height").css("height", window.screen.height + "px");
     $('.auto-height-two-third').css("height", Math.round(window.screen.height * 0.66, 0) + "px");
 }
