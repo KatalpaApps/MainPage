@@ -17,6 +17,7 @@ function resizeProjectsWindow(__iWindowHeight, __iWindowWidth)
     {
         $('.auto-height-one-third').css("height", Math.round(window.screen.height * 0.33, 0) + "px");
     }
+	
 }
 
 function hoverTitle(){

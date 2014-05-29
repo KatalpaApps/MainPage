@@ -2,6 +2,9 @@ jQuery(document).ready(function() {
 
     initModule('Contact', resizeContactWindow, initContact, false);
 });
+
+var map ;
+
 function initContact()
 {
     var options = {
@@ -63,7 +66,8 @@ function initContact()
         disableDefaultUI: true,
         scrollwheel: false
     };
-    var map = new google.maps.Map(document.getElementById('map'), myOptions);
+    
+map = new google.maps.Map(document.getElementById('map'), myOptions);
     var marker = new google.maps.Marker({
         position: new google.maps.LatLng(51.0295711, 16.9680158),
         map: map,
@@ -74,4 +78,5 @@ function resizeContactWindow(__iWindowHeight, __iWindowWidth)
 {
     $(".auto-height").css("height", window.screen.height + "px");
     $('.auto-height-two-third').css("height", Math.round(window.screen.height * 0.66, 0) + "px");
+	google.maps.event.trigger(map,'resize');
 }
